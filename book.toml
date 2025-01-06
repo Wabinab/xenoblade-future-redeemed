@@ -1,0 +1,12 @@
+[book]
+authors = ["wabinab"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Xenoblade Chronicles: Future Redeemed"
+description = "Xenoblade Future Redeemed translated from video to words."
+
+[preprocessor.footnote]
+
+[output.html]
+mathjax-support = true
