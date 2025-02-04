@@ -1,1 +1,12 @@
 # Terms
+
+- **Agnus:** One of the two factions fighting. They wore mostly-white uniform. 
+- **Aionios:** The world that they're living in. 
+- **Black Fog:** The purple-black fog that shrouded some location of Aionios. Perhaps it was created during the clashing of the two worlds, and where it is thick, there's a high probability of annihilation event happening. 
+- **Ferronis:** The heart of a colony. It is where the Flame Clock was hosted, the largest structure of a colony, and is driven into battle so the Flame Clock can absorb the life flames (red motes) of the fallen soldiers. When not in war, it hosted some space for living, or offices. 
+- **Keves:** One of the two factions fighting. They wore mostly-navy-blue uniforms. 
+- **Levnises:** The equivalent of our "tank": war machines that drove into the battlefield that can fire shots, missiles, or rays, at the enemy. There are various types of these; but they're not important for us to distinguish. 
+- **Moebius:** The conqueror of the world. They froze the time, at the will of the inhabitants of Aionios. 
+- **Monado:** God's weapon. Only a God can wield a Monado. The sword had a ring in its Ricasso that have various symbols; such symbols were displayed when an art is played. Ultimately, the final symbol, 神, signifies its true form: unleashing the full power a God can wield. Beneath it, 斬 (slicing from top to bottom) is about the strongest physical attack one can get (as of gameplay, compared to other symbols, not to other weapons, of course). 
+- **Ouroboros:** The special power wielded by some inhabitants that're capable to hurt Moebius. Non-Ouroboros had limited power against Moebius, unless they are _really_ strong. Ouroboros power made it much easier to negate the power of Moebius. 
+- **Term Symbol:** A symbol that showed which term the soldier is in. It starts out fully red, and gradually grayed out. It looks like a single diamon in the middle, and a smaller diamond on each of NESW (compass) direction; with the one to its left and right having an extra line piercing through the center of the diamond. 
