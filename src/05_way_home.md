@@ -1,12 +1,10 @@
 # On Their Way Home
 
-===
-
-The group trod the road, hamburgered by two levnises, one in the front, one at the back.{{footnote: It's a wonder how they climb rocks, but one assumed they can jump or even glide/fly short distance, given the jet-engine like object attached to their back which one guessed is jet engines.}} The ground was green; and there seemed to be a turn in front. To the left where they currently walked is tall cliffs, and to the right, a cliff to fall off the ledge; but soon they'll enter a region where both side are cliffs. Matthew was walking behind Dillon, looking at his figure, but his thoughts drifted afar. 
+The group trod the road, hamburgered by two levnises, one in the front, one at the back.{{footnote: It's a wonder how they climb rocks, but one assumed they can jump or even glide/fly short distance, given the jet-engine like object attached to their back which one guessed is jet engines.}} The ground was green; and there seemed to be a turn in front.{{footnote: Though, in the evening sky, you can't see well.}} To the left where they currently walked were tall cliffs, and to the right, a cliff to fall off the ledge; but soon they'll enter a region where both side are cliffs. Matthew was walking behind Dillon, looking at his figure, but his thoughts drifted afar. 
 
 ---
 
-Back at the City, nice blue day with some clouds. Perhaps it was memories, the scene wasn't so bright and clear. Matthew and Dillon spoke to each other, Na'el accompanied the former, and Grandpa watching over them, just outside the City. Other folks were forming their own little circles here and there, conversing. Children may participate, but they may adrift, like the one whom always tried to find Na'el to play her piano. 
+Back at the City, nice blue day with some clouds. Perhaps it was memories, the scene wasn't so bright and clear. Matthew and Dillon spoke with each other, Na'el accompanied the former, and Grandpa watching over them, just outside the City. Other folks were forming their own little circles here and there, conversing. Children may participate, shouting or speaking, but they may adrift, not too interested in adult conversations, like the girl whom always tried to find Na'el to play her piano. 
 
 Too bored of their parents talk, she searched her surrounding until she found her. Immediately she shouted, "**Na'el!**" as her face brightened from dull, and she already ran off towards her. Na'el heard her shouts, turned towards her. Her parents might have wanted to put brakes on her but was too slow to react. Na'el knelt down and she jumped into her hugs. Matthew turned and saw the scenery. 
 
@@ -32,7 +30,7 @@ Matthew took over the conversation, "Don't forget to call us, soon as you arrive
 
 "Them's fighting words."
 
-"Ha, hahaha!" There was silence between them, but their eyes transferred more emotions than can be put into language. After a while, Matthew held out his fist, and he punched back. 
+"Huh, hahaha!" There was silence between them, but their eyes transferred more emotions than can be put into language. After a while, Matthew held out his fist, and he punched back. 
 
 Later on, Na'el, Matthew, Dillon, and some others that chose to left behind watched as they left. The child, being the last, turned around and shouted, "**Na'el! Remember your promise!**" She waved as she did so. Her parents waited for her while others walked on. 
 
@@ -58,15 +56,15 @@ Shulk and the others turned around, himself acknowledged, "Yes. The Liberators' 
 
 "Uh? Colony 9? Like the one from Keves?" Glimmer was surprised by its name. 
 
-Panacea rebutted, "No, not that one. This is the **original** Colony 9. Though I guess that won't mean anything to you, one way or another."
+Panacea rebutted, "No, _not that one_. This is the **original** Colony 9. Though I guess that won't mean anything to you, one way or another."
 
 "Huh?" Nikol was more confused than ever. 
 
 "I-I don't get it." announced Glimmer. 
 
-"Well, anyway! Point is, it's **not** like a Kevesi or Agnian colony. That's all you need to know right now."
+"Well, anyway! Point is, it's **not- like** a Kevesi or Agnian colony. That's all you need to know right now."
 
-"Uh... OK..." Nikol felt. 
+"Uhhh... OK..." Nikol felt. 
 
 Linka announced, "I'll go on ahead to the command center and have your quarters prepared. If you'll excuse me..." And she immediately leave. 
 
@@ -82,7 +80,7 @@ She agreed, then shouted to the newcomers, "**Right, you heard the man. Try to k
 
 ---
 
-Walking into the City center, we saw the bazaar and the canteen at the 'square', which is really a roundabout with other structures surrounding the roundabout. Panacea introduced, "The plaza's kind of the heart of Colony 9. Anything you're looking for, you can more or less find it here, be it extra supplies or a quick bite to eat."
+Walking immediately past the tall buildings on both side of the main road, we saw the bazaar and the canteen at the 'square', which is really a roundabout with other structures surrounding the roundabout. Panacea introduced, "The plaza's kind of the heart of Colony 9. Anything you're looking for, you can more or less find it here, be it extra supplies or a quick bite to eat."
 
 Matthew was excited, "**Wow, it's pretty bustlin'.** Reminds me of the City."
 
@@ -136,23 +134,23 @@ Rex: "Great, cheers for that!"
 
 "Allow me to show you the way."
 
-Matthew: "Thanks, that'd be great." They walked out of the command center and head towards the direction of the tower-like structure. By the beginning of the bridge, to its side was a place tilled and planted. Kevesi and Agnians were working there. 
+Matthew: "Thanks, that'd be great." They walked out of the command center and head towards the direction of the tower-like structure. By the beginning of the bridge, to its side was a place where soil were tilled and planted. Kevesi and Agnians were working there. 
 
 "What? Never seen a field?" asked Panacea.
 
 "No." Matthew continued, "Those guys... They're Kevesi and Agnian soldiers, aren't they?"
 
-"They were. Teacher and the others freed them." And Matthew was taken aback in memories.
+"They were. Teacher, and the others freed them." And Matthew was taken aback in memories.
 
 --- 
 
 Where a rainbow casted over a waterfall, and a machine hidden below the rocks, Na'el and Matthew lead some City folks towards the pond. There was a monster imitating as a giant flower, hiding its body underwater; such flower was attached to its back. 
 
-They walked behind the waterfall, and Matthew noticed something, "_Whoa..._" Boxes of resources were laid there; but what interested were the bundle of corpse laid randomly on the floor, all dead. Creatures with a torch attached to their tail crawl around, perhaps to eat their remains, perhaps they just roam. Skittles (flying bugs) occupy some of the air field. "_What in the...?_ Doesn't look like they died in combat... All the husks around here are whip-thin."
+They walked behind the waterfall, and Matthew noticed something, "_Whoa..._" Boxes of resources were laid there; but what interested were the bundle of corpse laid randomly on the floor, all dead. Creatures with a torch attached to their tail crawl around, perhaps to eat their remains, perhaps they just roam. Skittles (flying bugs) occupy some of the air field. "_What in the...?_ Doesn't look like they died in combat... All the husks around here are whip-thin." The corpses looked Kevesi from their signature armor. 
 
 "You think they starved...?" asked one of the female City folk wearing goggles. 
 
-"Maybe."
+"_Maybe._"
 
 "With this much wildlife around, though?"
 
@@ -180,13 +178,13 @@ The male City folk reminded her, "_Thing is, though, fighting's all these guys k
 
 ---
 
-Linka explained, "It's not as simple as: plant some seeds, wait for the harvest. We're teaching them the ins and outs, as you can see. We're showing them there's more to life than battle."
+As memories dimmed and faded, attention returned to the present. Linka explained, "It's not as simple as: plant some seeds, wait for the harvest. We're teaching them the ins and outs, as you can see. We're showing them there's more to life than battle."
 
 "_You didn't do this in the City?_" asked Panacea.
 
 "No... We did do that stuff. We did, but..."
 
-"Hm?" Panacea and Linka were curious. But they had continued on their journey with the rest, seeing he's not going to say anything. And they followed on. Matthew took one last look at the tilling groups as the others passed through him, his minds in Na'el's desperate shouts, 
+"Hm?" Panacea and Linka were curious for so short a time that immediately after, they turned and walked away with Rex and Shulk. And they followed on. Matthew took one last look at the tilling groups as the others passed through him, his minds in Na'el's desperate shouts, 
 
 > "**Then show me already! This world of peace, where nobody has to die... Make it come true!**"
 
@@ -198,7 +196,7 @@ He shook off such thoughts and continued their tour. The turned around the corne
 
 Matthew: "I'm liking the atmosphere. Just right for settling down." 
 
-Nikol: "There's so many people, and it's so busy. It's worlds different from our colonies."
+Nikol: "There're... so many people, and it's so busy. It's worlds different from our colonies."
 
 Glimmer: "For now, anyways, we'll be glad of your hospitality. Is that right?"
 
@@ -226,7 +224,7 @@ Shulk explained, "He's a Nopon mechanic working with us Liberators. Quite a skil
 
 "**Ohhh**, that tickled your fancy, did it, Nikol?" Matthew exclaimed. 
 
-"Yeah, I-I really wanna check out his setup! Can we go now?"
+"**Yeah, I-I really wanna check out his setup! Can we go now?**"
 
 "Ahahah, sure thing, kid. Let's go and say hi before we bunk down."
 
