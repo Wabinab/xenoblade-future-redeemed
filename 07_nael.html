@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Na&#x27;el - Xenoblade Chronicles: Future Redeemed</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Xenoblade Future Redeemed translated from video to words.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00_preface.html">Preface</a></li><li class="chapter-item expanded affix "><li class="part-title">Main Story</li><li class="chapter-item expanded "><a href="01_introduce_matthew.html"><strong aria-hidden="true">1.</strong> The Place Where All Began</a></li><li class="chapter-item expanded "><a href="02_nikol_and_glimmer.html"><strong aria-hidden="true">2.</strong> Meeting New Friends</a></li><li class="chapter-item expanded "><a href="03_pursuing_glimmer.html"><strong aria-hidden="true">3.</strong> She's gone! We have to find her!</a></li><li class="chapter-item expanded "><a href="04_what_choice.html"><strong aria-hidden="true">4.</strong> Father and Son, Father and Daughter, A Conversation Clears The Wall Even Between Former Enemies</a></li><li class="chapter-item expanded "><a href="05_way_home.html"><strong aria-hidden="true">5.</strong> On Their Way Home</a></li><li class="chapter-item expanded "><a href="06_Rikus_workshop.html"><strong aria-hidden="true">6.</strong> What Has Riku Got For Us?</a></li><li class="chapter-item expanded "><a href="07_nael.html" class="active"><strong aria-hidden="true">7.</strong> Na'el</a></li><li class="chapter-item expanded "><a href="08_alpha.html"><strong aria-hidden="true">8.</strong> Alpha</a></li><li class="chapter-item expanded "><a href="09_history_ouroboros.html"><strong aria-hidden="true">9.</strong> History and Ouroboros Stone</a></li><li class="chapter-item expanded "><a href="10_prison_island.html"><strong aria-hidden="true">10.</strong> Journey to Prison Island</a></li><li class="chapter-item expanded "><a href="11_histories.html"><strong aria-hidden="true">11.</strong> History & The Promised World</a></li><li class="chapter-item expanded "><a href="12_end.html"><strong aria-hidden="true">12.</strong> Finale</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="95_armories.html">Repairing the Armories</a></li><li class="chapter-item expanded affix "><a href="96_appendices.html">Appendixes</a></li><li class="chapter-item expanded affix "><a href="97_postscript.html">Postscript</a></li><li class="chapter-item expanded affix "><a href="98_references.html">References</a></li><li class="chapter-item expanded affix "><a href="99_terms.html">Terms</a></li><li class="spacer"></li></ol>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+                data-name="bmc-button" data-slug="wabinab" data-color="#FAFAFA" 
+                data-emoji=""  data-font="Cookie" 
+                data-text="Make a donation!" 
+                data-outline-color="#000000" data-font-color="#000000" 
+                data-coffee-color="#ffffff" ></script>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Xenoblade Chronicles: Future Redeemed</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="nael"><a class="header" href="#nael">Na'el</a></h1>
+<p>The day's bright, the sky blue. It's rare to see Matthew up so early, for Glimmer and Nikol were only joining him and A. The campfire was forever burning, day and night. "Righty-ho... I'll go have a chat with Dillon. I wanna ask how all the City folk have been getting on. Got any plans yourselves?"</p>
+<p>"I think I'll pay a visit to the command center. I want to see what Shulk's up to."</p>
+<p>"And I'll... umm... I don't know. What should I do?"</p>
+<p>"If you're bored, you can come with me. I need to pick up a few things at the market." Glimmer suggested to her now friend.</p>
+<p>"Yeah, uh-uhm... OK."</p>
+<p>"Right then, catch you in a bit." And they split off.</p>
+<hr />
+<p>Several water fell off the cliff in the distance. Below the waterfall were somewhere near Colony 9. They were on top of a hill, overlooking the beautiful scenery, but their attention was on something else, despite the serenity.</p>
+<p>"Right... So you haven't seen Na'el..."</p>
+<p>"<em>I'm really sorry, Matthew. It was hard enough for the six of us to escape. But hey, it wasn't just <strong>our</strong> group. I hear Naomi's group made it out as well. There's a chance... she's with them.</em>"</p>
+<p>"Naomi?"</p>
+<p>"<em>Seems Caleb tried to stop them, but they weren't able to hear him.</em> We think they were headed towards Fornis. Except... <em>he said he was too far away to see who was <strong>actually</strong> with her.</em>"</p>
+<p>"Right..."</p>
+<p>"<em>This is Na'el, though. But she's with them, A-OK. She's like you, mate.</em> Hard as nails and <strong>twice</strong> as tough."</p>
+<p>"Uh-huh..." But hey, no, she's not. The long time he had with her, and he sworn to protect her; he sees her as someone to be protected, to live in what she's really happy about, and not immersed in war. His worries doesn't diminish therefore.</p>
+<hr />
+<p>Shulk was reading on a book, his butt on the edge of the table, when Rex arrived. "<em>You've got it <strong>so</strong> much easier, you know. At least yours is well-behaved.</em>"</p>
+<p>He raised his head from the book he's reading, "You're jealous? That's a surprise."</p>
+<p>"<em>That's- not- what I mean.</em>" He looked away.</p>
+<p>He looked down, recalling their encounters, "Nothing about this is easy. There's this <strong>awkward</strong> distance between us. I'm just lucky that things panned out this way."</p>
+<p>"<em>Is that right?</em>"</p>
+<p>"It's all about how to handle things in the moment. That's the crux of it, <em>or at least I think so.</em>" Starting to share experiences, eh!</p>
+<p>"<em>Hrmm...</em>" He started shaking his head.</p>
+<p>"You were independent from a young age, right?"</p>
+<p>"Yeah... <em>Well, apart from Gramps sticking to me like glue.</em>" That was memories. "But I supported myself."</p>
+<p>"That explains it, then. The way you think of her,... as being somehow different from you." He stood up and put his notebook on the table, had his attention on him, "<em>The paths you've walked are too unfamiliar. No?</em>"</p>
+<p>"<em>Hmm...</em>"</p>
+<p>"Try talking to her again... but be yourself." And thinking himself, putting his fingers in a V under his chin, "Actually..."</p>
+<p>"<em>Um?</em>"</p>
+<p>"Perhaps... she'll be the one who comes to you."</p>
+<p>"<em>Hm.</em>" He crossed arms.</p>
+<p>Just then, someone was shouting for them, "<strong>Hey Shulk! And Rex!</strong>" Rex turned around to saw a brown skin guy stopping near them, announcing the news before they asked what happened, "<strong>The search party's returned!</strong>"</p>
+<p>Both: "<strong>Huh!</strong>" Now that was some news.</p>
+<hr />
+<p>By the bridge entrance, Shulk, Rex, Panacea, Linka, Riku, and the main group's all four had gathered where the search party was. A white skin guy with wings sat down in front of the first two, drinking water while explaining the situation, and Shulk repeated, "You've not found a <strong>single</strong> person?"</p>
+<p>"There were clear signs of combat, that's it. But... As I've informed you, we've not been able to confirm any survivors. There were no husks present either, so I'd expect it to have been monsters."</p>
+<p>Rex wasn't very convinced, "But even then... can't see the whole <strong>group</strong> croaking it. Nagae's unit? <em>Shoulda been the cream of the crop.</em>"</p>
+<p>"Mhm." Shulk agreed.</p>
+<p>"Any case, we brought back anything we could find on the scene." The table behind, a short orange hair girl overseen all the equipment laid out. Some helmets, weapons, ids, and some cylinders. "Most objects belonged to the unit, <strong>but</strong>... there were also a few oddities." He walked over to the table while Shulk asked,</p>
+<p>"Namely?"</p>
+<p>"According to Carrom, things that may have potentially belonged to City refugees."</p>
+<p>"<strong>Whuh!</strong>" Now Matthew was alerted. Anything related to the City would mean news of Na'el. His eyes wide opened, studying the accessories on the table for any things that might be related to her. There was something small that laid in between all the equipment, a band alternating red and green that seemed to tied around the wrist broken caught his eye but not the others. "<strong>HUH!!!</strong>" He immediately took steps towards it, announced, "<strong>I KNOW THIS!!!</strong>"</p>
+<blockquote>
+<p>Na'el was speaking to him overlooking the square and the child when they were discussing their difference in goals. She pulled up her sleeve to revealed a band alternating green and red tied around.</p>
+</blockquote>
+<p>He took it up and shouted to the winged guy, aggressively, "<strong>OI! WHERE'D YOU FIND THIS?!!! THIS BELONGED TO NA'EL!!! TELL ME!!!</strong>" And he took steps forward, as if he's going to pick on him; and the winged guy backed away at such aggressiveness.</p>
+<p>In a frightened tone, "Li-Like I said, the location of the S.O.S."</p>
+<p>"Is that true?! <strong>You better not be lying!</strong>"</p>
+<p>A was watching his reactions coolly all the time, called out, "<strong>Matthew.</strong>" He's losing his mind, she need to watch over her.</p>
+<p>His pride overrode his fear, "It is, I'm not. It was with everything else, on the ground by a tree."</p>
+<p>"<em>Oh no... Na'el...</em>" His body drooped, his strength faded. A watched as he lose his motivation. What can she say? What had she seen?{{footnote: If you hadn't already know, she had foresight, as stated earlier when Glimmer ran away.}}</p>
+<hr />
+<p>Still, at the same place, but the search team members were already gone with the other stuffs. "<em>Huh...</em>" Matthew still couldn't accept the highly-probable fact.</p>
+<p>"Matthew..."</p>
+<p>Panacea asked, "This, 'Na'el'... She a relative of yours?"</p>
+<p>"She's my little sister. I've been looking for her for <strong>so</strong> long."</p>
+<p>"Right..."</p>
+<p>No time to linger, "Hey, Linka, where was that emergency transmission coming from?"</p>
+<p>"According to the search team, somewhere in the vicinity of Raguel Lake."</p>
+<p>He nodded to her, then walked towards the bridge himself, his steps stiff and certain, but he won't look back. Rex called out, "<strong>Oi</strong>, stop right there! You're not seriously planning to head out there alone?"</p>
+<p>"Uh, yeah? <strong>This is my problem, nobody else's. I've gotta see it for myself.</strong>"</p>
+<p>Linka: "Raguel Lake is quite a distance from here. I'd strongly recommend that you at least take <em>some</em> kind of <strong>escort</strong>..."</p>
+<p>He turned around and started venting, "<strong>You don't get it! I finally have a lead! If whoever</strong> attacked the search party <strong>still</strong> there, <strong>all the more reason for me to go, and rescue her!</strong>"</p>
+<p>Rex: "<strong>All right, all right, keep your shorts on. Nobody's tellin' you no</strong> here."</p>
+<p>Shulk explained, "We were planning to head there as well in fact. A whole search party taken out is no trivial matter."</p>
+<p>He apologized after listening, "Sorry. I didn't mean to go off on you."</p>
+<p>"No need. We don't really have the luxury of time, it's true." Thinking stance, "Then I suppose it's time to use the Ether Slide."</p>
+<p>"Ether... Slide?" Glimmer had not heard of that object before. What is it?</p>
+<p>"Take a look over here." He then walked them towards the edge of the gated cliff, where the bridge is in the distance. The ground had no particular details, only a patch of sandy soil that looked not very natural to the grassy surroundings; why had grass not grown there? "An Ether Slide is, <em>well</em>... Put simply, it's a method of conveyance that uses the flow of ether for propulsion. You can think of it as, sliding along a wire, made of ether. Using an Ether Slide would get us pretty close to Raguel Lake."{{footnote: Because the Ether Slide is charged with energy, the difference with a plain wire is, a plain wire is powered by gravity, and so you can only slide from higher place to lower; but an Ether Slide's energy allowed you to overcome gravity and slide from a lower location to one's higher.}}</p>
+<p>Panacea showed off the Great Contributors names, "Teacher and Riku developed this technology together. <strong>Amazing, or what?</strong>"</p>
+<p>Only the other guy whom knew mechanics got excited first, "<strong>Yes, it's really impressive...! The technology is fascination...!</strong>"</p>
+<p>Shulk took the opportunity at hand, "<strong>Hah!</strong>{{footnote: With trembled breathe, perhaps nervous.}} If- you're so curious about it, would you mind, lending me a hand?"</p>
+<p>"<strong>Absolutely!</strong>" He then ran forward to him.</p>
+<p>"Let me give you the necessary materials." He took it from his pocket and handed them to him.{{footnote: As usual, they had infinite storage space in their pockets. Game is game.}} 2 Trial Black Shards, 3 Wool Rock, and 1 Ether Cylinder.</p>
+<p>He glanced and observed them, noticed, "Hmm... What- odd- ether crystal structure."</p>
+<p>Shulk explained, "The ether in these was <strong>transformed</strong> due to the effects of the black fog. I call them, Black Shards."</p>
+<p>"So, they only form where there's black fog." He asked while tucking the items into his pocket.</p>
+<p>"That's right. They're... <strong>preeeetty</strong> rare, annnnd all the more valuable for it. That said, we need them when building the <strong>ether</strong> amplifiers used to project the wires."</p>
+<p>"Got it..."</p>
+<p>"Right, that'll do for exposition. Let's get to crafting the equipment."</p>
+<p><strong>Yeah, can't wait!</strong>"</p>
+<p>The Ether slide item looked like two horseshoe shaped arranged perpendicular to each other, the thicker and longer one on top of the thinner and shorter one, and both mounted on a cone that fixed to the ground. That two horseshoe form a gyroscope, which can rotate. Controlling the direction of the place they want to go, which is the higher-up cliff on the other side{{footnote: the bridge only reach the lower part of the cliff, and there's no way to climb up immediately available; and no, they prefer not to use a ladder because it's too low tech.}}, an ether line shot and attached itself to the edge of the cliff at the higher platform.</p>
+<hr />
+<blockquote>
+<p><strong>Translator's note on environment:</strong> The star filled where clouds cannot cover. The ruins on the right, stuck to some rocks. Grass grew on the ground. Large birds glided through the air. Bridge on top of the lake; while some high-stem lotus-leaves island stuck in the middle of the lakes. Some flakes were falling from the sky. Some of the location too dark to distinguish what it is, but we saw artificial ether lights. And let's not forget the various inhabitants that made their home here. This, is <strong>The Ragmos Desolation.</strong></p>
+</blockquote>
+<p>{{footnote: This is one of the affinity scene only available in video 2.}}</p>
+<p>Remember the ruins when we passed through the lake{{footnote: Which turned out to be Raguel Lake, the large lake with large petals on top of it, and a bridge that leads to the unknown places.}}? There was an old ruin that had ladders walking up them. The ladder walk up to a transit-platform with grass growing on it, and turn right to walk up another steps of ladders to reach the penultimate top of the platform. There laid another higher platform reached by another set of ladders, and there was an arc like Triomphe at one side of the structure. The 'windows' of the structure looked like the ones from the Roman Colosseum. Plants already stuck their roots into the dull-colored structure.</p>
+<p>Glimmer asked, "What is this place? Looks older than Colony 9 by far..."</p>
+<p>Rex answered, "To be honest with you, it's a <strong>super-ancient</strong> ruin. And when I say 'super', I mean <strong>ultra-mega-ancient</strong>."</p>
+<p>"Yeah??? Buildings made of stone... That's pretty primitive, all right."</p>
+<p>"Hey now, it's <strong>'primitive'</strong> buildings like <strong>these</strong> that are still standing <strong>today</strong>. Admittedly, there's not as much left <strong>standing</strong> as when I saw it the last time... <em>But still.</em> You can <strong>feel</strong> the <strong>magnificent weight of history</strong>, right?!"</p>
+<p>"Huh... S'pose?" The emphasis that Rex tried to use did not appeal to Glimmer.</p>
+<p>"Wow... Tough crowd. Mm, I guess it figures..."</p>
+<hr />
+<p>The group arrived at the battle zone, a ground without grass (scorched), surrounded by one with. Panacea took out her comms and scanned for signals, noting after a while, "No traces of Ouroboros power being used."</p>
+<p>"Huuuh..." Perhaps he was relieved; if she was in danger, why would she not had used it?</p>
+<p>Linka knelt down and noticed other stuffs, "Plenty of footprints though. <em>Although... they seem to all be</em> from search party boots."</p>
+<p>"Nothing else at all?" Rex couldn't believed their findings. "Gotta be some trace of the refugees."</p>
+<p>"Ohhh, there's something all right. <em>But it's weird.</em>"</p>
+<p>"Weird how?" Shulk asked.</p>
+<p>"There are tracks leading up to here, but... <em>nothing to suggest that anyone left.</em>"</p>
+<p>Rex questioningly concluded, "<em>So... do we think they were done in?</em>"</p>
+<p>"<strong>HRRRR</strong>"</p>
+<p>"Oh, sorry." Rex didn't meant to pluck the string in Matthew.</p>
+<p>"Huh..."</p>
+<hr />
+<p>Somewhere near, the group had set up camps to rest, seeing the sky's turning dark. They were split into 2 groups, one with Shulk talking to Rex, while Glimmer and Linka listened; another with Nikol sitting with his feet forming an angle on a mat, while Panacea to his left, A and Riku to his right. They left their belongings in between the two groups. Lush tall trees, giant rocks the height of their chest, and dense light green grass, plus other bushes to differentiate the flora and fauna a little.</p>
+<p>Matthew sat by himself at one of the large rocks, needing silence and alone time. He took the braces that the search party had brought back on his left, while holding out a photo of Na'el against some plains with rocks on a bright morning on his right. The thought of her dying, he can't believe it. But he couldn't find any signs of her on the place of battle, either. What could he do? Memories drifted backwards.</p>
+<hr />
+<h5 id="start-of-memories"><a class="header" href="#start-of-memories">Start of memories</a></h5>
+<p>Na'el was leading Matthew, Dillon, and other City soldiers, exhaustingly panting as they ran in between short cliffs on a barren road. They were arriving at a cave entrance and saw fire had already consumed their destination. Corpses lied barren in random locations around burning rubble.</p>
+<p>"Ugh, oh, no..." Despair washed over her as those of her brethren live no longer. Slowly but certainly, yellow motes dissipated from the fallen, and soon they'll evaporate. From left to right, she scanned for who's dear. "<strong>Hoh!</strong>" The girl in the distance caught her attention. Immediately, she dashed to where her corpse was; the child whom asked her to visit and bring a piano with <em>her</em> to entertain her laid lifeless. "<strong>HUUUUHHH URGHUH!</strong>" She knelt and skidded, stopping just before her corpse, her eyes on her face, hoping she still could be saved. She took her shoulder in her arms, brought it close to her chest, hoping the warm emanated would breathe life back into her. "<strong>Urggggh Urgggghhh... Chyra... Nghhhh Nghuhhhhh...</strong>"</p>
+<p>Matthew followed slowly behind her, quietly called out "<em>Na'el...</em>" as his sympathy connected with her. But steps were approaching, attracting his attention. Kevesi soldiers. "Huh!"</p>
+<p>"Hehehehe..." The head had just enjoyed a massacre when another is waiting for them. The leader with slighly dark skin and ruby-red iris, dark crimson hair 'proved' his point to his colleagues, "<em>See? What did I tell you? I was sure they'd show up.</em>" TNa'el was still crying over Chyra while they talked; the soldiers were of no importance to her; but Chyra was.</p>
+<p>"Be sure to strip their corpses. We'll be eating fine this week!"</p>
+<p>She hadn't cried enough, but Chyra already evaporated all. She held out her trembling fingers, trying to feel the remains; only left is her memories. No, doctors could not bring back what's already gone. A loud thud in her chest, she felt the weight against her heart. All personal belongings that don't return, was what souvenirs that memories anchor. "Pfffhhh..." Tears rolled down her cheeks, all beliefs gone from this moment. Peace, you say? To hell with it. Slowly but surely, she got on her feet, nothing to hold her down. Looking behind, "<strong>URGGGGHHHHHHH ARRRRGGGGHHHHH!!!</strong>" Despair raged, sadness scorched, hopelessness burn; feelings directed at the cause. She dashed, her blades like fan wit blades, but formed the angle like an umbrella; and repeat that again for both hands, towards the soldiers. Not long after, red motes filled the origin as all soldiers fell, their life withdrew from their corpses. She was tired, but standing. Sheathed her blade, her goals forever changed, her smiles no more. All subjects fell, she could no longer redirect despair externally. The other City folks still hadn't joined the fight, blades in hand, watched in awe.</p>
+<p>"Ohhhh..." was Matthew's reaction.</p>
+<p>"<em>Why...?</em> <strong>WHY CAN'T YOU JUST LEAVE US THE HELL ALONE?!!!</strong>" Her shouts reverberate through the caves, echoed the valley. Only black smoke rose from the burnings of the remnants; can they even hear her?</p>
+<hr />
+<p>At the City, the 'first'/original City, Matthew and Na'el stood on one side of the line, and some other City folks with them and on the other side of the line, forming a central alleyway for City folks to bring Kevesi and Agnian soldiers into the City. A process of reforming, perhaps, to escape from the cycle? Or perhaps, a process of injecting new blood for the City.</p>
+<p>"Huh..." She clenched her fist, gritted her teeth, no longer understanding, blurted between her lips, "<strong>Why</strong> are we bringing <strong>those</strong> <em>people</em> with us?!"</p>
+<p>All stopped, "<em>Huh...</em>" and some felt uneasy. "Oh..." "Urgh..."</p>
+<p>"Drop it, Na'el."</p>
+<p>"<strong>Matthew!</strong>"</p>
+<p>"<strong>You know why. Surely.</strong>"</p>
+<p>"<strong>Yeah, but...</strong>"</p>
+<p>"Some of our folk were soldiers. Spare a thought for them, yeah?"</p>
+<p>"<em>Makes no sense.</em>"</p>
+<p>"Na'el."</p>
+<p>"<strong>HAVEN'T we done enough?! We could've just</strong> kept to ourselves, <strong>but we're STILL, DOING THIS! And now Chyra's dead!</strong>"</p>
+<p>"<em>Urgh...</em>" How could he pat her on the back? He doesn't even know what to do with it.</p>
+<p>"Hmph!" And she dashed off into the distance. Everyone watched her off, said nothing. Not even Matthew tried to stop her. Perhaps, he thought, time will calm things down. But no, some stuff, not even time could calm down; it only get worse and worse, like an infinitely large dry logs lit on flames that spread.</p>
+<hr />
+<p>In her room, she sat by the dark. The moonlight from the windows shone into her one-storey room, at her bed. The only other light that barely produced illumination was from the fireplace; but that does not kept her warm. The cold tingling feel crawled down her skin as her memories recurrently repeat over and over the loss of whom she'd seen growing up, and attached so much emotion. She hadn't even grew up and experience the world for herself!</p>
+<p>The metallic door squeaked open and Matthew's voice called, "Na'el? You here? Why ya in the dark?" He reached for the switch.</p>
+<p>"<em>Go away...</em>" He stopped.</p>
+<p>A car drove through; its headlight so tall and wide the lights illuminate the room from the windows a little more brighter; at least bright enough to show the photo of Grandad as a baby in his mom's hands, accompanied by his dad.  The car passed through, only moonlight remains.</p>
+<p>"With or without Moebius, nothing will change... In the end, people- always- kill- people."</p>
+<p>Matthew walked nearer to him, trying to convince her, "Those soldiers were <em>still part of the cycle.</em> I bet... they were controlled."</p>
+<p>"Doubt it. No red Irises." She crossed her arms around her chest, as if that would kept her warm, "<strong>Savages...</strong> They killed Chyra just to add on a measly few extra days..."</p>
+<p>"<em>Come on. That's worst case.</em>"</p>
+<p>He's not even trying to understand her. Reasonings don't work. Neither do opposite ends of emotions{{footnote: optimistic vs pessimistic}}. "Matthew... Always in fantasy land."</p>
+<p>"What?"</p>
+<p>"<strong>You can't keep every bloody person happy! How can you not understand it's impossible?!</strong>"</p>
+<p>"The only true end is the moment you give up. Isn't that what Grandad taught us?"</p>
+<p>She stood up from where she sat, shouted back immediately, "<strong>Then show me already! This world of peace, where nobody has to die, make it come true! You think you can do that, do you?! You think you've got what it takes?!</strong>"</p>
+<p>"I,I... <em>Huh...</em>" He had no answers for her, looked aside feeling guilty.</p>
+<p>She continued, "<strong>Well I don't... I'm barely holding on! You hear me?!</strong>" And she rushed out the door. He watched her, but not going after her, feeling heavy himself,</p>
+<p>"<em>Huh...</em>"</p>
+<h5 id="end-of-memories"><a class="header" href="#end-of-memories">End of memories</a></h5>
+<hr />
+<p>"We can't yet be sure that she's dead." A interrupted his dreams. "Even the footprints. The search party's little skirmish could be <strong>wholly</strong> unrelated to this."</p>
+<p>"In my head, I get it, yeah. 'Cept{{footnote: Except}}... in my heart of hearts... <em>Urgh</em>... <strong>I bloody hate this.</strong>"</p>
+<p>"You hate what?"</p>
+<p>"<strong>These stupid bodies we have. If only we turned into husks, the same way that soldiers do...</strong> But no, we vanish without a trace. No evidence, nothing."</p>
+<p>"I understand your unease. But... Keep heart."</p>
+<p>"I know, I know..." Sensing someone approaching, they looked towards the shadows. Rex and Shulk were walking towards them. "You fellas... Can I help you?"</p>
+<p>"Food's up. Saved you some. C'mon. Everyone's havin' a blast." Rex invited.</p>
+<p>"I'm not depressed or anything."</p>
+<p>"Heh. Oh, I know you're not. That's not what I was <em>implying.</em>"</p>
+<p>Shulk explained, "We're having a... little shindig."</p>
+<hr />
+<p>Sitting round the campfire. Shulk and Rex specifically wanted to talk to Matthew, accompanied by A. Shulk started first, "Matthew..." He raised his head, and he continued, "I don't suppose you'd mind, <strong>telling</strong> us? About your sister? What happened to Na'el, and so on?"</p>
+<p>"Huh..." Such surprising request.</p>
+<p>"I wouldn't want to force you."</p>
+<p>Still feeling down, he agreed, "Nah, it's fine. All right. It happened on the day the City fell..."</p>
+<h5 id="start-of-memories-2"><a class="header" href="#start-of-memories-2">Start of Memories 2</a></h5>
+<p>"Huh huh huh" Pant pant pant, he exhaustedly dashed through burning rubble. All he had seen was black smoke enshrouding his vision, but he had no difficulty navigating the routes from memory, despite fallen buildings, signs, corpses, and wandering levnises.</p>
+<p>"Moebius..." He paused for a while before continuing to his destination, using the thick smoke as a cover against being seen, shouting, "<strong>Na'el!</strong>" No, the thick smoke also clouded his vision; but now he's near enough, he could see. "<strong>GRANDAD!!!</strong>" The City folks were protected within a beam of light like a large burning flame. At the center of the square was the sword stabbed right in his heart. "<strong>Huh!</strong>"</p>
+<p>There, Grandad held tight onto the sword, preventing the golden mask Moebius from moving it inwards, nor could he pull it out. The force was in balance as they wrestle for control. "<em>Matthew...</em>"</p>
+<p>Matthew rushed towards the injured, trying to be the one breaking the balance, "<strong>Grandad!</strong>"</p>
+<p>But too late. He started releasing the Ouroboros power to its maximum limits (self-exploding{{footnote: 自爆}}), his soul started to pushed out of his husk, his speeches quickened, "<em>Take care of... Na'el... the future...</em>"</p>
+<p>"<strong>GRANDAD!!!</strong>"</p>
+<p>"<em>It's in your hands, Matthew!</em>" His feet were still moving forward when the gigantic green ball pushed the boundaries. It reached out for Na'el and the City folks, and reached out for Matthew, and reached out for everybody, like a nuclear explosion that swallowed everything in its vicinity. All buildings burst into rubble; but the ball of energy contained a will to only push those living out than destroy them like those inanimate.</p>
+<p>"<strong>ARRRRGGGGHHHHH!!!</strong>"</p>
+<h5 id="end-of-memories-2"><a class="header" href="#end-of-memories-2">End of Memories 2</a></h5>
+<p>Glimmer and the others had already gathered around, listening to the storytelling from his side of the story. "When I came to, I was all... cuts and bruises."</p>
+<blockquote>
+<p>Matthew lying on the ground, unconscious.</p>
+</blockquote>
+<p>"Back then, A was the one that nursed me back to life."</p>
+<blockquote>
+<p>The surrounding was ground and grass; no sign of the City.{{footnote: Don't know how he flew so far away. No signs of nuclear blast, black floor, either.}} A approached him from nowhere.</p>
+</blockquote>
+<p>"Found me while traveling, apparently by pure chance."</p>
+<blockquote>
+<p>Together, after he awake, they dashed towards the center of impact. There was a huge hole made. They stopped beside the hole. "Huh..." At the center of the pit was burning rubble.</p>
+<hr />
+<p>Later on, A stood beside Matthew as he knelt on the ground, putting flowers on a memorial stone that had no encarvings on it.{{footnote: We saw this scene earlier in the chapters.}}</p>
+</blockquote>
+<p>Shulk: "I see... That's why..."</p>
+<p>"It's not just that. It's him too... The Moebius <strong>bastard</strong>... I'll wring his neck with my bare hands. <strong>I swear it.</strong>" And he tightened his fist. A was looking at him; perhaps she had something to say that she don't know if she wanted to say it or not? Shulk was meanwhile looking at A's reaction. They hadn't yet talked.</p>
+<hr />
+<p>Where all seemed to be asleep, A was looking over the lake herself, standing under the blanket of the stars. Shulk arrived and stood beside her, nobody else in sight, commented, "You've hardly changed, to my eyes."</p>
+<p>"You're saying I'm like him? No need to throw it in my face."</p>
+<p>"Hmph. So why do you look like that?"</p>
+<p>"Logos was the male persona." Rex explained, attracting their attention. "And Pneuma the female one. Ontos was meant to stand somewhere between. Forming the <strong>Trinity Processor.</strong> It all adds up to me."</p>
+<p>"I see..." the attention was turned back to A; and she nodded, accepted his rationalization. "Does Matthew know?" She shook her head. "So about you and Alpha... What happened? How did you split apart?"</p>
+<p>"It was unforeseen."</p>
+<blockquote>
+<p>The golden-mask Moebius slashed towards Na'el, breaking her Blades apart as she tried to defend.</p>
+</blockquote>
+<p>"For that Moebius and man... to have that kind of power."</p>
+<blockquote>
+<p>After Grandad exploded, his soul turned around and reached for Na'el. Na'el didn't even have the time to react, to the last moment.</p>
+</blockquote>
+<p>"To my fortune, it unshackled me. From the chains of Ontos."</p>
+<p>"Chains?"</p>
+<p>"As you may know... And this is surely evident to you, Shulk. But Origin... It's based upon the architecture of Ontos's core."</p>
+<blockquote>
+<p>By a seaside so wide, surrounded by mountains on the far side{{footnote: Actually, a horn-like stone structure. And one didn't mention the hole where seawater fall to an abyss.}}. On this side was very shallow, like Maldives on the verge of sinking if seawater raised just a bit. That guy, short, blonde hair, wearing a red jacket, apparently a younger version of Shulk, walked on the beach towards some orange-red crystal washed up on the beach. It was a cross similar to the ones wearing on A's ear. He picked it up.</p>
+</blockquote>
+<p>"I heard about that from Melia. A gift from Alvis, she called it."</p>
+<blockquote>
+<p>Three crystals like the ones wearing on A's earring, on each side of the triangle, fitted into the machine. The Trinity Processor had a hexagon in the middle, with tubes on 3 sides that connect to 3 larger hexagons where the 3 crystals were fitted onto. Energy flowed through the crystal.</p>
+</blockquote>
+<p>"Ontos, was the arbiter... And thus, was predicated on the existence, or perhaps the opinions, of the others, Logos, and Pneuma."</p>
+<p>Rex concluded her words, "In short... Without the two of them present, Ontos was just a machine."</p>
+<p>She agreed his conclusion. "My original, he was shaped by Klaus, and shouldered the man's regret, as he was born into that world.{{footnote: Check out the story of Xenoblade 2 endings before final boss for this.}} Hence, he was able to help you." Then she dropped his head, "But he is no longer... The 'me' that is left, is just a machine. And machines know no sympathy. That's why... he took steps... to erase this world."</p>
+<blockquote>
+<p>Alvis released a huge burst of energy that dragged Z, Shulk, and Rex backwards.</p>
+</blockquote>
+<p>"To create a new future in its place. Debris of the past, and the noise that permeates the present. Your lives are to him... redundant. His conclusion: that only new life, that of the people of the City, ought to be preserved. Ontos proclaimed himself 'Alpha', and chose to leave for a new world, shepherding the Citizens along with him... while erasing the old world in his wake."</p>
+<p>"However, N's intrusion caused something of a setback." And she nodded. N is the golden-mask Moebius.</p>
+<p>"That is not all it did. In any case, I was able to separate from Alpha. The memories, of traveling with you, and all other faint recollections... They compose me."</p>
+<p>"Mm."</p>
+<p>"You could call me his conscience."</p>
+<p>There was a short pause, before Rex asked, "So, here's what this conscience or whatever is saying, then. There's no life that deserves to be left behind. All life is worth saving, more or less." Is that where she stood?</p>
+<p>"Yes, that's the gist of it. I suspect that if Logos or Pneuma were here now, they would surely say the same thing."</p>
+<p>The Pneuma that became his wife; and the Logos that he fought as final enemy in his travel; he knows them the most here. "Yeah, I bet... So why tag along with the kid?"</p>
+<p>"You've good reason, don't you?" Shulk also wanted to know why.</p>
+<p>"For Alpha to command some form of power in this world, he needs a body to inhabit. Yes, like how, Zanza, once lived in you. And Matthew's sister-..."</p>
+<p>Before she could finished, a beam of light commencing intense energy stroke the ground behind her. She sensed it beforehand, looked behind and saw such orange beam like a lightning stroke from up in the sky, scorching the ground red hot, turning it magna. The intense energy it released, brushing against air particles, swooshed and formed a shockwave that pushed further out into the lake and other parts of the land. A female with cat ears, gray hair, wore a mask, and the wings that attached to her armor looked like frozen chocolate; she slowly walked towards them.</p>
+<p>Back at the camp, the others felt the intense shockwave. Matthew was meditating when it came. Nervously, he called out, "<strong>Wh-what's this?! This wind!!!</strong>"</p>
+<p>"<strong>Over by the lake!</strong>" Nikol stood up as he was ready to check it out. All of them leave for the lake.</p>
+<p>The three already by the lake were in defense mode, although they hadn't summon their weapons yet. They watched as the girl walked slowly horizontally in front of them; they occasionally tilt their body to ensure they were always facing her.</p>
+<p>As she was walking, the others also arrived from afar, stopping a distance from her.  This someone, Matthew felt familiar. She turned her attention to him, spoke, "I've come to fetch you, Matthew."</p>
+<p>"<strong>HUHUHUHUH!!!</strong>" He was literally gasping for breathe.</p>
+<p>"Come... It's time to go." She sheathed her mask, revealed her identity. Na'el held out both her hands, as if to welcome him. Though, now she don't have her diamond rainbow-colored core crystal in her chest, replaced by an Ontos core.</p>
+<h3 id="footnotes"><a class="header" href="#footnotes">Footnotes:</a></h3>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="06_Rikus_workshop.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="08_alpha.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="06_Rikus_workshop.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="08_alpha.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

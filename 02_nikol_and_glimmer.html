@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Meeting New Friends - Xenoblade Chronicles: Future Redeemed</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Xenoblade Future Redeemed translated from video to words.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00_preface.html">Preface</a></li><li class="chapter-item expanded affix "><li class="part-title">Main Story</li><li class="chapter-item expanded "><a href="01_introduce_matthew.html"><strong aria-hidden="true">1.</strong> The Place Where All Began</a></li><li class="chapter-item expanded "><a href="02_nikol_and_glimmer.html" class="active"><strong aria-hidden="true">2.</strong> Meeting New Friends</a></li><li class="chapter-item expanded "><a href="03_pursuing_glimmer.html"><strong aria-hidden="true">3.</strong> She's gone! We have to find her!</a></li><li class="chapter-item expanded "><a href="04_what_choice.html"><strong aria-hidden="true">4.</strong> Father and Son, Father and Daughter, A Conversation Clears The Wall Even Between Former Enemies</a></li><li class="chapter-item expanded "><a href="05_way_home.html"><strong aria-hidden="true">5.</strong> On Their Way Home</a></li><li class="chapter-item expanded "><a href="06_Rikus_workshop.html"><strong aria-hidden="true">6.</strong> What Has Riku Got For Us?</a></li><li class="chapter-item expanded "><a href="07_nael.html"><strong aria-hidden="true">7.</strong> Na'el</a></li><li class="chapter-item expanded "><a href="08_alpha.html"><strong aria-hidden="true">8.</strong> Alpha</a></li><li class="chapter-item expanded "><a href="09_history_ouroboros.html"><strong aria-hidden="true">9.</strong> History and Ouroboros Stone</a></li><li class="chapter-item expanded "><a href="10_prison_island.html"><strong aria-hidden="true">10.</strong> Journey to Prison Island</a></li><li class="chapter-item expanded "><a href="11_histories.html"><strong aria-hidden="true">11.</strong> History & The Promised World</a></li><li class="chapter-item expanded "><a href="12_end.html"><strong aria-hidden="true">12.</strong> Finale</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="95_armories.html">Repairing the Armories</a></li><li class="chapter-item expanded affix "><a href="96_appendices.html">Appendixes</a></li><li class="chapter-item expanded affix "><a href="97_postscript.html">Postscript</a></li><li class="chapter-item expanded affix "><a href="98_references.html">References</a></li><li class="chapter-item expanded affix "><a href="99_terms.html">Terms</a></li><li class="spacer"></li></ol>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+                data-name="bmc-button" data-slug="wabinab" data-color="#FAFAFA" 
+                data-emoji=""  data-font="Cookie" 
+                data-text="Make a donation!" 
+                data-outline-color="#000000" data-font-color="#000000" 
+                data-coffee-color="#ffffff" ></script>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Xenoblade Chronicles: Future Redeemed</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="meeting-new-friends"><a class="header" href="#meeting-new-friends">Meeting New Friends</a></h1>
+<p>Agnians and Kevesis exchanging hits. Not the time for Ferronises to join the battle yet; but soldiers and Levnises? The fallen engulfed in flames, but flames leaves not they proceed on. Slashes and cuts, shots and snipes, red motes rose from the dead.</p>
+<p>"Huurrrrggghhhh..." One Kevesi, a young guy with bright turquoise iris, having some mechanical goggles latched on top of his head, and having mechanical arms attached to his back, fair skinned, sharp chin, and blonde hair that cover his forehead and ears, gasped in horror as one of the sword pierced right into the ground in front of him. He backed a few steps, noticing a soldier coming for him, "Oh..."</p>
+<p>He immediately turned and ran for dear life. A shot blasted right before him, stopped him on the track. He switched to his left, make for another dash. Any shots to his left and right, he cared to ignore if he's outside the inner range, excluding the spattering dirt. He reached some fallen wreckage, seemingly a broken Levnis part, jumped over it, and immediately had his track lost. He backed a little, watching the sky, hearing the sounds, tried his hardest to duck under the debris, hopefully unseen by any.</p>
+<p>More Kevesi soldiers joining the fight, one shouting, "<strong>Hold those positions! They get through... left flank's good as snuffed!</strong>"</p>
+<p>"<strong>Yaa!</strong>" And they dashed toward an incoming Agnian Levnis.</p>
+<p>The 'coward' heard them. "<strong>Yaaahhhhhrrrggghhh</strong>" He covered his ears; their flesh slaughtered rang loud and clear. He pushed his body nearer to his feet, to duck deeper into the debris. More and more, the Kevesi lose the numbers. Eventually, the Agnian thrust forward.</p>
+<p>On the main battlefield, one female Agnian soldier wearing red short skirt, with a green crystal like that of A's earrings, carved into her chest, wearing a helmet, dashed towards the frontline. She swung her spear/lance in the air for a few rounds, "<strong>YAAAAAHHHH</strong>" before slashing down a Kevesi soldier.</p>
+<p>"<strong>ARRRRGGHHHHH...</strong>" And immediately he passed away. Red motes rose from his remains.</p>
+<p>She took off her helmet with a relieved sigh. "Hurggghhh..." Red hair tied into a pony tail reaching her thigh, and some shorter ones scattered to both sides reaching her shoulders, and covers the forehead. Her dark brown iris opened big and wide. Fair skinned. She wore some Agnian-colored bands that strapped above her forehead{{footnote: Where do you usually put your glasses/sunglasses when put pull them up?}}. Perhaps, she was relieved to win the war. She scanned for any standing Kevesis. Footsteps behind, she turned around to meet 2 Agnians catching up with her, questioned, "That 'em all?"</p>
+<p>"The right flank's been scoured pretty clean. <strong>Only thing left's</strong> the Ferronis in the rear." A giant turtle-like Kevesi Ferronis stood; it's Flame Clock still burning.{{footnote: If all soldiers die, the Flame Clock die, and the Flame Clock, being the 'engine' of the Ferronis, if it dies, the Ferronis will lose 'electricity' and fall to the ground.}}</p>
+<p>"Right. Back to the main unit, then-... Huh..." She was alerted; to her right, the 'coward' was backing up further in to the debris.</p>
+<p>"Kevesi?" One of the reporting Agnian soldier stated. "It's a miracle there's any left standing!" The three closed in; he stood up. No mechanical arm were behind, replaced by a giant metal box he tucked to his back. "What's wrong with 'im? Why's he unarmed?"</p>
+<p>"<strong>HA!</strong> Not even a Blade or nuffin'..." laughed the other reporting soldier. The boy was whimpering and shaking, stuttering breathe, as if the day's chilly. They don't stop demoralizing, "Look at 'is li'l face. Heheheheheh..."</p>
+<p>"Ahahahahahah!"</p>
+<p>"Make it quick." The girl ordered. "We can't afford to waste time on a runt like him."</p>
+<hr />
+<p>Matthew and A barely exited Vermillon woods; lush brown was all they saw. Oh, and the rocks and stone, and the dendrites-like trees. A puddle of water left in the dented soil; unsure why grass did not grew everywhere. Explosions from far away shook the floor; the puddle jiggles, the feet stopped.</p>
+<p>"Huh?" More shots, more explosions, more shaking, more shockwaves.  "Explosions? A battle." He concluded after listening carefully the signs.</p>
+<p>"Yes. It would seem that... someone's fighting up ahead," she agreed.</p>
+<p>"Remnants?"</p>
+<p>"It could be. The sounds, and the shaking... I'd say, it's rather major."</p>
+<p>"Hurrrghhh..." And out he dashed towards the source.</p>
+<p>She raised her tone in a hush, "<strong>Hey, Matthew!</strong>"</p>
+<p>He abruptly halted, turned around, announced, "<strong>I'll go check it out!</strong>"</p>
+<p>"Don't be a hero. If the skirmish is <strong>nothing to do with us</strong>..."</p>
+<p>"Leave it well alone, yeah? I know the drill." And he already dashed off into the distance.</p>
+<p>A shook her head. Nope, he don't know the drill. "<em>Yeahhh, not holding my breath.</em>" And she went after him.</p>
+<hr />
+<p>"Huh! Huh! Hah! Huh... What is that? That weapon...? Can't be a Blade..." The mechanical arm punched through one of the soldiers; so hard he rolled in like a shrimp.</p>
+<p>"<strong>Arrrrgghhh!!!</strong>" No soldiers yet reached his flesh, but they exhausted him. Only the girl left standing, not yet joining. He clenched the arms of the mechanics, the fist shall punch if she proves harming.</p>
+<p>"Huh...?!" Stood still, both of you. Something on the main battlefield their attention turned to. Forward, forward, forward, marched the soldiers and the Levnises. The Agnian Ferronis prepared its final blow as it close in. Closer and closer, they reached its foot. No more standing Kevesis could snatch victory from their hands. Or could they? They had gone closed enough, all of them except the two watching. The Kevesi Ferronis gathered blue-motes energy in front of its Flame Clock; their marching does not stop. Bigger and bigger the ball aggregates, till it zipped a laser-like line, from bottom to top. No shouts, no dodges, no escape; flames engulfed them in a painless death. The trail it left, corpses melt into lava that scorches the floor. The end of the trail sliced the Agnian Ferronis's right wing flat and clean, and it came crashing onto the floor. The late explosion on the shoulder perhaps wiped the rest clean.</p>
+<p>The red-haired girl covered her face as the bright sun-like explosion shone; and shield from the wind and dust that brushed through, drying her eyes and her lips and her nose. After she felt safe to opened and look, what she saw she gasped and (felt) shocked.</p>
+<p>The 'coward' lose his shaking tone, announced, "<em>We... We take this one.</em>"</p>
+<p>"How...?" She couldn't believe her eyes.</p>
+<p>All plans can now be told, for an executed plan is no longer a plan, but a learning history. "So long as we can hold the flanks... the colony will mop up. New armament. All went... as planned."</p>
+<p>"Grh..."</p>
+<p>"And now it's curtains."</p>
+<p>"<strong>SHUT UP!!!</strong>" Not till she fall. She dashed to him, slashed down while he blocked.</p>
+<hr />
+<p>Matthew and A were closing in onto the battlefield when a blue beam sliced in front of them. "<strong>WHOA!!!</strong>" The flames rose so high, that chilly morning turned bright noon. Where they stopped were meters from the zone, he exclaimed, "<strong>Flippin' close one!</strong>"</p>
+<p>"I thought you said you knew the drill? Hold back. It looks to be a feud between colonies anyway." To prove herself, she dashed towards a clearer view, which he followed. The thick dust could not shroud their views on the Ferronises, still standing. Nearer on the ground below, "Over there..." His eyes fixated on the two exchanging slashes and punches. "Is it just those two left? No one else?"</p>
+<p>A scanned the vicinity, affirmed, "No one. Mutual destruction.{{footnote: It's unsure how her X-ray eyes could looked through all obstacles and enshrouding flames and smokes to confirm the numbers.}} The battle has already come and gone."</p>
+<p>"Then why are they still fighting?"</p>
+<p>"It's just who they are. Nothing for us to get involved with. Pull back. Moebius will notice." And he dashed off, towards the descending ledge, that disrupt her cool, "<strong>Oh, come on!!!</strong> Matthew!"</p>
+<p>"<strong>I'm not just gonna stand aside! They're only kids! I'll put an end to it! I have to!</strong>"{{footnote: Yeah, you <em>know</em> the drill...}}</p>
+<p>"Moebius are always present for the aftermath!"</p>
+<p>"<strong>Then that Moebius is getting a socking!</strong>"</p>
+<p>"Both of them?!"</p>
+<p>"<strong>Then I'll make it a two-fer!</strong>" Without further adieu, he ran towards the destination.</p>
+<p>"Urghhh..." She should've known. "Oh, to hell with it..." And she tracked her de-facto partner.</p>
+<p>"Ugh huh huh huh" Despite exhausted, they still <em>have to</em> fight; not till their enemies fall before their eyes.</p>
+<p>"<strong>All right, break it up! The hell are you two playing at?</strong>" Their attention turned from each other to Matthew. He jumped as he talked, activated the power of Ouroboros, and aimed it on the ground between them. "<strong>You wanna scrap... you scrap with me!</strong>" It threw the two up into the air, pushed their soul out of their husk, changed the Flame Clock symbol in their Iris to that of Ouroboros, and fell with their soul back in their body, dragging along the ground.</p>
+<p>Immediately, the girl struggled to get up, her blade laid in front of her, out of her grip. In an instance, she grabbed and swung it at Matthew, whom dodged adeptly. "<strong>I told you to cut it out!</strong>" He gripped so hard her spear shattered; and his hands reached for the back of her neck, lifted her above the ground. She tucked her hands behind her neck, trying to free the grip that don't break. The 'coward' lifted himself off the ground, his eyes intensely targeting his new 'enemy'. Not waiting for him to take action, "<strong>Yeah, and you,</strong>" Matthew threw the girl that slammed at him. The back of his surprised face kissed the floor, the girl sealed him from getting free.</p>
+<p>"Phenomenal... Now you've gone and done it." A entered after Matthew had did his job, just in time for the slightly recovered two to get up on their feet. With resummoned blades, this time, they no longer fight each other; an '<em>us</em>' had been temporarily created, and together shall they face the unknown.</p>
+<p>"I guess words ain't getting through to 'em."</p>
+<p>"Odd. You've such a way with words."</p>
+<p>Clenching his fist, "If they won't listen... <em>I'll make 'em listen with my</em> <strong>fists!</strong>"</p>
+<p>Shaking her head, "<em>Phenomenal...</em>" And she joined the battle.</p>
+<hr />
+<p>"Urgh..."</p>
+<p>"<strong>Harrrggghhhh...</strong>" The 'coward' dashed towards A while the girl looked at him. Hearing footsteps, she looked and saw Matthew landing a punch on her. Trying to block with her blade only shattered it. His running stance made him unstable; A easily jumped and timed her slicing; he flew back to where he was before. She struggled to stand up, trying to resummon her blade.</p>
+<p>"Persistent..." Matthew didn't gave her a chance, shattered it during the process. He tried to help her, but Matthew was behind him, detached his robot arm from his back and kicked him to the ground. "Chill out, will you?!" And he actually knew how to sheathed it back into a metal box, to which he dropped it behind him, and sat down on it.</p>
+<p>To his left knelt the girl, to his right knelt the 'coward', and A watched from his 2 o'clock. Defenseless, now conversation can start, with the girl being one step fast(er), "What... What are you, goon?"</p>
+<p>"I was beginning to think you'd never ask."</p>
+<p>"Uh..." She was surprised.</p>
+<p>"I'm Matthew, from the City." And he signaled to his partner, introduced, "And this is A."</p>
+<p>"'City'...? Huh?" Never heard before.</p>
+<p>"I guess you lot would probably think of us as enemies... But we're your allies... in a sense..."</p>
+<p>The 'coward' prompted for more, "Our allies?"</p>
+<p>"Our <strong>real</strong> enemy... <em>It isn't each other.</em>"</p>
+<p>Both of them: "Huuuh???" What're you even talking about?</p>
+<p>A announced, "They're here..."</p>
+<p>"Right on cue..." And he stood up, ready for another round. "Nice of our real enemies to drop by. <strong>You</strong> just sit tight, while <strong>we</strong> take care of 'em, aight? Trust me on this one." The purple motes were gathering in front of them faster and faster.</p>
+<p>Now that his attention was diverted, the 'coward' ran towards his giant hand mechanism to check it out, while the girl watched Matthew and A, to see what they're talking about.</p>
+<p>A spider-head Consul appeared in the scene, started the observation, "Hey now! <strong>What do you think you're doing? The show was just getting good.</strong>" She walked nearer to the two.</p>
+<p>On the other side, a hard-head chicken-crest-headed Consul walked after she finished her sentence, added, "<strong>And you've fully screwed up our wager to BOOT.</strong>"</p>
+<p>Matthew: "Oh, I'm sorry, did I spoil your fun?" Folding his hands, "You really are a bunch of sickos, you lot."</p>
+<p>"<strong>He doesn't seem like a soldier.</strong>" The spider-woman observed. "<strong>Who are you?</strong>"</p>
+<p>"Huh... My Iris. Check it, and weep." And he showed the Ouroboros symbol.</p>
+<p>With a shaky tone, "<em>What in the-?! Ou-Ouroboros?!</em>"</p>
+<p>"<em>A City refugee...</em> Moebius Hunter?!"</p>
+<p>"'Moebius Hunter'?" Now that's a term he'd never heard of. "You what?" He turned to look at A. "Wait, is that what they call us these days?"</p>
+<p>She looked away, as if <em>really</em> thinking hard about it, with a hush tone, "No idea. I don't recall 'hunting' any... Just cleaning up the mess you always end up making. Bailing you out of trouble."{{footnote: Yeeeeaaahhh... <em>cleaning</em>...}}</p>
+<p>"Exactly... OK, anyway. Those two kids over there. They're in our <em>custody now.</em>" The 'coward' had his weapon back on his back, standing beside the knelt-down girl looking at their conversations.</p>
+<p>The chicken-head questioned, "<strong>Custody</strong>, you say? <strong>HAHAHAHAHAH... You sound like you think you can take ON US. This mighty pairing of Moebius Q and R!</strong>" And both transformed into their Moebius form.</p>
+<p>"Obviously?" The 'coward' had summoned his giant hand once again, to at least defend himself, seeing such new monsters he'd never seen in his life. The girl was still on the floor. A and Matthew hadn't deactivated their weapons anyway. "After all, gotta live up to our new nickname!"</p>
+<hr />
+<p>She dragged along the floor, put a few steps behind. Pant, pant, pant. Cracking his knuckles, "Alrighty... We just gotta smash the core... and the job's a good 'un." The first target? The chicken head.{{footnote: Unsure if he's Q or R...}}. The chicken head stood up; not dying knelt down. The others watched.</p>
+<p>Still on the ground, the red-haired girl heard something. "<em><strong>Glimmer</strong>... My beloved soldier...</em>" The woman Moebius was whispering into her ears. "<em>He isn't paying attention to you. It's your chance to strike.</em>" She watched him twisting his neck, cracking his fist. "<em>On my mark... attack.</em>"</p>
+<p>"Mhm..." Still faithful to her colony, she agreed. Slow and steady, her spear materialize, alerting only the 'coward' whose eyes were long on her. He gripped his fist to punch the chicken head. "<strong><em>NOW!!!</em></strong>" And she launched herself.</p>
+<p>"Ngh..." The 'coward' don't know what to say.</p>
+<p>"Ohh..." Matthew reacted fast, twisted and blocked her attacks. Unprepared, the sparring wasn't as easy as before. "<strong>Whoa, easy now! There's no need to fight me!</strong>"</p>
+<p>"Ahahaha!", laughed the female Moebius. slowly retreating with the chicken head, "That's right, you play your little game of tag... We'll just pop back home, and once we're healed up, we'll- <strong>ORGGGHHHHH!!!</strong>" A sharp, shiny blade thrusted through her core. Dark energy leaked from the wounds.</p>
+<p>Her face was calm as ever. "I don't normally stoop to this. Such duplicity is beneath me." Her sword, originally totally red, had now changed form; it's blade shiny and icy; the ring on the Ricasso displayed a symbol: 斬 (slice from up to down). Only a Monado possessed such symbols.</p>
+<p>"<strong>S-s-stabbed in the back...? What a...</strong> dirty ruse..." She pulled out her sword; she evaporated into blue motes immediately. The chicken head came after her; she waited for the right distance, twisted and sliced through his core.</p>
+<p>"<strong>OAGGGGGGG!!</strong>" And he knelt down, losing power. "No... That... sword...!" He saw the symbol. She put the shackles back on in front of his eyes; the light and symbol died down therefore. Blue motes gently rose from his body, he could live no longer.</p>
+<p>Matthew haven't solved Glimmer yet. Concerned, her attention diverted, "<strong>Lady Consul...!</strong>"</p>
+<p>"Argh..." The 'coward' watched his leader died, but took no action.</p>
+<p>Blocking one of her attacks, he shouted, "<strong>A! To you!</strong>"</p>
+<p>"Way ahead of you!" She dashed towards one of the Ferronis, activating her sword's symbol once more, "Hurgggg! <strong>Huaaaarrrggghhh!!!</strong>" Down she sliced, red motes escaped the Flame Clock. Like a frog, she jumped off the bottom as it sprayed like a cut artery. The 'coward''s mouth wide opened, can't believe his eyes. Moving swiftly, she jumped once more, pierced her sword into the other Flame Clock, and sliced it once more. The Flame Clocks, aiming at each other, seemed like mixing blood, spraying at each other. Losing energy to even stand, they collapsed under the pull of gravity. The 'coward' and the red-haired girl, their iris Flame Clock dimmed, replaced by an Ouroboros symbol, and they effetely fell, losing consciousness. Near her, Matthew managed to grab her before she collapsed hard. The 'coward' wasn't that lucky, dropped to the ground, 'protected' by his mechanical arms.</p>
+<p>Putting her on the ground, he wiped the sweat on his forehead, "<strong>Whoo...</strong> Just one thing after another, innit?"</p>
+<p>"I'm sure you're feeling pleased with yourself..." She'd returned, stopping a distance away. "But I wish you'd spare a thought for me as well. You realize, all this takes a toll on me."</p>
+<p>"I know, I know." And he closed in on her, held out his fist, asking for a punch. And his smile, they don't disappear despite.</p>
+<p>"Hmph..." And she walked to arm-length and return the punch. Welcome to the age of hyper-cooperative apes!</p>
+<hr />
+<p>"<strong>ARRRRRGGGGHHHH UNGHHHHH...</strong>"</p>
+<p>"<strong>Stop running! You coward!</strong>"</p>
+<p>Waking up, the Agnian and Kevesi were fighting again. Actually, it's Glimmer catching after him.</p>
+<p>Just returning to the camp at dusk, Matthew held to the legs of an animal; A hugged a sack. "Phenomenal..."</p>
+<p>"There we go, what'd I tell you? One of us shoulda watched 'em."</p>
+<p>"You also told me you wanted us to secure as much food as possible." Such conflicting goals, eh!</p>
+<p>He was on the ground, Glimmer bashing on him. His mechanical arms timed her; grabbed it tight; she can't pull it out. "So, ideas?"</p>
+<p>"Oh, very well. I'll handle it." She put down the sack, drew her weapon, and knocked both of them on their belly with its hilt.</p>
+<p>Matthew be the one doing the speaking, "<strong>Right, time out!</strong> That'll be enough out of you two. <strong>Your</strong> fighting days are over."</p>
+<p>"<em>What?</em>" Glimmer can't believed what he just said.</p>
+<p>"The Moebius... Or, <em>uh, I guess</em> you'd call them the Consuls, right? <em>Well, they're dust in the wind,</em> the Flame Clocks are in pieces... and your Iris Clocks... They're gone, aren't they?" Ever since being hit by the power of Ouroboros, their Iris Clocks had transformed into Ouroboros symbols.</p>
+<p>"Huh?" Both was surprised at the bland truth.</p>
+<p>"You're done. No need to fight any more. No need to take life, or fear its loss."</p>
+<p>Glimmer, the one less fearful of wars, asked with shaky tone, "You're not serious...?"</p>
+<p>"Give it a couple of days for it to sink in. Your life's stopped draining. And that means you don't have to fight. All you're gonna need now... is a bite to eat." And he threw the game beside the campfire.</p>
+<hr />
+<p>It'd been cut into pieces and the balls are joined by a piece of stick, like satay, and put beside the campfire for baking. One on each side, north east south west, they sat. Matthew picked up two skewers of roasted game and passed it to the two, "Gw'an{{footnote: "Go on."}}." The 'coward' took one from him, while Glimmer faced away, not taking it. "Wow, aren't we stubborn. It's your loss." And he took a bite from the remaining himself.</p>
+<p>A, sitting in front of the 'coward', watched him ravenously chomping down the food. Glimmer questioned, full of emotions, "<strong>Why did you do that...?</strong>"</p>
+<p>"Huh?"</p>
+<p>She jumped from her seat, "<strong>I was so close... I WAS SO CLOSE TO FINALLY COMING HOME!!!</strong>" She turned to show the term symbol on her right shoulder, almost all grayed out.</p>
+<p>Calmly, he replied, "I'm... not sure I follow...?"</p>
+<p>"<strong>MY OFFERING! I WAS GOING TO GIVE MY LIFE! FOR MY COMRADES? KILLED BY THIS FILTH!</strong>" She turned to refer to the 'coward'. "<strong>IF I COULD JUST MAKE IT HOME, IT WOULD MEAN SOMETHING...!!! THAT...</strong>" She shook her head, "<strong>THAT'S THE ONLY THING I'VE ever wanted... To fight, to come Home...</strong>" And she slowly knelt down, eyes over her crossed arms, to cover her tears, "<em>And you... You... <strong>took it</strong>.</em> Ungh..."</p>
+<p>The 'coward' had nothing to say. A questioned, "This fight of yours. Who was it that forced it upon you?"</p>
+<p>"Huh?" Both were surprised.</p>
+<p>"Think about it. You have all the pieces."</p>
+<p>"Nikol, and..." Nikol also had a single red dot with all others grayed out in his term symbol, also nearing his homecoming. "Glimmer, right?" Matthew asked, reading the dog tag on her arm. He took another skewer of meat and hand it to her, addressed, "You're both starving. Can't think straight on an empty tum. Eh?"</p>
+<p>She looked up. This time, she took it softly from him. And Nikol continued eating.</p>
+<hr />
+<p>Night falls. They made bed NESW. A and Matthew were far asleep. Nikol dropped his gadget by his bedside, too tired to be awake. She seem asleep, but her eyes wide awoke. Then, she softly got up, alerting 'no one', and ran off into the distance. A was never totally asleep; she heard her footsteps and opened her eyes, saw it's her dashing off rather than danger approaching, then closed back her eyes, continued sleeping.</p>
+<h3 id="footnotes"><a class="header" href="#footnotes">Footnotes:</a></h3>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="01_introduce_matthew.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="03_pursuing_glimmer.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="01_introduce_matthew.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="03_pursuing_glimmer.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

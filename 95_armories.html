@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Repairing the Armories - Xenoblade Chronicles: Future Redeemed</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Xenoblade Future Redeemed translated from video to words.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00_preface.html">Preface</a></li><li class="chapter-item expanded affix "><li class="part-title">Main Story</li><li class="chapter-item expanded "><a href="01_introduce_matthew.html"><strong aria-hidden="true">1.</strong> The Place Where All Began</a></li><li class="chapter-item expanded "><a href="02_nikol_and_glimmer.html"><strong aria-hidden="true">2.</strong> Meeting New Friends</a></li><li class="chapter-item expanded "><a href="03_pursuing_glimmer.html"><strong aria-hidden="true">3.</strong> She's gone! We have to find her!</a></li><li class="chapter-item expanded "><a href="04_what_choice.html"><strong aria-hidden="true">4.</strong> Father and Son, Father and Daughter, A Conversation Clears The Wall Even Between Former Enemies</a></li><li class="chapter-item expanded "><a href="05_way_home.html"><strong aria-hidden="true">5.</strong> On Their Way Home</a></li><li class="chapter-item expanded "><a href="06_Rikus_workshop.html"><strong aria-hidden="true">6.</strong> What Has Riku Got For Us?</a></li><li class="chapter-item expanded "><a href="07_nael.html"><strong aria-hidden="true">7.</strong> Na'el</a></li><li class="chapter-item expanded "><a href="08_alpha.html"><strong aria-hidden="true">8.</strong> Alpha</a></li><li class="chapter-item expanded "><a href="09_history_ouroboros.html"><strong aria-hidden="true">9.</strong> History and Ouroboros Stone</a></li><li class="chapter-item expanded "><a href="10_prison_island.html"><strong aria-hidden="true">10.</strong> Journey to Prison Island</a></li><li class="chapter-item expanded "><a href="11_histories.html"><strong aria-hidden="true">11.</strong> History & The Promised World</a></li><li class="chapter-item expanded "><a href="12_end.html"><strong aria-hidden="true">12.</strong> Finale</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="95_armories.html" class="active">Repairing the Armories</a></li><li class="chapter-item expanded affix "><a href="96_appendices.html">Appendixes</a></li><li class="chapter-item expanded affix "><a href="97_postscript.html">Postscript</a></li><li class="chapter-item expanded affix "><a href="98_references.html">References</a></li><li class="chapter-item expanded affix "><a href="99_terms.html">Terms</a></li><li class="spacer"></li></ol>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+                data-name="bmc-button" data-slug="wabinab" data-color="#FAFAFA" 
+                data-emoji=""  data-font="Cookie" 
+                data-text="Make a donation!" 
+                data-outline-color="#000000" data-font-color="#000000" 
+                data-coffee-color="#ffffff" ></script>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Xenoblade Chronicles: Future Redeemed</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="repairing-the-armories"><a class="header" href="#repairing-the-armories">Repairing the Armories</a></h1>
+<p>Across the bridge from colony 9, where the broken armories were parked, on a warm, sunny day, Dillon was looking at them when the side of his eye caught the group walking towards him. He therefore greeted, "Oh, hey, Matty."</p>
+<p>"Hey yourself, Dillon. Whatcha up to here?"</p>
+<p>"Ah, well, y'know... Just thinking about things. Life. Where we're going. Know what I mean?"</p>
+<p>"Yeah... City's on your mind?"</p>
+<p>"Bingo. Things'll never go back to normal for us if we don't get this rebuilding done. One day soo, we'll have to get started. We'll need to scout out a new location... So with this and that, I figured it might help to have the Armories operational, y'know? But in Shulk's estimation, it'd be too much of a chore for the mo.{{footnote: 'moment'.}}"</p>
+<p>Shulk shared his logic, "Repairing such a large piece of machinery would require a lot of worker-hours. The internal wiring is also a lot more complicated than it appears at first glance... I wouldn't be a simple job, simply put."</p>
+<p>Matthew listened, then asked, "So, have you talked to the others about this?"</p>
+<p>"No, not yet. Why, what are you thinking?"</p>
+<p>"That's perfect, then. I'll take this to 'em."</p>
+<p>"But, Matt, we'll never manage alone..."</p>
+<p>"That's why I wasn't gonna suggest doing it alone. I wanna ask the Liberators for their help."</p>
+<p>Dillon's eyes widened up, asked in surprise, or perhaps, in shock, "<strong>What...? This is a City problem,</strong> Matt. You really want to get them involved in it?"</p>
+<p>"That's <strong>your</strong> problem right there, Dill."</p>
+<p>"Huh?"</p>
+<p>"<strong><em>You gotta stop dividing the world into 'us' and 'them'.</em></strong> I know we were always livin' in our own little bubble, but it's like... Us and the Liberators, we're tight now. Dontcha think? Honestly, we're pretty much a family." He turned around and asked Shulk and Rex, "You're with me on this, yeah?"</p>
+<p>They looked at each other, and Rex answered, "Hrmm... Might have to chew on that one for a bit."</p>
+<p>"Aw, come on, man, don't be such a killjoy!"</p>
+<p>Shulk suggested, "Matthew, if you truly believe that, you need only reach out to them. See if they reciprocate how you feel."</p>
+<p>A grim grew on his face, he replied, "Yeah. I was thinking of doing <em>just that</em>."</p>
+<p>Dillon put his hand over his forehead, "You're something else, Matt, I swear..."</p>
+<p>"Well, anyway, I'll be sure to do something about the whole Armory business. And mate... stop trying to do things alone. We're all in this together."</p>
+<p>"Yeah, all right,I get the message! Flippin' poser... Well, guess I'll just have to hold you to it."</p>
+<p>He nodded, turned around, announced, "<strong>Aight, guess it's time to do the rounds!</strong>"</p>
+<hr />
+<p>The group waited while Matthew himself talked with the Liberators (including those former soldiers liberated). After explaining the situation, Lucille, a tanned skin woman with goggles over her head wearing City's armor plates, shook her head: "I actually tried looking into it one time myself, but it seemed like a massive pain to fix up. Didn't know where to start."</p>
+<p>Hamill, possibly her partner, cheered up, "But it's definitely possible, right? That is, leaving cost out of the equation."</p>
+<p>Peridot, a former Kevesi soldier, sensed her turn to speak, "Bringing the cost down is exactly why we're needed here, isn't it?"</p>
+<p>Jethro don't understand, like Dillon, "But Matthew, isn't this a City problem? Do <em>we</em> really need to <em>beg</em> for help...?"</p>
+<p>Eow, a former Agnian soldier, disagreed with him, "If it enables us to use aerial routes, our logistics will get a much-needed boost in efficiency. Getting it done would benefit everyone here. I think we'd be mad to pass this one up."</p>
+<p>"Uh, right... Valid point."</p>
+<p>Lucille: "All on the same page, then? Great! Now how about we get to laying the groundwork?"</p>
+<p>Peridot: "If there's anything we can do to help, just shout. We'll sort it out."</p>
+<p>Eow suggested, "Better start rounding up the materials. Can someone get a list going?"</p>
+<p>Jethro: "All right then. We'll defer to you here, Matthew."</p>
+<p>Matthew agreed, replied, "I appreciate the vote of confidence."</p>
+<hr />
+<p>At the Square, Matthew again speaking to various people, while the rest of the team waited 10 feet away.</p>
+<p>One of the fair-skinned buff guy with his red hair gelled like Spartan's, complaint, "Well! First the Remembrance Stone, and now the Armories? You sure like to keep honest people busy, huh!"</p>
+<p>Cathy, the short-haired woman standing beside him, her height to his shoulder, teased, "Heh, I know you. You're just happy he came to you, aren't you?"</p>
+<p>An old man shook his head, commented, "This place is safe, but it's not 100% absolutely forever-safe... Might be good to have an exit strategy in place."</p>
+<p>Another guy standing beside the old man, his ears with crystals, gave permission, "I'll be more than happy to help too, Matthew! Although I'm not great with machines... Still, please find me something to do!"</p>
+<p>Georgie, the one wearing glasses, commented, "It'll be a lotta people working on this. Gonna be hectic as heck."</p>
+<p>Matthew: "You know it. But if it's your curry fueling 'em, they'll have the energy to move mountains!"</p>
+<p>"<strong>That's</strong> a lot of faith to put in one <em>humble</em> dish... but <strong>sure thing!</strong> If they keep eating it, I'll keep making it."{{footnote: Oh, so you're the store owner that sells curry, Georgie!}}</p>
+<p>Ruben laughed out loud, "<strong>BAHAHAHAH!!! I'm already itching to get started!</strong>"</p>
+<p>Cathy: "Any careful tinkering needs doing, you point me at it and watch me go."</p>
+<p>Miguel: "I've got some nimble fingers myself. Hope I can put them to good use."</p>
+<p>Mickey found himself a job, "<strong>Oh, I know!</strong> I'll go round up more hands! The more people helping us, the better!"</p>
+<p>Matthew: "Thanks, everyone. Couldn't do it without you."</p>
+<hr />
+<p>Still at the square, but with another group of people. Again, the group waited while Matthew spoke with them. Janus, gray-haired young man, was excited, "<strong>Forsooth!</strong> You wish for mine help in the great work of restoring yon Armories to their former glory?!"</p>
+<p>Lui, a female with sharp chin and short hair, commented 'sad'-ly{{footnote: What the spark???}}, "High time."</p>
+<p>Lottie, the green-haired girl next to her, was much more excited than her, "Didn't think I'd get to fly in an Armory again... Honestly, I can't wait."</p>
+<p>Kayleigh, the red-haired winged female, had questions, "Is this a directive from the Liberators' top brass then, Matthew?"</p>
+<p>"Ah, nah, not this time. You're free to take the job or leave it. Whatever suits ya."</p>
+<p>"So you're leaving it to our discretion?"</p>
+<p>The male beside her was thinking, "Hmm... Well then, our answer is obvious, isn't it?" They looked at each other.</p>
+<p>"Yeah, I believe so." Both looked back at Matthew, "Harby and I will take part in your project. We'd be glad to lend you our assistance."</p>
+<p>"Oh, yeah? You sure?"</p>
+<p>"Both in Keves and Agnus, we're taught to value our comrades. To have each other's backs. This choice is no choice at all."</p>
+<p>Lottie: "Ahahah, nice speech! That's hit me right in the tear ducts."</p>
+<p>"We can try to canvass for more volunteers from our side as well. Would that be OK?"</p>
+<p>"Yeah? <strong>Sweet! If you could!</strong> That'd be a big help."</p>
+<p>Janus went up and patted on Matthew's shoulder, excitedly exclaimed, "<strong>Young Master Matthew! Prithee, forget not your humble servant, me!</strong>" Matthew was slightly shocked and took a step back, looked at him and listened to his speech.</p>
+<p>Lui saw such interaction and commented, "Suck up..."</p>
+<hr />
+<p>Still another group by the turn of the street, Carrom, green-haired tanned skinned, just knew, "So those big transport ship things are called Armories, are they?"</p>
+<p>Axel the kid was more excited, "You think the Armories can still fly?"</p>
+<p>Finley, the female kid, was equally excited, "I wanna help! Lemme help!"</p>
+<p>Saomi, with two crystal thorns on her head and ruby red iris, questioned, "Hrm, OK, but, like... Is that meant to be on <em>top</em> of our Liberator duties, or...?"</p>
+<p>Hyzen was sour-faced, shook his head, "Saomi, please stuff a sock in it..."</p>
+<p>Carrom heard these two were more unwilling to do jobs outside their current job, strictly spoke, "One day, Linka's gonna stop covering for you, and on that day, I'll be ready to teach you the meaning of real, honest work..."</p>
+<p>Saomi retorted, "Uh, <strong>I didn't say I wasn't gonna do it, did I?! Way to stereotype someone!</strong>"</p>
+<p>"So you'll help, then?" asked Matthew.</p>
+<p>Carrom answered immediately, "Sure, happily... Though you might want to relegate me to lugging stuff around."</p>
+<p>Hyzen offered his role, "I did some Levnis maintenance back in Keves, so I might be able to do a bit more."</p>
+<p>Saomi: "Ehhh, might as well. Can't turn down a bud in need now, can we?" Matthew nodded back at the kids eager faces.</p>
+<hr />
+<p>"Oh, you're back? How'd it all-" He hadn't finished and saw 'soldiers' marching through the bridge, shocked by the sheer number of people willing to lend a hand. "<strong>Hahahahah, wow, you were busy!</strong>"</p>
+<p>"See, Dillon? What'd I tell you? Us City folk and the Liberators, we're all birds of a feather now. Don't knock a bit of camaraderie till you've tried it, eh?"</p>
+<p>"Heh, you got me there..." He scanned the people. Countable but uncountable. Now, that was some headache, "Well, one thing's for sure. Wherever we found the next City, we'll need to make sure there's lots of room."</p>
+<p>"That's the spirit, mate."</p>
+<p>Lucille, accompanied by another guy, walked forward to Shulk and Nikol; "Heheh... Looks like I'll have my hands full. Nothing a mechanic loves more!"</p>
+<p>Shulk: "I can't wait to get started too! Let's get our technically-minded bods together and start planning. Nikol, could you get our experts to gather round?"</p>
+<p>"Sure, I can do that."</p>
+<p>Hamill offered to accompany, "Oh! I'll go as well!"</p>
+<p>Matthew walked to the group, asked, "And if I could get the supply, logistics, provisions, and other assorted dogsbodies over here, please!"</p>
+<p>Glimmer was freaking out, "Ugh, this is so slapdash... Surely it'd be better to draw up a proper plan first?"</p>
+<p>A suggested, "We can play a supervisory role, then. Care to help me, Glimmer?"</p>
+<p>"Yeah, sure..."</p>
+<p>She looked at Matthew assigning roles and giving speeches from behind, commented, "If Matthew hadn't stepped up, all these people would never have come together on their own. Few would attempt to rally everyone under one banner, and fewer still would achieve it. We're already witness to a great feat today."</p>
+<p>"For a leader, he's a real handful, that one..."</p>
+<p>Matthew: "Right on, guys, there's plenty of work to go around! I know you'll do us proud!"</p>
+<hr />
+<p>Repairing in progress, each doing different roles, helping out in different sectors. At last, the 'brand-new' armories stood up, looking good.</p>
+<p>Janus exclaimed, "By all the stars above... The Armories, as I live and breathe...!"</p>
+<p>Lucille: "All they need now are a few tanks of fuel and they should be ready to fly."</p>
+<p>Jethro suggested, "Hmm... Then we'd better stock up on some, so we're ready for any eventuality."</p>
+<p>Linka agreed, "We can't very well afford to be sitting around in Colony 9, indeed."</p>
+<p>Panacea: "You said it... As soon as this Alpha thing is resolved, we'll be right back to our war against Moebius. First off, we should find someplace we can stay hidden from them."</p>
+<p>Mickey was reminded of something sad, dropped his head, "Good point. I'll be damned if I let those scumbags steal our home from us a second time...!"</p>
+<p>Dillon: "I feel exactly the same, Mickey, my chum. And we won't let 'em. Never again."</p>
+<p>Saomi: "Sounds to me like we'll be sticking together for quite some time, then."</p>
+<p>Janus: "Indubitably, for we are now fateful companions, bound by the red thread of common destiny, and no mistaking!"</p>
+<p>Matthew agreed, "Yeah, what Janus said. When we leave here, it'll be as one people. The Armories are gonna make that happen."</p>
+<p>Dillon: "Well then, it's all up to you guys now. We'll keep Colony 9 safe. Nobody's dying on my watch. That goes for you too, Matt. You die out there, I'll kick your arse."</p>
+<p>"Heh, I hear ya!" And they leave for Alpha, the rest watching them go.</p>
+<h3 id="footnotes"><a class="header" href="#footnotes">Footnotes:</a></h3>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="12_end.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="96_appendices.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="12_end.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="96_appendices.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

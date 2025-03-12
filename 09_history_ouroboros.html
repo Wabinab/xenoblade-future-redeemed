@@ -1,0 +1,540 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>History and Ouroboros Stone - Xenoblade Chronicles: Future Redeemed</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Xenoblade Future Redeemed translated from video to words.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00_preface.html">Preface</a></li><li class="chapter-item expanded affix "><li class="part-title">Main Story</li><li class="chapter-item expanded "><a href="01_introduce_matthew.html"><strong aria-hidden="true">1.</strong> The Place Where All Began</a></li><li class="chapter-item expanded "><a href="02_nikol_and_glimmer.html"><strong aria-hidden="true">2.</strong> Meeting New Friends</a></li><li class="chapter-item expanded "><a href="03_pursuing_glimmer.html"><strong aria-hidden="true">3.</strong> She's gone! We have to find her!</a></li><li class="chapter-item expanded "><a href="04_what_choice.html"><strong aria-hidden="true">4.</strong> Father and Son, Father and Daughter, A Conversation Clears The Wall Even Between Former Enemies</a></li><li class="chapter-item expanded "><a href="05_way_home.html"><strong aria-hidden="true">5.</strong> On Their Way Home</a></li><li class="chapter-item expanded "><a href="06_Rikus_workshop.html"><strong aria-hidden="true">6.</strong> What Has Riku Got For Us?</a></li><li class="chapter-item expanded "><a href="07_nael.html"><strong aria-hidden="true">7.</strong> Na'el</a></li><li class="chapter-item expanded "><a href="08_alpha.html"><strong aria-hidden="true">8.</strong> Alpha</a></li><li class="chapter-item expanded "><a href="09_history_ouroboros.html" class="active"><strong aria-hidden="true">9.</strong> History and Ouroboros Stone</a></li><li class="chapter-item expanded "><a href="10_prison_island.html"><strong aria-hidden="true">10.</strong> Journey to Prison Island</a></li><li class="chapter-item expanded "><a href="11_histories.html"><strong aria-hidden="true">11.</strong> History & The Promised World</a></li><li class="chapter-item expanded "><a href="12_end.html"><strong aria-hidden="true">12.</strong> Finale</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="95_armories.html">Repairing the Armories</a></li><li class="chapter-item expanded affix "><a href="96_appendices.html">Appendixes</a></li><li class="chapter-item expanded affix "><a href="97_postscript.html">Postscript</a></li><li class="chapter-item expanded affix "><a href="98_references.html">References</a></li><li class="chapter-item expanded affix "><a href="99_terms.html">Terms</a></li><li class="spacer"></li></ol>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+                data-name="bmc-button" data-slug="wabinab" data-color="#FAFAFA" 
+                data-emoji=""  data-font="Cookie" 
+                data-text="Make a donation!" 
+                data-outline-color="#000000" data-font-color="#000000" 
+                data-coffee-color="#ffffff" ></script>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Xenoblade Chronicles: Future Redeemed</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="history-and-ouroboros-stone"><a class="header" href="#history-and-ouroboros-stone">History and Ouroboros Stone</a></h1>
+<p>Seated by a rectangular table at the command center, Shulk began, "Our{{footnote: Him and Rex's}} original worlds... used to be one and the same. It boasted almost <strong>unthinkable prosperity</strong>, and was home to <em>so</em> many people."</p>
+<p>Rex continued, "That is, until one man's foolishness screwed it all up, splitting it into two separate places."</p>
+<blockquote>
+<p>A scientist at a lab pressed a button on the computer. At the center of the computer was a bright light with the shape like a cross.</p>
+</blockquote>
+<p>Shulk: "One was the world of the Bionis, and the other, Alrest."</p>
+<blockquote>
+<p>Bionis was two giant titan, standing on vast, infinite sea, wielding their monado{ fighting against each other, finally Bionis pierced into Mechonis's heart. Alrest was giant bird-like creatures that flew/swim atop vast, infinite cloud sea, hosting buildings and refuge on its back.</p>
+</blockquote>
+<p>Shulk: "These two divided worlds began to... evolve, independently of each other. They each... gave birth to new life."</p>
+<blockquote>
+<p>On Alrest, there was a floating bird carrying a submarine-like ship hanging below its belly, departing the port, towards unknown destiny. On another place, perhaps Bionis, there were giant, green luminiscent birds with sharp diamond-like orange flakes on their multiple tails{{footnote: If you'd watched Xenoblade 1, you'd know they're called 'telethia'}}, soaring the air, roaming the clouds. Below where the bird flew were lush green grass with roads spiraling up the hill. Tall pillar-like stones stretched high into the sky, providing refuge to the scorching sun. No one knows what live above the platform hosted by the pillars, for only those with flight capabilities can reach such heights. New life can he stone age humans, or machine-like people walking in a factory.{{footnote: Mechonis.}}</p>
+</blockquote>
+<p>Rex: "Wasn't as peaceful as it sounds, though. You had your share of tyrannical empires... scrabbling over limited resources. But despite all that, thanks to generations of people fighting for the future, the worlds did eventually know harmony."</p>
+<blockquote>
+<p>A thunder strike a bird as it falls, injured, in darkness. In the center of a Industrial revolutionized city, a beam stroke from high above, creating a ball of energy that engulfed the city. The king of Mechonis stood before his throne, speaking. A guy with strict face and short black hair{{footnote: Trinity Processor Logos}} holding onto a cube crystal. Unmanned Levnis-looking machines of dark green texture and golden joints and metallic surfaces scanned with their red laser-like eye, killing and destroying anything belonging to the flesh people. A blue-faced pointed chin guy that looked like mermaids, his gown covered the back of his head and opened up like a mouth engulfing his whole body, leaving only his face visible. Another guy with neck-long hair and some beard{{footnote: Dunban}} accompanied by a machine man, in a town, turning around and spoke to someone. Machine man conversing with non-machine man inside a hall; its walls made of glass, looking very high-tech like. And other people, other human, other teams, other groups, all had their happiness, sadness, surprises, and... Melia.</p>
+</blockquote>
+<p>Shulk: "Sadly, it didn't last. The two worlds torn asunder... longed to be as they once were."</p>
+<blockquote>
+<p>People on a market, the door was a broken arc hanging two lanterns, looking up at the evening sky. The other world were emerging and became more and more visible high up on the sky, as if collision wasn't the question anymore.</p>
+</blockquote>
+<p>Shulk: "But they were... composed of opposing types of matter."</p>
+<blockquote>
+<p>One ball of yellow, one ball of blue, attracted towards each other like magnets of opposing poles. Their collision created so bright a light, released so much energy, it lit up the whole universe in its vicinity.</p>
+</blockquote>
+<p>Shulk: "Recombined, they would dissolve into light and cease to be."</p>
+<blockquote>
+<p>On a mountain, a ball of energy suddenly appeared and engulfed a hole in it. After it disappeared, rocks that didn't turn into dust were left floating mid-air, spiraling around the center of the explosion, before falling to the ground under gravity's pull.</p>
+</blockquote>
+<p>Shulk: "The annihilation events you see across Aionios... are miniature portents of this."</p>
+<blockquote>
+<p>That ball of energy did not only engulf the mountains, but everywhere on Aionios, holes in ground became the new crevasse and pits.</p>
+</blockquote>
+<p>Rex: "So we put our heads together, and built something that would let us escape destruction."</p>
+<blockquote>
+<p>On a blueprint, there was a giant ball, with labeling that draw lines to the margins displaying more specific designs of the object.</p>
+</blockquote>
+<p>Rex: "We called it 'Origin'. A repository of data about everything, of memories, and souls."</p>
+<blockquote>
+<p>On top of a high place, perhaps a tower's balcony, a women dressed in white gown with spiky, long ears looked into the sky where half of the dimmed disc, Origin, floated. On another side, a long-haired women equally stood on top of a tall building's balcony looking at the other half of Origin floating in the sky.</p>
+</blockquote>
+<p>Rex: "Even if the worlds were annihilated, this system would let us revive them."</p>
+<p>Shulk: "And..."</p>
+<blockquote>
+<p>On a night, cloudy day, Origin lurked above the clouds.</p>
+</blockquote>
+<p>Rex: "That thing in the sky is it."</p>
+<p>Shulk: "At the heart of its workings... is the Trinity Processor core called Ontos. In other words, Alpha."</p>
+<p>"But Alpha deemed our existence obsolete and wanted to erase us. We all fought, even Moebius. And it was a draw... No, I guess- we lost." The lost hand, the lost eye, were the price they paid. What did Alpha paid? Time, probably, but no limb lost or anything unrecoverable. "All we did, was delay the inevitable a smidge. <em>We couldn't cut it.</em>"</p>
+<p>"Now Alpha's gathering power again, and getting ready to depart. In the heart of Origin called the Ark. Alongside new life... The lives... of City people gathered there,... which he plans to take to a new world."</p>
+<p>He could sense they'd finished talking fast, raised his head and questioned, "Is that all of it then? We done? No more little secrets?"</p>
+<p>Shulk took one small breathe before answering, "It's the unvarnished truth."</p>
+<p>"<em>Huh...</em>" They waited for him to digest. "<em>Huhhhh....</em>"</p>
+<p>Linka had a question, "But... why would he choose her in particular? There were so many in the City to choose from."</p>
+<p>Rex explained, "She's got Agnian ancestry... In terms of hereditary traits, Core Crystals get dominance." That was the crystal in her chest. "My guess? Maybe it's 'cause he's got injured when we fought. Maybe she's got whatever he's lacking."</p>
+<p>"There's more to it." As the only person whom were enchained in her and knew her better than all except Matthew, and the only person that knew Alpha almost better than almost anyone else, A had something to add. "Her emotions also factor into it. Or... That <strong>may</strong> in fact be the most crucial element of all."</p>
+<p>"<em>Argh...</em>" He should've known, her wishes, spoken clearly to him; but he'd been ignoring for so long till now. And now it can't be taken back.</p>
+<blockquote>
+<p>"Say... What's so great about this world, really? All the thieving for one's own gain! <strong>The greed! Life, has less value in this world than a PIECE OF DIRT! THIS IS YOUR WORLD OF PEACE?!</strong>"</p>
+</blockquote>
+<p>"That..." A turned her attention to him, saw him shaking his head, "That wasn't my sister back there. Na'el is the kindest person I know. She looked after the City's children, and they loved her..." He still can't turn his head around, or rather, he don't want to believe it, given his optimistic personality. Plus, whom of us are willing to believe that people change, that our friend changes, when we can live in the confirmity of unchange?</p>
+<p>"But that's just it," rebutted A. He turned to A, what does she had to say? "When a person loses that, what do they do?" Recall Chyra losing her life. "They change."</p>
+<p>"Hrrrpphhhhh..."</p>
+<p>"What she said last night... That's the way she <strong>truly</strong> felt. And, to Alpha... Those emotions are the <strong>perfect</strong> fodder. Right now, she's a <strong>great</strong> deal more indispensable to him than me."</p>
+<p>"<em>Hrrrrph....</em>" Then he stood up, strong and unwavering, declared, "I'll find him. But I'm doing it for her. For Na'el. All this- saving the world stuff? That's something for you guys to sort out. <em>I'll buckle up, no problem.</em>"</p>
+<p>Rex was glad, "Good to hear." Shulk nodded. "Then our goals align. Case you didn't <em>notice... we want the best for you too.</em>" Matthew nodded back, turned around, leaving the others for themselves.</p>
+<hr />
+<p>He stood looking to the floor having time for himself in a balcony where boxes were stacked together and waterfall fell behind him. When A found him, she started, "Knowing N is your family... Still up to it?" He didn't look at her first, tucked whatever he's holding into his pocket, not gonna let her see it.</p>
+<p>"Family? He <strong>killed</strong> Grandad. He's no family of mine."</p>
+<p>"I see. Then I won't stop you. <em>Though...</em>"</p>
+<p>"Huh?"</p>
+<p>She was looking at the ground when she speak, "Listen to me. If you decide to hear his side of the story, be sure to heed his words." She then looked into his eyes, "Once you do, you can judge for yourself. I'll respect your choice."</p>
+<p>"Mmm..."</p>
+<hr />
+<p>Night, they returned to the command center and found the others were still there, sitting or standing. Other City folks were standing farther away, chatting. A: "Apologies. Were you waiting long?"</p>
+<p>"No. We were just about to start." replied Panacea. "<strong>Right</strong>, about our next course of action..." she and Linka were standing in front of the notice board, perhaps using it like whiteboard/blackboard.</p>
+<p>Matthew don't understand, "What's there to discuss?" Isn't everything clear? If so, the actions were also clear, "We break into that Origin place, beat Alpha to a pulp, <strong>and get Na'el the hell out of there! End of!</strong>"</p>
+<p>Rex already "Thought you might say that. It's <strong>pretty much what we had</strong> in mind too."</p>
+<p>A added some details, "If we want to make our way to Origin, then our first port of call will <strong>have to be</strong> Prison Island.{{footnote: The place where Zanza was imprisoned.}}"</p>
+<p>"Prison, Island? Where's that?" Matthew never heard of it before.</p>
+<p>Shulk shared, "Prison Island lies at the northernmost tip of the Cent-Omnia Region, where we are now. Smack in the middle of the rugged terrain."</p>
+<p>A continued, "From there, there is a way into Origin."</p>
+<p>Linka added, "However, there's a problem."</p>
+<p>"'Course there is." said Matthew, like I didn't know.</p>
+<p>"The entrance to Prison Island is located on the side of a tower, and at <strong>considerable</strong> elevation. The survey team has looked into it, and concluded that it would be <strong>impossible</strong> to access from ground level. The City's Armories are all under repair, which takes the air route off the table."</p>
+<p>"So we're shit out of luck... Isn't there, some other way?"</p>
+<p>Panacea calmed, "Relax. There's a way all right. We can tweak the Ether Slide apparatus, for direct vertical ascent. <em>Should give us access</em> to the island's face."</p>
+<p>Shulk excitedly changed its name, "At that point we should probably call it an 'Ether Lift', really! I'll take you through the steps necessary for the refurbishment later at the workshop."</p>
+<p>Matthew impatiently replied, "OK, gotcha. So to start with, we'll need to get this- 'Ether Lift' thing ready for action. <strong>Well, no time like the present!</strong>"</p>
+<p>"Matthew!"</p>
+<p>"<em>Huh?</em> What's up, Nikol?"</p>
+<p>"Oh erm... It's uh..."</p>
+<p>Glimmer just shook her head at his timidity, took over, "There's something we wanted to talk to you all about." And he nodded.</p>
+<p>"Uh, that's sudden. You sure it can't wait?"</p>
+<p>Nikol: "It's- of the utmost importance."</p>
+<p>"Hmmm..." Shulk was curious too.</p>
+<p>"Right you are, then." If they says so, he'll listen. He looked around and saw those people walking around, talking around, no secretive and privacy at all. "But this place makes me <em>anxious</em>. <strong>Shall we take this somewhere else?</strong>"</p>
+<p>Nikol agreed, "OK, then... how about our tents?"</p>
+<p>"Great!"</p>
+<hr />
+<p>At their tents, they gathered around the campfire, and Matthew started, "Right, so lemme get this straight... Nikol, you said you had something important. Speak to me." He glanced at Glimmer, whom nodded back to him, before starting.</p>
+<p>"Uhm, well, so... Glimmer and I talked things over, about... what to do next." He paused for a while, waiting for them to absorb what he just said, then announced, "<strong>We're gonna fight too. We wanna stand shoulder to shoulder with you guys.</strong>"</p>
+<p>"<strong>WHOA!!!</strong>" That surprised Rex.</p>
+<p>"Hm..." Shulk had his suspicions.</p>
+<p>Matthew clarified, "What, so... you mean you're coming with us to Origin?"</p>
+<p>"<strong>Yeah, I mean, it's true that</strong> thanks to you... we don't have to fight any more, <strong>but</strong>... Still, Glimmer and I, we don't have much time left anyway. If we can... <em>We'd like to use it, for your benefit.</em>"</p>
+<p>"<em>Wow...</em> Pretty kind of you."</p>
+<p>Glimmer added, "And anyway, that uh, Alpha... or whatever his name is. If we don't take him down, then the whole world's in danger, right? If that's how things stand, then we can't act like it doesn't concern us. <em>So. we. figured...</em>"</p>
+<p>"<strong>You're. Not. Coming. With. Us.</strong>" Rex unwaveringly denied their requests.</p>
+<p>"Wha-?... <strong>Why the spark not? You think we can't hold our own? We're proper soldiers. We can fight with the best of you, and we're ready for anything.</strong>"</p>
+<p>That's not the issue. He shook his head and continued, "All right, listen up. You seem to think that being- 'ready' makes you Alpha's <strong>match</strong> or something. <strong>You couldn't be more wrong. In this fight, your readiness counts for ZILCH. What we need now is RAW POWER.</strong>"</p>
+<p>Shulk added, "You could say that the Ouroboros power is a <em>prerequisite</em> for opposing Alpha. But in <em>you two</em>, it's only just been awakened. The amount you possess won't be enough to pose a meaningful <strong>threat</strong> to him."</p>
+<p>"You, you can't know that before we try...!" Glimmer pushed for acceptance.</p>
+<p>Rex immediately rebutted, "<em>Nah</em>, we can, and we do. <strong>As you are now</strong>, it doesn't matter <em>how much you want it</em>, Alpha will <strong>SWAT</strong> you down like flies. Just like he did us, last time."</p>
+<p>"Ngh..." Nikol dropped his head, losing confidence.</p>
+<p>Rex added, "And this time round, it'd be doing me no favors to try and look out for you while fighting... so ,be good, and just..."</p>
+<p>"What if... What if we could, <strong>gain</strong>, the power?" Nikol questioned before he could finished his sentence.</p>
+<p>"<em>What did you say?</em>"</p>
+<p>"Riku's told me all about the Ouroboros Stone. How the device can serve to deploy and <strong>amplify</strong> Ouroboros power. <strong>But also</strong>, that there's- still- room- for <strong>improvement</strong>, and how it may have powers that we don't know about... <strong>If we could tease out those capabilities</strong>, <em>then our Ouroboros power</em> should <strong>also</strong> grow stronger...!"</p>
+<p>Logically, Shulk agreed, "Hmm... It's... a possibility, for sure."</p>
+<p>Rex was finding other excuses, "You're grasping now. <strong>It'll never work</strong>, not against Alpha."</p>
+<p>Glimmer immediately rebutted, "<strong>OK, <em>that</em> you <em>can't</em> know without trying!!!</strong>"</p>
+<p>Rex got stronger urged inside him, spoke faster, "Kids, kids, look! I'm only saying this for your own good..."</p>
+<p>"No, hang on, Rex. I agree with Glimmer." Matthew stopped him.</p>
+<p>"<em>Not you too?!!</em>"</p>
+<p>"I know I feel like crap, having to sit around on my arse, knowing there was something I could do to make a difference. And if my days on this world were numbered, <strong>I'd hate it even more</strong>... Besides, I've not known these two for long, but I feel like they're part of the gang now. When you offered to fight with us... I was proper floored, guys."</p>
+<p>"Aw, Matthew!" Nikol felt grateful.</p>
+<p>"Hmph." Not that Glimmer want to show her other side.</p>
+<p>A be the judge, "There's a logic to both sides of this debate, but I don't think you'll reach a middle ground. So, what do we do?"</p>
+<p>Shulk don't know. "Hm... A very good question."</p>
+<p>Rex questioned the two, "You said you want to draw out more power. Any- actual, solid- proposals?"</p>
+<p>Nikol, "<strong>W-well, Riku- said, he had an idea, and- that- he'd tell us, once he was ready with the preliminary steps.</strong>"</p>
+<p>"<em>All right. Then</em>, I suppose we should talk to Riku first." And he turned away.</p>
+<p>Glimmer voiced out loud, "What's his problem? Crappy attitude to take with someone saying they wanna help you."</p>
+<p>Linka, whom was still in the scene, just laughed at it, "Ohh, you don't know the <strong>half</strong> of it." And she walked away, not giving her the chance to ask what half.</p>
+<p>Only after a while she reacted, "Huh? What's that supposed to mean?"</p>
+<p>Matthew: "Don't mind them. Let's just all go and see Riku."</p>
+<p>"Sure!" agreed Nikol. And they walked away.</p>
+<p>Shulk stayed back for a while, sighed, "<em>Oh, Rex...</em>"</p>
+<hr />
+<p>They found Riku at some workstation place meddling with something. The Ouroboros Stone was connected to some wires to the box he was meddling with. Then, Nikol entered and called out, "Hey, Riku!"</p>
+<p>He put down the work at hand and asked, "Why whole crowd come see Riku? Riku exasperate. Anyway, Riku is busy now with work on Ouroboros Stone. Please to come back later."</p>
+<p>"That's- <strong>exactly</strong> what we wanted to talk to you about, actually. <strong>You said before</strong>, that it- could- be- powered up. Could- you, tell us more about it?"</p>
+<p>"<strong>Friend should have led with that.</strong> In that case, have come at just right time. Please to bear with for moment." He turned back to tinker with the box while speaking, "Ur-form{{footnote: Original form}} of Ouroboros Stone was made by Queens of Keves, and Agnus many many yonks ago. But that form still imperfect, <strong>hence people</strong> who <strong>summon</strong> power of Ouroboros, fail to stand up to Moebius. <em>And so</em>, Queen of Keves was captured... With Queen of Agnus left alone, she slink into hiding place to escape beyond reach of Moebius. But <em>Riku hear</em> that perfectization of mechanism was <strong>close</strong> at hand." The Ouroboros Stone was activated, having splitted the top half of the 'egg shell' to reveal the inner identities for modifications.</p>
+<p>"Hrrr..." Rex wasn't yet convinced by such stories.</p>
+<p>Riku didn't heard his murmur. As he walked to his table and searched underneath it, he continued, "RIku capable of improve assembly proper by <em>self</em>, basing on scattered records <em>from time of construction. But that alone surely not do trick.</em> Thing needed is <em>probably</em>... <strong>'Trigger'</strong>."</p>
+<p>"W-What do you mean by that?" asked Nikol.</p>
+<p>He moved himself in front of him, concluded, "To make long story short, Riku give friends, this." He brought out a device from his pocket. It was like comms, but we don't know what usage it does yet.</p>
+<p>"What are these?" asked Matthew.</p>
+<p>He tucked it back into his pocket, "Microterminals, for connect Ouroboros Stone with Ouroboros power users. When use Ouroboros power while wearing terminal, biological data of user sent to Ouroboros Stone. <strong>Should allow</strong> Ouroboros Stone to further <strong>'grow'</strong> in turn." Nikol seemed to pick up something from the floor (???) before he stood back up to listen to him completing his explanation{{footnote: Probably the microterminal???}}. "And when Ouroboros Stone grow, thanks to microterminal, power of Nikol and Glimmer also get more powerful,... <em>in principle.</em>"</p>
+<p>"<strong>Oh, I get it! So they just</strong> have to train while wearing those wotsits, yeah?"</p>
+<p>"It- not- quite- so simple. As Riku mention, for <strong>true</strong> <em>growth</em>, will need even bigger 'trigger'."</p>
+<p>Glimmer was confused, "I don't think I get what you mean by that. <em>What're we actually supposed to do?</em>"</p>
+<p>Riku gave her the 'meh' face, "If Riku knew, job of Riku would be <strong>easier</strong>. All Riku can tell, is that normal level of fighting will <strong>not</strong> be enough."</p>
+<p>Nikol considered for a moment, adding, "I think I might've figured it out, actually." Others have their attention on him, he continued, "When we were fighting against that Consul called N, when he, had us cornered..." He turned around and faced Matthew, shared what he'd observed, "<strong>There was this distinct spike in Matthew's Ouroboros power!</strong> I'm thinking that must've been the '<strong>trigger</strong>' -- for Matthew, anyway."</p>
+<p>"<strong>Oh! That's what you mean!</strong>" He remembered it all right, the power he suddenly had to stop N's attack on Na'el.</p>
+<p>Linka summarized, "So we're saying that fighting against even stronger foes could be the catalyst?" He nodded back.</p>
+<p>Making such connection, Matthew naïvely suggested, "<strong>Hell yeah! Then how about we get out there, and hunt all the big-game monsters we can clap eyes on!</strong>"</p>
+<p>Shulk suggested otherwise, "No... I've got a better idea."</p>
+<p>Rex sensed something, turned to him and shook his head, sigh, "<em>Oh, boy, here it comes.</em>"</p>
+<p>Shulk ignored him, told Nikol and Glimmer, "We can be your opponents, your... 'even stronger foes'."</p>
+<p>"Whhhuhhhh?!" Nikol's voice was trembling.</p>
+<p>Glimmer: "<em>Uh, one sec... When you say 'we', do you mean...?</em>" She turned to Rex, whom agreed,</p>
+<p>"Well, it wouldn't be fair if you ganged up on him, right? Can't have that. If you can <strong>beat us both</strong>, then we'll let you do whatever you like. <em>Simple enough, right?</em>"</p>
+<p>Matthew was excited at the idea, "<strong>Nowwww we're talking! A battle against Shulk and Rex?</strong> Can't ask for better opponents than that!"</p>
+<p>"<em>Huh...</em>" Glimmer wasn't so impressed.</p>
+<p>Panacea tried to incite her pride, "What, are you gonna chicken out?"</p>
+<p>"Uh in your dreams!"</p>
+<p>Rex suggested, "Might not go down too well if we start a punch-up in the middle of the <strong>Colony</strong>. How about we, <strong>relocate</strong>?"</p>
+<p>Shulk: "Hm... may I propose the area- <strong>behind</strong> the Colony, then?"</p>
+<p>"Gotrock Oracle Ruins, eh? Sure, sounds fitting. <strong>Let's do it!</strong> No objections  from you two?"</p>
+<p>Nikol: "Not from me!"</p>
+<p>"Hmph. Suits me, just fine."</p>
+<p>Matthew cheered for them, "<strong>Go on,</strong> Nikol, Glimmer. <strong>Really stick it to 'em!</strong>"</p>
+<hr />
+<p>Facing the blue sky at a ruins with only the paved tiles with a stair leading up to a platform; originally, it should be a building, but except for one of its pillars, the rest is either broken or only a small shards remained. Foliage climbed everywhere. Yet when they arrived, an orange bird with wide wings greeted them, apparently taken habitat of the ruins. Colony 9 was built on top of a lake; and the water body separated this place with the colony.</p>
+<p>Shulk: "Seems- we've been beaten to the punch."</p>
+<p>Matthew: "Ironic, considering it was punching we were after in the first place."</p>
+<p>Rex: "I don't think that's how irony works, kid." Summoned his blade, he commented, "At least it'll be a nice punchy appetizer before the main <strong>dish!</strong>"</p>
+<p>Glimmer: "If <em>this</em> is the appetizer, I don't see how we'll have room for the entrée..." Bro, this is already like, <em>hard</em> difficulty; will the next dish be <em>insane</em>?</p>
+<p>Unleashing his mechanical arms, Nikol look no choice, "Well, still... There's no recourse!"</p>
+<p>Shulk agreed, summoning his blade thereafter, "Indeed... That's the spirit, Nikol!"</p>
+<p>Then the rest after Matthew called for battle, "Orrrrite! Forks at the ready, then! <strong>Grub's up!</strong>"</p>
+<hr />
+<p>It was tough, but it relaxes the muscle a bit. Rex gave them a thumbs up, "OK, good job, team... I'm feeling <strong>nice and warm.</strong>"</p>
+<p>"Shall we get to it?" asked Shulk.</p>
+<p>"Uh let's."</p>
+<p>"Urgh..." Not that they could escape now.</p>
+<p>The group leave empty spaces below the stairs for the two partners. While still getting ready, Nikol asked, "Do you think we stand a chance?"</p>
+<p>"Hey, you cut that out, <strong>right now!</strong>"</p>
+<p>"S-sorry..."</p>
+<p>"And anyway, the point here isn't <strong>winning</strong>, or losing, right?"</p>
+<p>"Right... <em>It's all so we can send data to the Ouroboros Stone</em>. Still..." Glimmer turned to look at him, waiting for his next words. "<strong>If- we're doing this anyway, might as well put in a winning performance, no?</strong>" His eyes met hers, and they looked into each other for a while, passing unworded emotions and feelings.</p>
+<p>With a grim, she summoned her blade and turned back looking at the duo, cheerily agreed, "<strong>Heheh... Obviously!</strong>" And Nikol called his thereafter.</p>
+<p>On the other side, Rex was commenting when Shulk was massaging his mechanical arm, "<strong>Pretty audacious wager</strong>. Especially for <em>you</em>, Shulk."</p>
+<p>"I thought it would be the <strong>best way to get everyone on the same page.</strong>"</p>
+<p>"It probably was, at that. <strong>Either way</strong>, it's time to put an end to this <strong>pipe</strong>-dream of theirs, of <strong>fighting against Alpha. They've got their potential</strong>, sure, but they're <strong>far from ready</strong>. That goes for <strong>Glimmer and Nikol both.</strong> If someone needs to burst their bubble, <strong>let it be us.</strong>"</p>
+<p>"Yes, absolutely. We owe it to them, as- the adults in the room." And the battle begins.</p>
+<p>Seeing them summon their blades, Nikol gave instruction, "I'll take the vanguard. Glimmer, support me from the rear."</p>
+<p>"Roger that, Nikol. Let's do this."</p>
+<hr />
+<p>Both duos drifted backwards with force. Shulk's duo immediately stood up and resummoned their blades, and Glimmer's duo resummoned shortly thereafter. Shulk suggested, "Let's make this the decider."</p>
+<p>"Yeah." And they both prepared for their strongest moves.</p>
+<p>"Brace!" warned Glimmer.</p>
+<p>"J-just a little more...! We <strong>need to ride it out...!</strong>" As their will to rebel got stronger, their microterminals, located by a bag strapped to her knees, in his pocket, started vibrating furiously. The Ouroboros symbol started appearing in their irises, while Glimmer glowed red, and Qi evaporating off her; similarly for Nikol.</p>
+<p>A saw it, announced, "<strong>That's it!</strong>"</p>
+<p>"<strong>HAAAAAAAARRRRRRGGGGGGHHHHHHHH!!!</strong>" Both pairs went for each other, their final blow. The impact point released an energy so huge it blew up the place, brightened the sky. Dimmed out, Shulk was half-knelt on the ground, Rex sat down. Nikol and Glimmer were still standing, and their Ouroboros power died down soon. Blue and red motes, seemingly the remaining expression of the power of Ouroboros, decorated the surroundings.</p>
+<p>Glimmer:  "Did... Did we win...?"</p>
+<p>Nikol stood straight, wanted to answer but was disturbed by the strong vibration he previously ignored from a lack of attention. Taking it out, he excitedly called, "<strong>Glimmer, look! Our terminals!</strong>" The two fluorescent-looking bars encased within the 'screen' glowed brightly, still vibrating furiously.</p>
+<p>"We did it?" Then it dimmed down. They weren't sure what to make of.</p>
+<hr />
+<p>The audiences were excited as well. Matthew shouted, "<strong>WHOA, A! DID YOU SEE THAT?!!!</strong>"</p>
+<p>"Yes. Their Ouroboros power levels <strong>spiked</strong> to <strong>unprecedented</strong> heights."</p>
+<p>On the ground, Rex exclaimed, "<strong>Not too shabby, are they?</strong>"</p>
+<p>Shulk shook his head, "And it's not as if we went easy on them, either..."</p>
+<p>"<em>Yeah</em>, feels like they whopped us, <strong>fair and square.</strong>"</p>
+<p>"A <strong>fortuitous miscalculation</strong> on our part... <em>shall we say?</em>" The final attempt to save their own face.</p>
+<p>"<strong>Heh!</strong> So much for us playing the big folks' authority card." They get onto their feet and went over to them. Glimmer and Nikol turned their attention.</p>
+<p>"E-erm... You guys are OK, right?" Then she looked away, was feeling a little <em>guilty</em>...</p>
+<p>Rex became playful, sounding effetely, "<em>Not too sure about that... <strong>Think I heard a rib crack earlier</strong>...</em>"</p>
+<p>Glimmer immediately jumped on her feet, "<strong>Wha-?! No way! Let me see it I can splint it until we can get you proper care...!</strong>"</p>
+<p>"Heh heh..." The grim on his face as he raised. Shulk just shook his head. Glimmer took a while to realize it was a joke.</p>
+<p>"Ugh, asshole. You scared me! Don't even joke about things like that!"</p>
+<p>"Ahahahahaha!" Glimmer then gave Nikol <em>the</em> look on the face. He saw it, and turned back, muted his laugh but not his smile.</p>
+<p>The audience now approached them, with Matthew talking, "<strong>Good effort, team! Well impressed</strong> by what I saw out here today."</p>
+<p>A: "Yes, the fight should have been more than enough of a trigger for the Ouroboros Stone."</p>
+<p>"Mm... Let's go back to Riku's place and make sure of that."</p>
+<hr />
+<p>"Nikol, Glimmer. Good jobbings! <strong>Please</strong> to direct eyes hither." Turning to the Ouroboros Stone, it was shimmering like in an excited state. Green motes of Ouroboros power rising up but not escaping the constraint of the Ouroboros Stone.</p>
+<p>Nikol noted, "The Ouroboros Stone is glowing!"</p>
+<p>Riku explained, "While it receive biological data from friends, suddenly internal photon energy begin to exhibit signs of excitation. Without trace of error, Ouroboros Stone undergo <strong>growth</strong>, and power-up greatly."</p>
+<p>Glimmer wants to know more about, "So does that mean <strong>our</strong> Ouroboros power grew as well?!"</p>
+<p>"Glimmer and Nikol linked to Ouroboros Stone via terminal, <strong>also</strong> should be powered-up, <strong>yes</strong>."</p>
+<p>Matthew agreed, "Yeah, well, there ain't much room for doubt after that little performance!" Then looking at Shulk and Rex, "You did beat these two fine <strong>strapping</strong> fellas."</p>
+<p>Shulk: "Neither I nor Rex held back in our contest. There's no mistaking it -- the two of them bested us under their own power. I take back what I said. As you are now, you're more than fit to contend with the likes of Alpha."</p>
+<p>He was excited, "<strong>Th-thank you, so much!</strong>"</p>
+<p>And she gave him a smirk face, "And what have you got to say?"</p>
+<p>He unfolded his arm and agreed, "What I said <strong>before</strong>. You beat us, so you can do <strong>what you like</strong>."</p>
+<p>"Sooooo... I guess that means <em>you... recognize our</em> worth then, yeah?"</p>
+<p>"<em>Yeah, I do.</em> You did good, kid. Really."</p>
+<p>"Urrrrrr... Sure. <em>Whatever.</em>" She looked away, face red, but got the recognition she needed.</p>
+<p>Shulk: "Well... I'm glad <strong>everything</strong> worked out."{{footnote: That refers to the situation, or refers to the situation between their parenthood, maybe both!}} A didn't said anything as she watched their interactions, deep in thoughts.</p>
+<hr />
+<p>As the group gathered around the Ouroboros Stone and chatted, the 'older' guys and gals (Shulk, Rex, A) waited outside the tent{{footnote: Actually, seeing the surrounding now, one realized this is Dunban's house. Looks like Riku had also moved not just his workshop there, but also the lab there.}}. She started speaking, "To protect their child, a parent is expected at times to set some <strong>firm</strong>, ground rules. I thought that's what you were doing."</p>
+<p>"<strong>Ohhhh</strong>, I was <em>trying</em> to be firm, believe you me." Rex excitedly answered, "But it looks like they had the strength to <em>bend those rules</em>... <strong>What can you do, eh?</strong>"</p>
+<p>"<em>Heh...</em>" Shulk had equally no idea.</p>
+<p>"Something funny?"</p>
+<p>"Oh, not at all. It just occurred to me. I didn't expect I'd ever get to celebrate seeing them grow again like this..." He and Rex looked at Nikol encouraging Glimmer, conversing in the meantime. They watched her shook her head, declining his suggestion, whatever that is.</p>
+<p>"Hmph. <em>You and me both.</em>"</p>
+<p>A had another worry, "Even if we defeat Alpha, it won't <strong>change</strong> what fate has in store for them. When the time comes, what will <strong>you</strong> do?"</p>
+<p>Without adieu, Rex blurted, "We'll change it. <strong>'Fate'</strong>, or... <strong>what have you.</strong>" A looked at him, he continued, "It's a weird and twisted world out there, sure, but you know... I can't watch a kid go before their parent. <strong>I'm not letting that happen, no way.</strong>"</p>
+<p>Shulk agreed with him, "<em>I'll do anything that's in my power too...</em> Even if it costs us our lives." Rex kept quiet, agreed.</p>
+<p>A guessed something, "Don't tell me..." Only their firm eyes and belief showed her their choice. She looked away, looked back at the kids having fun.</p>
+<hr />
+<p>{{footnote: We add something here on repairing the armories. <a href="./95_armories.html">Check them out in the appendices!</a>}}</p>
+<p>Gathered around the table at the Command Center, Matthew concluded, "So, I guess we should be able to reach Prison Island now."</p>
+<p>Rex concluded, "All that's left is to <strong>make sure</strong> all our preparations are in order for the big day."</p>
+<p>Glimmer suggested, "Let's get plenty of rest in, ensure we're in optimal form for it."</p>
+<p>Matthew agreed, "Sure. Once we're feeling ready, let's rest up in our tents."</p>
+<hr />
+<p>Gathered around the fireplace at their tent, night falls and Matthew concluded, "All right, I think we're as ready for tomorrow as we'll ever be. Might wanna hit the <strong>sack</strong> sometime soon."</p>
+<p>A: "I'll be going straight to bed. Mind you don't oversleep, Matthew."</p>
+<p>"<strong>I wouldn't! Don't patronize me, dammit!</strong>" The group just smiled at their jokes at each other.</p>
+<p>Shulk shard, "Rex and I have some last-minute i's to dot at the command center. <strong>We have to ensure things run smoothly</strong> in our absence."</p>
+<p>Rex started shaking his head, "<strong>Titan's foot!</strong> More paperwork? <em>Awesome, can't wait...</em>"</p>
+<p>Panacea offered, "I'll help you."</p>
+<p>Similarly for Linka, "I'll gladly lend a hand as well, Boss. Better for you to be on top form when you head out."</p>
+<p>Matthew whom overheard their decisions concluded, "<strong>Right!</strong> Then I guess we're going our separate ways for tonight. <strong>See you bright and early tomorrow!</strong>"</p>
+<hr />
+<p>The moon hung huge up in the sky, the town went quiet blanketed by the stars. He looked at plans laid out on the table alone, with merely an ether lamp providing barely sufficient illumination. She stood outside and watched him, didn't dare yet to enter. He bent over and laid his hands on the table, attentively focusing on the paperwork while reaching out for the cup with his trembling left hand, feeling his way.</p>
+<p>"Urgh..." Just before the cup toppled, her hands reached and held it in her hands. "<em>Kiddo... Cheers.</em>" He took the cup from her hand.</p>
+<p>"<em>I'm not 'kiddo'...</em>"</p>
+<p>"Ahh, <em>gotcha</em>. Glimmer, I know. <strong>You need</strong> something <em>from me? Someone erm... asked you to deliver a message, or</em>...?"</p>
+<p>"Thank you." Her eyes can't laid on his, too shy to admit.</p>
+<p>"<em>Umm?</em>"</p>
+<p>"I-I never... got a chance <em>to thank you.</em>"</p>
+<p>"What?"</p>
+<p>"For saving me, <em>that is.</em>"</p>
+<p>"Ohhh... <em>It wasn't that big a deal.</em> All in a day's work." says he as he faced back to his paperwork, or rather, away from her. "<strong>Sorry</strong> for flipping out <em>at you.</em>"</p>
+<p>"<em>Ohng...</em>" She dropped her head, unsure what to react. "<strong>Spark you, how dare you!</strong> huh... <em>That was my first thought.</em> But now, I'm glad I'm here... Glad I can choose for myself..." His eyes on hers, listening to her attentively than superficially.</p>
+<p>"That right." The pause was a little long as topic rushed through their brains, searching for a commonality. Wind brushed through the tips of her waist-long hair as it wiggled vigorously. She started the conversation back again.</p>
+<p>"Say..."</p>
+<p>"Hm?"</p>
+<p>"Your scar. <em>That recent?</em> <strong><em>What's the story?</em></strong>{{footnote: This is useful not only in <em>the</em> story, but real life too. People just like to tell stories, and if you can show curiosity at them, and one mean <em>real</em> curiosity, not <em>fake</em>, and you know what's <em>fake</em> if you sense <em>not genuine</em>... If you cannot sense, read more books about it and learn how to!}}"</p>
+<p>"<strong>Oh this?</strong>" The scar permanently damaged his left eye. "Lost it in the fight with Alpha. Got sloppy and had to pay for it."</p>
+<p>"Huh!... I'm sorry..."</p>
+<p>"It's got its downsides... <em>but I kinda like it. This guy I really looked up to? Had an eye thing too.</em>"{{footnote: One can't remember whom he's referring to.}}</p>
+<p>"Like a mentor? Sounds nice..." And she dropped her head, perhaps wishing she'd a mentor too; or perhaps, there was something she need to voice out but she needed some time to muster the courage, "<strong>Hey, why do you do all this?</strong>"</p>
+<p>"Why do I do all... <em>what now?</em>"</p>
+<p>"All the helping. <em>It's nothing to do with you,</em> but you risk your life and limb, fighting to protect people <em>you don't even know...</em>"</p>
+<p>He turned to another side, his memories came upfront, answering, "<strong>Smiles</strong>, <em>I guess...</em>"</p>
+<p>"Ungh... Smiles?"</p>
+<p>"<em>If through my fighting, someone out there gets to smile... That's the kind of world I wanna help</em> create."</p>
+<p>"And that's why you fight?"</p>
+<p>"Yeah. <em>And also...</em>" He looked back at her.</p>
+<p>"Hm?"</p>
+<p>"You're a little off. <em>It's not 'nothing' to do with me.</em>"</p>
+<p>"Huh..."</p>
+<p>"<strong><em>Long as you're alive... you're always connected to others.</em></strong> <em>We used to call it affinity or bonds.</em>"</p>
+<p>"'Bonds'...?"</p>
+<p>"Our meeting was the <em>work of chance.</em>" He looked down at her chest, the core crystal that signified Pneuma's, and continued, "<strong>Chance</strong>. That's what tied the bond between you and me. And now... We gotta <strong>protect</strong> that."</p>
+<p>"Well, spark..."</p>
+<p>"<em>Protecting the world, see... It's just that simple</em>." What words continued thereafter, we no longer knows. But certainly something more interesting than paperworks!</p>
+<h3 id="footnotes"><a class="header" href="#footnotes">Footnotes:</a></h3>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="08_alpha.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="10_prison_island.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="08_alpha.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="10_prison_island.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

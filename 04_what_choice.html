@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Father and Son, Father and Daughter, A Conversation Clears The Wall Even Between Former Enemies - Xenoblade Chronicles: Future Redeemed</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Xenoblade Future Redeemed translated from video to words.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00_preface.html">Preface</a></li><li class="chapter-item expanded affix "><li class="part-title">Main Story</li><li class="chapter-item expanded "><a href="01_introduce_matthew.html"><strong aria-hidden="true">1.</strong> The Place Where All Began</a></li><li class="chapter-item expanded "><a href="02_nikol_and_glimmer.html"><strong aria-hidden="true">2.</strong> Meeting New Friends</a></li><li class="chapter-item expanded "><a href="03_pursuing_glimmer.html"><strong aria-hidden="true">3.</strong> She's gone! We have to find her!</a></li><li class="chapter-item expanded "><a href="04_what_choice.html" class="active"><strong aria-hidden="true">4.</strong> Father and Son, Father and Daughter, A Conversation Clears The Wall Even Between Former Enemies</a></li><li class="chapter-item expanded "><a href="05_way_home.html"><strong aria-hidden="true">5.</strong> On Their Way Home</a></li><li class="chapter-item expanded "><a href="06_Rikus_workshop.html"><strong aria-hidden="true">6.</strong> What Has Riku Got For Us?</a></li><li class="chapter-item expanded "><a href="07_nael.html"><strong aria-hidden="true">7.</strong> Na'el</a></li><li class="chapter-item expanded "><a href="08_alpha.html"><strong aria-hidden="true">8.</strong> Alpha</a></li><li class="chapter-item expanded "><a href="09_history_ouroboros.html"><strong aria-hidden="true">9.</strong> History and Ouroboros Stone</a></li><li class="chapter-item expanded "><a href="10_prison_island.html"><strong aria-hidden="true">10.</strong> Journey to Prison Island</a></li><li class="chapter-item expanded "><a href="11_histories.html"><strong aria-hidden="true">11.</strong> History & The Promised World</a></li><li class="chapter-item expanded "><a href="12_end.html"><strong aria-hidden="true">12.</strong> Finale</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="95_armories.html">Repairing the Armories</a></li><li class="chapter-item expanded affix "><a href="96_appendices.html">Appendixes</a></li><li class="chapter-item expanded affix "><a href="97_postscript.html">Postscript</a></li><li class="chapter-item expanded affix "><a href="98_references.html">References</a></li><li class="chapter-item expanded affix "><a href="99_terms.html">Terms</a></li><li class="spacer"></li></ol>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+                data-name="bmc-button" data-slug="wabinab" data-color="#FAFAFA" 
+                data-emoji=""  data-font="Cookie" 
+                data-text="Make a donation!" 
+                data-outline-color="#000000" data-font-color="#000000" 
+                data-coffee-color="#ffffff" ></script>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Xenoblade Chronicles: Future Redeemed</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="father-and-son-father-and-daughter-a-conversation-clears-the-wall-even-between-former-enemies"><a class="header" href="#father-and-son-father-and-daughter-a-conversation-clears-the-wall-even-between-former-enemies">Father and Son, Father and Daughter, A Conversation Clears The Wall Even Between Former Enemies</a></h1>
+<p>Blue sky, white clouds. Inside the City. Between the buildings is a square paved with green grass and walkways that criss-crossed on all sides, making an octagon tiled path in the middle. People were gathering there, looking after their children playing and chatting with each other. On one balcony overlooking the square, Matthew and Na'el stood, smiles on their faces.</p>
+<p>"15 years ago feels like a dream now. Like it was an eternity away..." Matthew drew out his knuckles thereafter. Na'el saw it, commented, "You might never have to use those again."</p>
+<p>"Now wouldn't that be amazing? The Queen of Keves though... She's still not free."</p>
+<p>"What, you think our fight's still not over?" And she looked back at the running children and tranquil parents, asked, "Can't things stay like this?"</p>
+<p>"The soldiers, they're still fighting. Right this moment."</p>
+<p>Na'el engaged deeply in what he'd said, then shared, "Personally, if things could just stay this way... I'd be happy."</p>
+<p>"<strong>You serious?</strong> If Grandad could hear you, he'd lay you out flat." He teased, but she wasn't smiling. There below was the girl from before that led a group of people and found her, dragged her away to play the piano, playing with other friends.</p>
+<p>"Yeeaahhh, I know what he'd say. 'The soldiers are the roots from which we grew.'" She imitated the voice of her Grandad. "But still... we are who we are, right? And them and the Moebius, they're a whole different story. No reason we can't coexist..."</p>
+<p>He immediately snuffed her out, "Nah, don't gimme that. Come on!" Their parents, died 15 years ago; that's not something he can forget.</p>
+<p>"There's no need to fight if we just stay out of each other's way. It's worked out fine for the <em>past 15 years.</em> I guess, for you... <em>it's all or nothing</em>, huh?" She wasn't even looking at him; perhaps she don't want to look into his eyes, don't want him to look into her eyes.</p>
+<p>"Huh?"</p>
+<p>"Those children are <strong>everything</strong> to me, you know... What choice have I got?" She pulled her her sleeve and look at the band-lace made of strings tied around her wrist. What do they signify? Who does it remind her of? What story lies behind it? We don't yet know.</p>
+<p>"Huh..."</p>
+<hr />
+<p>"Leave it to Uncle Rex. I'll show 'em a thing or three!" Now, everyone was just, 'whoaaaaa'...</p>
+<p>Matthew remembered someone else previously in danger, dashed towards Nikol, asked, "You OK?"</p>
+<p>"Y-yeah..."</p>
+<p>"Can you stand?" She immediately got up on her feet. Then, he turned his attention back at the Moebius, asked, "Nikol, ready to fight?"</p>
+<p>"Urh!" And he nodded.</p>
+<p>"<strong>You too, Glim! Hup-hup!</strong>"</p>
+<p>"<strong>HUUUUHHH???</strong>" After what she did?</p>
+<p>"<strong>There'll be time for</strong> thinking later. <strong>For now... it's down to brass tacks!</strong>"</p>
+<p>Now she felt guilty for her stupidity. So she'll end her stupidity by fighting alongside them, drew her weapons.</p>
+<p>Uncle Rex peered over his shoulder and noted their interactions, without displaying any specific emotions. One of his eyes, his left ones, was permanently damaged. He split his sword from single to dual -- one red, blaring with greenish-yellow flames as its blade; the other dark yellow, with bright yellow-green flaming blades. Round 2!</p>
+<hr />
+<p>More and more lives get sucked from both Ferronises's Flame Clock into the Moebius's mouth. Rex dragged backwards as "<em>I get it.</em> So that's his game, <em>is it?</em> I'll take the one on the left! <strong>Shulk, you take the right!</strong>"</p>
+<p>"Sure thing."</p>
+<p>"And as for you!" He looked at Matthew, "kiddo!"</p>
+<p>That poked his sensitive spot, "Eh? <strong>Oi who you calling 'kiddo'?</strong>"</p>
+<p>"You take out the Moebius! <strong>All in sync!</strong>" Not that he's gonna explain.</p>
+<p>"Whuh? In sync?!"</p>
+<p>"Let's go!" And they already dashed off while Matthew still had questions,</p>
+<p>"<strong>HEY!! The hell!</strong>" Rex and a green-haired girl whom wielded a staff ran to the left. She launched a light ball at the Ferronis, hit it, while Rex took the advantage and jumped onto the Ferronis, dashing along the metal frames up to its top.</p>
+<p>Meanwhile, Shulk and Panacea dodged an attack from the right's Ferronis. "<strong>YAAAAAAAHHHHH!!</strong>" With such high-pitched shouts, she punched her spear into the hull of the Ferronis, breaking its surface, which released sparks and purple electricity. Shulk dashed past her on the arch towards the top.</p>
+<p>"Tch..." Matthew had no choice but to follow. "I better hop to it then!" And he and A dashed towards the Moebius.</p>
+<p>"Hah! <strong>You're getting on my nerves! Piss off!</strong>" The Moebius, his whole body like cancer cells joining both Ferronis, where only his head isn't concealed by the various nerves and veins, shouted, and launched two beam at Matthew and A, whom dodged agilely. Those that cannot, she slashed past them, he punched through them. Nearing him, he jumped high into the air, called on the power of the Ouroboros, and punched at his core. Simultaneously, Rex and Shulk sliced through the Flame Clocks. Out spit the lives, and shattered his Moebius core, and the three returned to the floor. Did they succeed?</p>
+<p>"My... <strong>my Ferronises...</strong>" He cannot even disengage with his core leaking dark energy. "<strong>My pretties... My fused friends! ALL MY WORK RUINED!!!</strong>" And bright light emitted from the combined entity, and soon it exploded, the fireball engulfing the cliff edges. The shockwave so strong it blurred the surrounding with dusts.</p>
+<hr />
+<p>Flames, flames, flames. Debris everywhere. Their platform actually didn't collapsed; missed by a little -- it's radius carved a hole just below where they now stand. "Phew... He gave us a hard time." Rex peered down into the cloud sea.</p>
+<p>"Nice timing there, Rex." Shulk walked up to him. "Thanks for that."</p>
+<p>"Everyone knows the real hero steps up in the third act!"</p>
+<p>"Hah!" But he was relieved. "Still, something's off here."</p>
+<p>"Mm. Double the Flame Clock..." They recalled. "But no soldiers in sight."</p>
+<p>"There has to be more to it, Boss." The glasses-wearing green-haired girl that accompanied Rex mentioned. She had a rectangular crystal on her chest.</p>
+<p>Shulk got into a thinking stance, fingers on his chin, shared, "I've heard a rumor... About how one of the Moebius like to create all kinds of experimental Flame Clocks.{{footnote: If you'd watched Xenoblade 3, you'd know who he is.}}"</p>
+<p>"Linka, mind looking into that for me?" asked Rex to the green-haired girl.</p>
+<p>"I can do that. I'll dispatch a platoon, we'll see if they can get a handle on it."</p>
+<p>"Lovely." Then, he turned his attention to their new friend's direction, now that they have the attention to handle them, "Arright, so? Who's this then?"</p>
+<p>Shulk walked up beside him, looking at Matthew and A, commented, "City refugee, it seems."</p>
+<p>"Well. That explains the Ouroboros power." That's Matthew. Then, he turned to Nikol. Seeing he's in spotlight, his hands that's by his waist unnaturally put down. He asked, "And this soldier? Who released him?"</p>
+<p>Shulk eyes was targeted on A. More exactly, her earring. Rex followed glance, realized. "Huh! My day keeps getting better. To business. Tell <em>me, Shulk</em>... How'd Moebius <em>get the jump on you?</em>"</p>
+<p>"'Cause of her." He hadn't said anything, but the one who'd hated so much already spoke. Panacea gave a nod in Glimmer's direction.</p>
+<p>"Ah urg..."</p>
+<p>"We'd meant to protect her, but she went and gave away our position."</p>
+<p>"Uh-!" She said nothing. That was the truth, anyways.</p>
+<p>Rex eyes was on her for long, then suddenly he realized something, shaky with his breathe, "H-Hang on..." This girl... she looks like... looks like someone... someone long gone from memories... and his smile gone. He took steps toward her, whom still had her heads down. She looked up as he loomed over her, spoken, "You wanted to get back to your friends, huh?"</p>
+<p>"Urh..." She looked away.</p>
+<p>"Even if it meant getting us all killed." The sternness in his tone grew.</p>
+<p>"Urg... <strong>No!</strong>"</p>
+<p>He didn't let her speak more, "Don't try to play the innocent with me."</p>
+<p>"Hoh..."</p>
+<p>"You were <em>well aware of the consequences. But you decided to <strong>ignore</strong> that inconvenient fact.</em>" The others watched as he lectured her, not joining in. Glimmer clenched her fist.</p>
+<p>"Enough... <strong>Stop.</strong>"</p>
+<p>"<strong>Hmm?</strong>"</p>
+<p>"<strong>I AM <em>NOT</em> LETTING THE ENEMY GET INTO MY HEAD!!!</strong>"</p>
+<p>"<strong>MANNERS...!!!</strong>" Panacea wanted to interfere, but Shulk held her back. She looked at him, surprised.</p>
+<p>Meanwhile, in the center, Panacea's words flew past her without effects, "<strong>I DIDN'T ASK FOR ANY OF THIS!!! It was almost time for MY Homecoming! My comrades and I... We made it ALLLL this way... I fought... SO SNUFFING HARD... Ungh... Ung huh huh huh huh, ungh...</strong>" Rex was looking at her term symbol.</p>
+<p>Nikol looked at her, frozen, releasing a deep breath. "Mhhhh..." He was one that could relate, and who said he isn't her his Homecoming?</p>
+<p>Rex didn't let her cry long, spoke calmly. "Listen. <strong>Two</strong> things. First of all, that <em>there</em> was your enemy." He looked behind where they previously fought. The red particles was still floating in the darkness. The flames of the debris were still burning. "And <strong>second</strong>... Let it go. Your friends are gone." And he just walked away thereafter, leaving Nikol looking after her.</p>
+<p>"Urg... Uhm..." He was too shy to move forward to comfort her.</p>
+<p>"Ermmm, soooo...." Matthew finished watching the event, turned to Shulk, asked as he approached him, "What's the plan from here, then? It's pretty clear you're not our enemies from the way stuff's panning out, but... It's all a bit, <strong>'ehh'</strong>, right?" He referred to A.</p>
+<p>Haven't got time to reply, the buff guy whom first realized who's he when Glimmer gave the description started speaking, and others turned to him their attention, "Don't gimme that! Obviously we're teaming up, eh Matty?" He started walking in between the soldiers.</p>
+<p>"<strong>DILLON!!! MATE!!! YOU WERE ALIVE?!</strong>"</p>
+<p>"<strong>Ahahaha!</strong> That was about my reaction too. Glad <em>you're still with us, Matt.</em>"</p>
+<p>Shulk then approached the reunited two, did a favor, "I'll set us up some tents. We can all debrief each other there."</p>
+<p>"Ohhh, now we're talking. Haven't slept under shelter for <strong>yonks.</strong>"</p>
+<p>"First light, we'll make a start for our base. If it's all right with you, I'd feel a lot safer if we traveled together."</p>
+<p>"I don't really mind... whatcha think?" He asked for A's opinion. She nodded back. Then, he turned to Nikol.</p>
+<p>"Mhm..."</p>
+<p>And Glimmer? She's still looking away.</p>
+<p>"...Awrite{{footnote: Alright}} then."</p>
+<p>"Great to hear."</p>
+<p>"So, what's this base thing?" He asked as Dillon and Shulk were walking away, "And who are you guys? Feeling kinda lost here..."</p>
+<p>"I'll tell you all about it on the way. It's not like we're in any rush."</p>
+<p>"Right... Yeah, I suppose that's true." A had already walked past him. "Fine then."</p>
+<p>"Great." A walked past Shulk a little. Tent was just up ahead. The fire torch at the distance beside the cave entrance we can still see.</p>
+<hr />
+<p>During the way back, Matthew asked, "So about these Liberators. What do you guys even do?"</p>
+<p>"The Liberators are a resistance faction that Rex and I founded to fight back against Moebius."</p>
+<p>"So you've been fighting 'em too!"</p>
+<p>"Yeah! Our goal is to free the world, to return it to how it's supposed to be. But right now, we have another immediate objective."</p>
+<p>"What's that, then?"</p>
+<p>"There are many people, ones from the City like you and Dillon, all soldiers freed from the Clocks. We rescue them, keep them from harm. Working towards that is currently the Liberator's primary concern."</p>
+<p>"Hmm..." That's A.</p>
+<p>"At its founding, we only had a scant few members in addition Rex and myself. But in time, the people we helped offered us their help in return. And our numbers have swelled considerably. Oh, but... you'll see soon enough. There's our temporary camp now." They were walking through the camp entrance as he finished speaking.</p>
+<hr />
+<p>Rex were already seen speaking to someone by the table where Panacea sat yesterday, probably. Though, there's now a tent roofing over the table. Rex continued talking to the person after eyeing who'd arrived. Shulk turned around and welcomed them, "Well, we made it. We should be safe here for the time being." Then he signaled to his 5 o'clock, "You can use that tent over there. We've had it set up especially for you."</p>
+<p>A appreciated, "Thank you. We'll do just that."</p>
+<p>"Phew! Be a nice change to finally get to kip under a roof."</p>
+<p>Glimmer's voice was still shaking, "<em>Huh...</em>"</p>
+<p>"Mmm..."</p>
+<p>Rex had already finished speaking to the person and joined them, shook his head, and commented to Glimmer especially (but also to Nikol), "Look, everyone here knows what's what. Nobody's gonna bully you or anything."</p>
+<p>She unbelievably replied, "Gee, thanks, very reassuring... <em>Not.</em>"</p>
+<p>Matthew called out loud, "<strong>All right, break it up now! How about</strong> we grab a bite and unwind, eh? Don't need you running around hangry."</p>
+<p>She immediately rebutted, "I'm not really hungry." 'Groooggg...' Her stomach refused to side with her as she finished her sentence, in strike. She shook her head, "Urgggg..."</p>
+<p>Shulk suggested, "Try to get some rest. We'll take the guard shifts."</p>
+<p>Panacea updated them, "We'll be departing for base in the morning; Don't go the whole night without sleep."</p>
+<p>"Noted. All right then, we'll see you later." Shulk replied, then with Rex took off, followed by Panacea and Linka.</p>
+<hr />
+<p>He stood cross-arm by himself under a tree, back lying on the trunk. Someone interrupted his thoughts, "That was harsh, Boss."</p>
+<p>"Hm?"</p>
+<p>"You didn't have to talk to her like that. Not cool."</p>
+<p>"Tell me something I don't know."</p>
+<p>"Hrrrrh... You don't want her with us, is that it? I'm sure she'd see sense if you just gave her a chance. What's the problem?"</p>
+<p>"Mm."</p>
+<p>"Is it because... it feels too close to home?"</p>
+<p>"D'you always have to be right on the mark? Very well spotted though, Linka."</p>
+<p>"I knew it the moment I saw her. She looks like them... exactly."</p>
+<p>"I know, right? Someday, I knew it'd happen, but... Not exactly the best timing, is it...?"</p>
+<p>"It's the same deal with him, y'know." She turned to look at the camp's direction.</p>
+<p>"What, Shulk? Really?"</p>
+<p>"Really really. Panacea said she had a hunch."</p>
+<p>"<em>Strike me...</em> Hmph..." Heavy on the heart. He pinched the little moustache he had, grooming, as he continued, "I guess we're bound by fate. Like it was meant to be..." Perhaps the stars and the moon and the clouds that blanketed them had more to say?{{footnote: This is in the 2nd video; the 1st would have bright sun, which didn't sound like correct timing.}}</p>
+<hr />
+<p>Nikol was cranking his mechanical arms with various tools on the table under the tent himself when Shulk sounded from beside, "Nice gear you've got."</p>
+<p>"<strong>Ungh!</strong>" He turned and saw him, but not the green Nopon with standing hair{{footnote: If you'd watched Xenoblade 3, you'd know who's he. Read on to be introduced to his name once again here, by Shulk to Nikol.}} that was too low from registering in his field of sight.</p>
+<p>Shulk continued, "The joints move without a hitch, <em>and</em> listen to the purr of that motor!"</p>
+<p>He was humble, "I-It's just a tool for destruction. Death. Nothing... to be praised."</p>
+<p>"Good point." And he took a seat beside him.</p>
+<p>"Umm..."</p>
+<p>"Whoa...! That's an Equites pulse driver assembly! No wonder it's so pleasing to the ear! And melded with a cylinder...?" He continued to stay surprised with his mechanical skills. He even touched and feel the surface. "Perfect soldering technique!" Nikol was flabbergasted by someone speaking mechanics with him.</p>
+<p>"Hey... Stop that..."</p>
+<p>"Did you make it yourself?"</p>
+<p>"Uh... Yeah...? Well..." And he put his hands back to the machine, his heart wasn't there, or too shy to be there.</p>
+<p>"I've always liked tinkering with machines, as well. I can't help myself."</p>
+<p>"Uhm..."</p>
+<p>"Earlier..."</p>
+<p>"Hm?"</p>
+<p>"You tried to help us, right?" That's when trying to shield Glimmer from the blast, "Using this."</p>
+<p>"Uhm..."</p>
+<p>"A tool is merely a tool. It does as the user chooses." He moved his prosthetic right arm, putting his other hand over it as if it was heavy to hold. "Wouldn't you agree?"</p>
+<p>"Urgh..."</p>
+<p>"Be it to kill others, or... to help them..." He looked down and just saw.</p>
+<p>"Your arm..."</p>
+<p>He took it up and showed it to him, "A war wound. From way back when. Then Riku here made me this one, but..."</p>
+<p>The green Nopon heard the triggering word and immediately rebutted, "<strong>'But'</strong>... what, please? Manner of expression seem pointed."</p>
+<p>"I'm not saying it's bad! It's not bad at all. Just a little squeaky." When he moved his arms, the moving of the gears at the joints can be heard clearly.</p>
+<p>"That same as saying, 'bad'. <strong>Riku</strong> had to make from <strong>hodgepodge material. Do not nitpick.</strong>"</p>
+<p>"Mm hmm..." Nikol was watching their interactions, before asking, "Hey, um... Would you mind if I... take a look?"</p>
+<p>He put his mechanical arm on the table. After some observations, Nikol confirmed his hypothesis, "Thought so." Pointing at some parts, "Here, you're missing a shim between these bits. That'll be why it creaks. Hang on, I... should have one here... some-where..." and he went to search in his toolbox. All the while Shulk's eyes was on him, not on his mechanical arm. It reminded of eons ago when he was the one in the lab working out with parts. Then, he looked at Riku, whom was smiling back at him. Seemingly they staged the scene, and Riku did it on purpose, helped them reunited their precious time together. Some conversation openers they were.</p>
+<hr />
+<p>Glimmer was looking at the Agnus Castle{{footnote: Why do one know, because it inherits the description from Xenoblade 3, and one made such assumption that you'd already know how an Agnus Castle looked like. Nevertheless, one added the description here once more.}} in the far distance, blurred by dust particles, which looked like some pointed teeth going up and down{{footnote: So, imagine you put your bottom jaw on top of your top jaw, so your top jaw's teeth faced down, and your bottom jaw's teeth face up.}}, by herself. The wind brushed over the surface of the grass and the flowers. No one interrupted her to keep herself thinking and sorting out things.</p>
+<p>Nikol approached her after a while, stopped at some distance away, "<em>Urm...</em>" He then walked closer to her.</p>
+<p>Already sensed his existence, she asked in annoyance, "What? I won't run away again. Not if there's anywhere left <em>to</em> run."</p>
+<p>"I uh... I think it was good... what happened."</p>
+<p>"Huh?" She turned to look at him, curious what he meant by that.</p>
+<p>"Fighting against you."</p>
+<p>"I don't understand."</p>
+<p>"If we hadn't fought... we wouldn't be here now, like this."</p>
+<p>She looked away, "'Here', isn't exactly a sparking picnic." Where he hates fighting, she only wanted Homecoming before this, and probably still lingering inside her.</p>
+<p>He took a seat beside her. "People... would bully me..."</p>
+<p>"Wha?" She turned and look at him. That's unusual for the only person whom survived a battle, all comrades dead except for.</p>
+<p>"'Cause... I can't summon a Blade. Makes me... kinda useless."</p>
+<p>"Hmph..." She turned her head away, as if she also agreed.</p>
+<p>"But all those bullies... they're dead now."</p>
+<p>"Yeah? Well, good for you. But that's a weight off y-"</p>
+<p>She hadn't finished her sentence when he continued his story, exclaimed, "Someone like me... How'd I survive?... <em>Nobody else did...</em>"</p>
+<p>"Ur urgh... hmm..." Not that she could rebut.</p>
+<p>"But now, I-I can make something of myself. That's how it feels. <em>Honestly,</em> just knowing who I'm meant to be fighting... That's the biggest thing of all."</p>
+<p>"Nikol..."</p>
+<p>"Another thing... I'm happy about."</p>
+<p>"Hm?"</p>
+<p>"Back then... I'm glad I didn't have to kill you."</p>
+<p>She wouldn't give up her domination in fighting skills, "<strong>You</strong> got to be joking. A little squirt like you could never take <em>me</em> down."</p>
+<p>"Umph." He was just smiling at her when she denied. She turned back to look at him, and he continued, "That day... we became friends."</p>
+<p>"Ur! Urg..." Her eyes widened, then looked to the bottom left of her eye. Can't deny. Turning her head away, she acknowledged, "You're an idiot. <em>Wow.</em>" The sun hadn't rose yet, but that scene is what they'll enjoy.</p>
+<hr />
+<p>In the morning, sun rose so high in the sky, Nikol were already talking to A, and Glimmer stood beside him, looking at some other direction, when the one whom always woke up late came to them, "Oi-oi! Lovely morning today! Perfect weather."</p>
+<p>"Wrong. This cloud cover practically guarantees rain." That's A lecturing him on what weather forecast means. Everyone was just looking at the heavy clouds for a while until Nikol broke the ice,</p>
+<p>"Morning... everyone..."</p>
+<p>"Hello..." Still looking away, she reluctantly spoke out.</p>
+<p>"<strong>WHOA!!! Did I just hear a 'hello' from you?!</strong>" Matthew just had his ears cleared, continued teasing, "<strong>What next</strong>, a rain of Brogs?"</p>
+<p>"Plain rain's bad enough." argued A.</p>
+<p>"Damn, if I didn't know better. I'd think you were warming up to me."</p>
+<p>"Umph... <em>I was forgetting the <strong>real</strong> idiot among us.</em>"</p>
+<p>"<strong>Theeerreeee you go! It's cool. This is progress!</strong>" He explained to A, not being invoked by her words.</p>
+<p>"Tsk."</p>
+<hr />
+<p>The sun went higher up, and other soldiers had already getting up one by one, talking or just getting ready. Shulk and the other three joined in, "Morning, all! Feeling- refreshed, and, ready to take on the world?"</p>
+<p>"<strong>Yeaaahhh</strong>, thanks to you guys. Haven't slept this well in <strong>a-ges</strong>."</p>
+<p>Rex: "Don't mention it. It's gonna be quite a trek to our base, though."</p>
+<p>"Yeah, speaking of, where is this base of yours exactly?"</p>
+<p>That leave Panacea to explained, looking towards a vine-covered cliff, allowing for climbing. "Once we climb that cliff and follow the road, you'll be able to see for yourself."</p>
+<p>Matthew: "<strong>Huh, sweet! Can't wait to see what it's like.</strong> How 'bout you, Glimmer?"</p>
+<p>She's not even looking at him, speaking from behind dull-ly, "Not interested."</p>
+<p>"Aaaaa-ha-hah, <strong>still being a sulk, eh?</strong>"</p>
+<p>Nikol broke in to save the situation for her, "I-I'm... a little curious, I think."</p>
+<p>"<strong>Yeah, attaboy, Nikol! See that</strong>, Glimmer? You could stand to learn from this one."</p>
+<p>"Can someone shut this guy up?" She was already so annoyed by his mouth.</p>
+<p>The one whom traveled with him for so long had already felt the annoyance for not sure how long, years? "He'll grow on you."</p>
+<p>Shulk continued their original conversations, "We have some refugees from the City, by the way, back at base. You should let them know you're fine once we've arrived. I'm sure they'll appreciate it."</p>
+<p>The only new City refugee{{footnote: A wasn't a City refugee, by the way, you'd know later.}} replied, "Yeah, I'll be sure to do that, thanks."</p>
+<p>Rex summed it up, "<strong>All right, we all done with the banter? This road's not gonna walk itself.</strong>"</p>
+<p>"Yeah, let's make tracks!"</p>
+<h3 id="footnotes"><a class="header" href="#footnotes">Footnotes:</a></h3>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="03_pursuing_glimmer.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="05_way_home.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="03_pursuing_glimmer.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="05_way_home.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

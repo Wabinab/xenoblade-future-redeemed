@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Journey to Prison Island - Xenoblade Chronicles: Future Redeemed</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Xenoblade Future Redeemed translated from video to words.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00_preface.html">Preface</a></li><li class="chapter-item expanded affix "><li class="part-title">Main Story</li><li class="chapter-item expanded "><a href="01_introduce_matthew.html"><strong aria-hidden="true">1.</strong> The Place Where All Began</a></li><li class="chapter-item expanded "><a href="02_nikol_and_glimmer.html"><strong aria-hidden="true">2.</strong> Meeting New Friends</a></li><li class="chapter-item expanded "><a href="03_pursuing_glimmer.html"><strong aria-hidden="true">3.</strong> She's gone! We have to find her!</a></li><li class="chapter-item expanded "><a href="04_what_choice.html"><strong aria-hidden="true">4.</strong> Father and Son, Father and Daughter, A Conversation Clears The Wall Even Between Former Enemies</a></li><li class="chapter-item expanded "><a href="05_way_home.html"><strong aria-hidden="true">5.</strong> On Their Way Home</a></li><li class="chapter-item expanded "><a href="06_Rikus_workshop.html"><strong aria-hidden="true">6.</strong> What Has Riku Got For Us?</a></li><li class="chapter-item expanded "><a href="07_nael.html"><strong aria-hidden="true">7.</strong> Na'el</a></li><li class="chapter-item expanded "><a href="08_alpha.html"><strong aria-hidden="true">8.</strong> Alpha</a></li><li class="chapter-item expanded "><a href="09_history_ouroboros.html"><strong aria-hidden="true">9.</strong> History and Ouroboros Stone</a></li><li class="chapter-item expanded "><a href="10_prison_island.html" class="active"><strong aria-hidden="true">10.</strong> Journey to Prison Island</a></li><li class="chapter-item expanded "><a href="11_histories.html"><strong aria-hidden="true">11.</strong> History & The Promised World</a></li><li class="chapter-item expanded "><a href="12_end.html"><strong aria-hidden="true">12.</strong> Finale</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="95_armories.html">Repairing the Armories</a></li><li class="chapter-item expanded affix "><a href="96_appendices.html">Appendixes</a></li><li class="chapter-item expanded affix "><a href="97_postscript.html">Postscript</a></li><li class="chapter-item expanded affix "><a href="98_references.html">References</a></li><li class="chapter-item expanded affix "><a href="99_terms.html">Terms</a></li><li class="spacer"></li></ol>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+                data-name="bmc-button" data-slug="wabinab" data-color="#FAFAFA" 
+                data-emoji=""  data-font="Cookie" 
+                data-text="Make a donation!" 
+                data-outline-color="#000000" data-font-color="#000000" 
+                data-coffee-color="#ffffff" ></script>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Xenoblade Chronicles: Future Redeemed</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="journey-to-prison-island"><a class="header" href="#journey-to-prison-island">Journey to Prison Island</a></h1>
+<p>Next morning, Shulk and Rex joined the others whom had assembled. Rex then shouted out, "<strong>RIGHT! Is that everyone?</strong>"</p>
+<p>Nikol, checklist in head, scanned around, reported, "Um... We're missing Matthew." They were gathering by a protruded platform that overlooked the body of water below, the waterfall to the left of him.</p>
+<p>Shulk: "That's worrying... Has something happened?" Shulk and Rex looked at each other.</p>
+<p>Just then, there was a great shout from the other direction, "<strong>OOOORRRRRGGGGGHHHHHH, DAMMIT!!! I OVERSLEPT!!!</strong>" After he jumped in, he huffed and puffed, "Huhhh... Huhhhhh... Sorry you guys! Sorry I'm late!"</p>
+<p>A shook her head, "I <strong>cannot</strong> believe you <strong>actually</strong> overslept."</p>
+<p>"<strong>Yeah I dunno what happened. Just couldn't settle down.</strong> I was tossing and turning like crazy..."</p>
+<p>Even Rex shook his, "<strong>Awww</strong>, diddums..."</p>
+<p>Glimmer: "Gee, someone's got a sensitive constitution..."</p>
+<p>Nikol can't believe what he heard, "Matthew, sensitive...?"</p>
+<p>He had a target now, peered at him, "<strong>You wanna</strong> share your observations with the rest of the class, Nikol?"</p>
+<p>He swiftly turned away, "Oh, n-n-nope! <em>Nothing to add at this point!</em>"</p>
+<p>Panacea effetely sighed, "<em>I worry about the future</em> sometimes... <strong>I'll... move us right along, shall I?</strong> Let's talk about the route to Prison Island." She then turned to look behind the waterfall. There was a large cave entrance that connected to the body of water. The thinness of the waterfall cannot veil such entrance. "You see <strong>that</strong>, out the back of Colony 9?"</p>
+<p>Glimmer asked, "Is that a... cave?"</p>
+<p>"That's right. That's the first waypoint."</p>
+<p>Linka continued, "There's a large pit beyond the cave, which would be difficult to scale by hand. Fortunately..."</p>
+<p>Matthew filled in the blanks{{footnote: Not a good style talking actually, sometimes, it feels disrespectful.}}, "<strong>We've got the Ether Lift, right? One step ahead of ya.</strong>"</p>
+<p>"As you said. It'll be <strong>perfect</strong> for a field test."</p>
+<p>Shulk asked, "Panacea, have you got what we spoke of?"</p>
+<p>"Yes, Teacher! And- not a moment too soon!" She took from her pocket and handed out 1 Trial Black Crystal, 3 Monochromagnetite, and 2 Ether Cylinder.</p>
+<p>"Thanks for your hard work. Just what the Ether Lift needed."</p>
+<p>Matthew crunched his palm against fist together, as if preparing to fight, "It's time to take Alpha down a notch, <strong>and bring Na'el home! For better or worse</strong>, <em>it's nearly over</em>. <strong>First</strong>, Prison Island. <em>And then, Origin!</em> <strong>Strap in, everyone! It'll be the riiiide of a lifetime!</strong>" The rest nodded and agreed.</p>
+<hr />
+<blockquote>
+<p><strong>Translator's note on environment:</strong> Creatures with flames on their body and legs, reindeer-like or wolf-like or bird-like or whatever the shape is, plus some Tauros with reindeer-like long branchy horns, and other animals such as the white birds with blue tips on their ultra-long wings, roamed the icy mountains. The land were steep, covered in thick snow. The rocks were dark, acting as foundation for the whole mountain. An arc like the ones in Triomphe, half buried in snow; perhaps ancient civilization used to live here, as other remains still stood strong like Rome's Colosseum today, but such palace-like city were now abandoned. Strong winds blow, orange thunder stroke. At the very top of Prison Island, stairs lead up to an altar-like platform, and at its end, a fan-like object stretched open 180°; the place of imprisonment. This, is the <strong>Black Mountains.</strong></p>
+</blockquote>
+<hr />
+<p>On the Mountain itself, standing atop snow, there was an Ether Slide built behind them{{footnote: Yes, a slide, not a lift, because it's not going straight up.}}, they were conversing.</p>
+<p>Glimmer exclaimed, "I cannot believe you! That day was the first time the two of you ever met, and you just 'assumed' A was from the City?"</p>
+<p>"There was a lot of us. <strong>I didn't know</strong> every single person... A had supposedly lived there, and just happened to be coming back. That's basically when our paths crossed."</p>
+<p>"So you knew nothing at all about A, but you tagged along anyway? <em>Ugh... Nobody's that oblivious.</em>" A was turning her head left and right, overhearing the 'dire' conversations about her between them.</p>
+<p>"<strong>Hey, blame the one keeping the secrets, not me.</strong>"</p>
+<p>Now she had something to say, the ball passed to her, "You never thought to <em>inquire</em> about it, so I never told. That's all..."</p>
+<p>"Huh? <strong>Don't give me that!</strong>"</p>
+<p>"I mean, traveling this world alone isn't exactly normal behavior. Normally you'd inquire!"</p>
+<p>His eyes wide opened, refused to acknowledge, "<strong>No you wouldn't!</strong> Normally." He couldn't continue the sentence.</p>
+<hr />
+<p>They built a campfire where wind won't blow too hard, shielded by the tall cliff walls. Riku was maintaining an object wrapped mummy-like, its tip on the snow and balanced upright on the table, together with Shulk's Monado. The pot was cooking to his right. Linka sat next to the pot, listening to Panacea. Nikol was meddling with the duffel bags. Rex talking to Glimmer, Matthew checking his terminal. Shulk and A looked at the various activities the others were doing.</p>
+<p>Shulk turned his attention to "A..."</p>
+<p>"Go on."</p>
+<p>"When I turned down the chance to be a god, I lost the power to have visions. But you, A..."</p>
+<p>She didn't wait for him to finish, "There is no single established future. You should know that better than anyone, Shulk."</p>
+<p>"<em>Huh...</em>"</p>
+<p>"If I were to tell you now, what form your futures might one day take, it would be but one possibility, and a hazy one, at that. The thing that gives 'shape' to the future... it is your <strong>will</strong>. That's all the future is, Shulk."</p>
+<p>"<em>Huh!</em> You're quite right. I don't relish getting old. Age saps my courage." He shook his head.</p>
+<p>"That perfectly correct." Someone had been eavesdropping on them for long. He walked up to him, complaining in a stern voice, "Leaping Blade-first into thick of fray... is game best left to young and reckless."</p>
+<p>"You said it, Riku."</p>
+<p>"Actually, it's Masterpon who say."</p>
+<p>"Your master, eh?"</p>
+<p>"Masterpon say... when find one such give this." He turned to look at the mummy-wrapped blade. Yet, despite the wrappings, he seemed to recognize,</p>
+<p>"Isn't that...?"</p>
+<p>"Everyone... is right here." And he turned to his Monado, continued, "And also with Shulk... there."</p>
+<p>He looked at his own blade, perhaps enlightened, "You're right. We're not alone."</p>
+<p>A thin smile on Riku's face, his head nodded, "Hmph!" He turned back to A, and she gave him a thin nod.</p>
+<hr />
+<p>What was the mummy-wrapped object then? Let's look at another conversation back at colony 9, Riku's workshop. Matthew was looking at it when Riku called out, "It catch eye of friend?" He turned and saw him walking up to beside him.</p>
+<p>"Huh? Um, yeah, gotta admit it has."</p>
+<p>"Then Riku relieve curiosity, just this once. As special reward for services rendered."</p>
+<p>Opening it up, it was a sword of purple dark hilt, connected to the shiny blade via a circle with a hole built into the 'Ricasso' of the blade. Its sharpness capable of slicing through steel like tofu.</p>
+<p>"Whoa... That's a wicked-looking blade. Even I can tell it's a masterwork, and I don't know the first thing about swords."</p>
+<p>"Yes, it just as friend say. It impossible to conceal. Sword is special weapon, forged from metal of Origin origin."</p>
+<p>"Wha-! like, <em>Origin</em> origin?"</p>
+<p>"It said that Origin is place where memories and souls of people are gathered. That go also for this sword, forged from Origin metal as it be. According to Masterpon, dearly important people reside inside."</p>
+<p>"Important people? In a sword?"</p>
+<p>"Masterpon has said to Riku, many many yonks past..." and he looked up to recall the storyline. "One day will come when Riku must give sword to person who is worthy."</p>
+<p>"So this Masterpon of yours made a sword from Origin bits? Who the heck could've done a thing like that? A Nopon, I bet, right?"</p>
+<p>"Meh meh? What friend saying? Masterpon of Riku was friend Melly. Did Riku not say?"</p>
+<p>"Melly? Who's that?" He thought for a while, running through the list of people in his head, until he reached one, "No way... You can't seriously mean... Melia, the Queen of Keves?!"</p>
+<p>"Exacting. Like Riku say, Melly. Dadapon of Riku and Melly once traveling companions...{{footnote: Heropon Riki}} Eh, but it long story, so Riku rather not tell."</p>
+<p>"Sounds like you're kind of a big deal then, huh?"</p>
+<p>"Please not to spread this story around. Riku not fan of celebrity namedropping."</p>
+<p>"Right I see... Yeah, sure, you got it." Then he changed the subject back to the sword, "Say, Riku, does the sword have a name?"</p>
+<p>"Of course. Name of sword is... 'Lucky Seven'!" And he did a dab.</p>
+<p>"Lucky... Seven...?"{{footnote: The Lucky Seven whom traveled together by pure chance during his Dadapon and Melly period, perhaps.}}</p>
+<p>"What friend think? Cool, no? Terrific? Perhaps magnificent, even?" The demand for praise and respect!</p>
+<p>"Hmmm..." He thought for a while before answering, "Pretty decent."</p>
+<p>Riku shockingly cried, "<strong>For serious?!</strong>"</p>
+<p>"Sure, yeah. It's got a nice ring into it. I like it, personally."</p>
+<p>"Meh meh! Friend Matthew is first who say so!"</p>
+<p>"Lucky Seven, huh..." He looked back at the sword, "Hope you get to meet your worthy new master some day. Fingers crossed, eh?"</p>
+<hr />
+<p>The group continued on their journey up the snowy mountains; some ice had formed so thick it's grew into 5-storey tall crystals. The red lightning never stopped striking at this height afar.</p>
+<p>Matthew got the chance to ask, "Say, A. I'm not sure... <strong>how</strong> much I should trust you, right now. So talk to me." She didn't answer anything, continued walking on. He pressed on, "What really happened back then? In the City? If you're a part of Alpha, then you must've seen it, right? <em>What do you know?</em>"</p>
+<p>She stopped right there, but firm in her voice, "I won't tell you."</p>
+<p>"Why not?"</p>
+<p>"That's... <strong>something</strong> I'm afraid you'll have to ask N about directly."</p>
+<p>"<strong>I should?</strong>"</p>
+<p>"Then you must judge for yourself. What to do afterwards." She turned around and look into his eyes, "Whom it is that you should save."</p>
+<p>"<em>Hrrr...</em>"</p>
+<p>"<em>Beyond the answers you seek, you'll find Na'el.</em>"</p>
+<p>"<em>Hrrr...</em>" His voice more shaky and nervous, "<em>Huhhhh...</em>" No other choice, then. "Is uh..."</p>
+<p>"Hm?"</p>
+<p>"Is A your real name?"</p>
+<p>She looked up in the sky, "It has the nuance of, 'the one at the beginning'. <em>In this world, only I and Alpha can claim that honor...</em>" Where she looked, and where Matthew followed glance, was where the Origin floated, their destination.</p>
+<hr />
+<p>Origin lurking high up above them; and they were at the top of Prison Island. The group reached a platform where imprisonment happened, and there, the final teleportation device laid. Looking at it, there's no turning back.</p>
+<p>Shulk noted, "It might not be the best way to put this, but... It's like old times."</p>
+<p>A recalled: "In the past, you embarked for Ontos's memory space from here. Recreating it... was <strong>deliberate</strong> on Alpha's part."</p>
+<p>"You mean, we'll be able to board the Ark from here."</p>
+<p>"Logically it would follow, yes."</p>
+<p>"Hmm!" They then looked up at the sky, their final destination. Suddenly, there were purple motes floating around, gathering in front of them while a high-pitch reverberating tone muted their ears, "<strong>THAT'S N!!!</strong>" He appeared in front of them, facing them.</p>
+<p>Rex: "<strong>So he decided to wait for us after all. What a considerate lad.</strong>" The group let down their guards.</p>
+<p>"Hrrrh!" Glimmer wasn't feeling good seeing that pair of dimmed irises, her voice shaky.</p>
+<p>"What is it?" asked Nikol, standing close beside her.</p>
+<p>"I've never seen a Consul like that before."</p>
+<p>"I guess... <em>that's 'cause</em> he's one of ours?"</p>
+<p>She turned to him, "I know <em>that</em>. It's the look in his eyes. Did you see?"</p>
+<p>"Whuh?"</p>
+<p>"The other Consuls... <em>In theirs, there's joy. This gleeful glint...</em> But for him... His hold no light at all." Nikol's eyes widened, just noticed. "<em>I-I don't like it... Not one bit.</em>"</p>
+<p>"<em>Mmm...</em>"</p>
+<p>"Tch..." Matthew took the initiative to walk towards his great grandad. "You tryna bar our way? <strong>That's the vibe I'm</strong> gettin' here."</p>
+<p>"You're aware... Alpha said he was <strong>waiting</strong> for you."</p>
+<p>"Yeah and so what?"</p>
+<p>"<em>What that implies,</em> is that he <strong>requires</strong> your presence. That without <strong>you</strong>, the <strong>Ark</strong> will not <em>depart</em>."</p>
+<p>"<strong>Come on, stop beating around</strong> the bush, dammit. <strong>It's pissing me off!</strong>"</p>
+<p>"I'm saying the one keeping Na'el in this world is <strong>you</strong> and none other."</p>
+<p>Rex concluded, "And that's why you're trying to kill <strong>Matthew</strong>, is that it? No thought for saving Na'el or anything? <em>Man</em>. Twisted- little- so-and-so..."</p>
+<p>"You serious about this?" asked Matthew.</p>
+<p>"<em>I did warn you.</em>"</p>
+<p>"<strong>Ohh, gee thanks.</strong>"</p>
+<p>"In the current of the eternal flow,... you need not justify the means. <strong>All</strong>, is swallowed up. Everything." And he prepared to slash at him. The groups therefore drew their blades and faced him.</p>
+<p>"Ungh." No other choice.</p>
+<hr />
+<p>"<strong>TRRRRRRHHHHHHHHH!!!</strong>" Matthew is battling with N's sword. A dashed to the flanks and joined the fight, activating his sword's elevated form with its symbol. "Huuuuuh!" "Trrrrr!"</p>
+<p>He pushed them backwards with a horizontal slash, releasing huge amount of energy, dashed forward and knocked Linka and probably Panacea to the side, broke Nikol's shielding arms, fenced him until he almost lose his defense, but Shulk got in front of him while they were battling. "<strong>HUUUUURRRRAAAHHHH!!!</strong>" Nikol tried to hold him back, but Shulk was now enraged, attacking N with all his might.</p>
+<p>Sensing someone coming, he put up his mechanical arm where Glimmer jumped "<strong>HRRRRRAAHHHH!!!</strong>" towards N. Rex joined beside her, and together, they went for him, still halfway in the air.</p>
+<p>"You will go... <strong>no further!</strong>"</p>
+<p>"<strong>Idiot!!!</strong>" Matthew had summoned the Ouroboros power as he dashed towards where he expected him to land. "<strong>See some bloody sense, man!</strong>" The Ouroboros power is so enhanced it punched right through him and through his back, and reached straight up at Origin.</p>
+<p>"Huh!" Linka and Panacea saw the changes in Origin as it absorbed the power of the Ouroboros, "What...? What's that light?!"</p>
+<p>A: "Could it be... " Before she could voiced her guesses, the energy shot back down at the platform, and what they see now changed.</p>
+<h3 id="footnotes"><a class="header" href="#footnotes">Footnotes:</a></h3>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="09_history_ouroboros.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="11_histories.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="09_history_ouroboros.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="11_histories.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

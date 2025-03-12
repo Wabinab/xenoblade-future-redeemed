@@ -1,0 +1,602 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>She&#x27;s gone! We have to find her! - Xenoblade Chronicles: Future Redeemed</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Xenoblade Future Redeemed translated from video to words.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00_preface.html">Preface</a></li><li class="chapter-item expanded affix "><li class="part-title">Main Story</li><li class="chapter-item expanded "><a href="01_introduce_matthew.html"><strong aria-hidden="true">1.</strong> The Place Where All Began</a></li><li class="chapter-item expanded "><a href="02_nikol_and_glimmer.html"><strong aria-hidden="true">2.</strong> Meeting New Friends</a></li><li class="chapter-item expanded "><a href="03_pursuing_glimmer.html" class="active"><strong aria-hidden="true">3.</strong> She's gone! We have to find her!</a></li><li class="chapter-item expanded "><a href="04_what_choice.html"><strong aria-hidden="true">4.</strong> Father and Son, Father and Daughter, A Conversation Clears The Wall Even Between Former Enemies</a></li><li class="chapter-item expanded "><a href="05_way_home.html"><strong aria-hidden="true">5.</strong> On Their Way Home</a></li><li class="chapter-item expanded "><a href="06_Rikus_workshop.html"><strong aria-hidden="true">6.</strong> What Has Riku Got For Us?</a></li><li class="chapter-item expanded "><a href="07_nael.html"><strong aria-hidden="true">7.</strong> Na'el</a></li><li class="chapter-item expanded "><a href="08_alpha.html"><strong aria-hidden="true">8.</strong> Alpha</a></li><li class="chapter-item expanded "><a href="09_history_ouroboros.html"><strong aria-hidden="true">9.</strong> History and Ouroboros Stone</a></li><li class="chapter-item expanded "><a href="10_prison_island.html"><strong aria-hidden="true">10.</strong> Journey to Prison Island</a></li><li class="chapter-item expanded "><a href="11_histories.html"><strong aria-hidden="true">11.</strong> History & The Promised World</a></li><li class="chapter-item expanded "><a href="12_end.html"><strong aria-hidden="true">12.</strong> Finale</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="95_armories.html">Repairing the Armories</a></li><li class="chapter-item expanded affix "><a href="96_appendices.html">Appendixes</a></li><li class="chapter-item expanded affix "><a href="97_postscript.html">Postscript</a></li><li class="chapter-item expanded affix "><a href="98_references.html">References</a></li><li class="chapter-item expanded affix "><a href="99_terms.html">Terms</a></li><li class="spacer"></li></ol>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+                data-name="bmc-button" data-slug="wabinab" data-color="#FAFAFA" 
+                data-emoji=""  data-font="Cookie" 
+                data-text="Make a donation!" 
+                data-outline-color="#000000" data-font-color="#000000" 
+                data-coffee-color="#ffffff" ></script>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Xenoblade Chronicles: Future Redeemed</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="shes-gone-we-have-to-find-her"><a class="header" href="#shes-gone-we-have-to-find-her">She's gone! We have to find her!</a></h1>
+<p>A metallic-looking City surrounded by high, sturdy walls. It had the watchtower-like pillars at its corners, metal fences by the edges of the top floor. The tall entrance, capable of accepting tall vehicles to pass through, were closed. Just outside the entrance stood two figures, training. The third sat on a chair overlooking them. "Pliph" Simultaneously, they punched. "Hoigh hoigh! Hoigh! Hurgh!" And a series of movements followed. The old man watched attentively at Matthew and Na'el, finding any tiniest faults, if any.</p>
+<p>Grandad was old, all wrinkled, thick creasy eyelids with fluorescent green iris, white hair and white moustache.</p>
+<p>"<strong>HUAAAAA!!!</strong>" They drew back their fist and released their Qi{{footnote: internal energy}} as it evaporates off the surface of their skin. Matthew glowed green, Na'el bright orange. The Ouroboros symbol came into existence in their irises. Then, they punched, emitting a ball of energy forward. "Huuuhhh..." Finishing move returned their Qi to their Dan Tian{{footnote: 丹田}}.</p>
+<p>"Your power was expertly balanced. Well done. You've both made great strides." Proud of his praises, eh! "But a real battle is unlike anything else. You can't just hope for the best." He then stood up and walked towards them, signaling, "Come at me..." And he summoned his Ouroboros power to fight both of them.</p>
+<blockquote>
+<p>By the way, Grandad's name is <strong>Ghondor.</strong></p>
+</blockquote>
+<p>"Urghhh..." One hit at Matthew's belly and he fell to the ground. Na'el was exhausted.{{footnote: Grandpa finished with the Chinese stance for hello/bye after you fight someone, with fist on right, and left palm wrapped around it.}} Folded his arms, he asked, "Well?"</p>
+<p>"'Well'? Don't gimme that!" And he got up from the ground. "That was cruel, Grandad."{{footnote: It rhymes!}}</p>
+<p>"He's right." Na'el agreed, adding, "Countering the moment we unleash our power's just rude!"</p>
+<p>"<strong><em>When your concentration is lacking, the body, and spirit drift apart.</em></strong> Only when you've mastered the power of Ouroboros will you find balance. Nay, you will become one, with your very selves."</p>
+<p>Matthew asked, "Uh..., so, this, incredible- power- of yours... Anyone ever actually been able to master it?"</p>
+<p>"...Nay."</p>
+<p>Na'el: "Knew it. Even you fell short, Grandad?"</p>
+<p>"Mmm... My parents, however... It is said that they were a, breath away, from success."</p>
+<p>"The ones in the photo?" A guy dressed in black, with pointed chin, thin lips, laid beside the bed where his wife, with silver hair and cat ears, pointed chin, holding a baby in her arms.{{footnote: If you'd watched/read Xenoblade 3 main story, you'd know they're Noah and Mio, respectively. <strong>Translator's note:</strong> It's a wonder who named him Ghondor, though, considering that the other Ghondor hated her name.}}</p>
+<p>"Our great-grandad and grandma, right? That'll have been a proper while ago. <strong>I bet that's why.</strong> Everyone in the City must think we're a bunch of clowns."</p>
+<p>"Whuh? You think so?" Na'el was surprised at his viewpoint.</p>
+<p>"Yeah, like, 'get with the times!' We're stuck with these <em>wibbly</em> Ouroboros powers... <strong>Everyone's rocking those sweet new amps.</strong> It really opens up the options for your Blade. So yeah, nobody uses the Ouroboros stuff any more..."</p>
+<p>Grandad disagreed, "Nobody thinks we're clowns, Matthew." Then, he imitate, "'Woweeee... Those guys are some real sticklers for tradition, eh?' That's about the extent of it."</p>
+<p>"Yeah, but that's the same as calling us 'clowns'!"</p>
+<p>"Mmmmm... It is not. The very reason the City exists, is because, <strong>those</strong> who gained the power of Ouroboros, confronted Moebius long ago."</p>
+<p>Na'el added, "<strong>And</strong>, it's because of them that lots of soldiers were freed from the system, banded together... and then founded the City... Right?"</p>
+<p>"Mm."</p>
+<p>"We musta heard it dozens of times now. Eh?" Na'el said in a teasing tone.</p>
+<p>Matthew agreed, teasingly added, "Other kids got lullabies... Wish we could've traded places."</p>
+<p>"Hmph hmph..." laughed Na'el.</p>
+<p>"Mmm...."</p>
+<p>"I haven't forgotten... About how Mum and Dad... died in the last battle against Moebius, 15 years ago."</p>
+<p>"Mm..." Na'el agreed with him. "They gave us this. This time of peace we get to enjoy."</p>
+<p>Slightly nodding his head, Grandpa added, "And you must never forget that, you hear me? <strong><em>The only true end... is the moment that you give up.</em></strong>"</p>
+<p>"Yeah."</p>
+<p>Just then, a bunch of kids were running towards them, shouting, "<strong>Na'el!</strong>"</p>
+<p>They turned towards them, and she was smiling. Matthew commented, "<strong>Huh?</strong> So much for our time of peace."</p>
+<p>The leading kid, blonde hair, bright green iris, commented, "This is where you were! And you fighting with your grandad again? <strong>You can't do that!</strong>" Grandpa was just smiling and nodding watching them. "<strong>You promised!</strong> You said you'd play piano for us after the nap!"</p>
+<p>She knelt down to level her head with the kid's. "<strong>Ah,</strong> sorry, of course. I'll be with you in <strong>just</strong> a minute."</p>
+<p>Putting her hands around her waist, she rebutted, "<strong>No, not a minute! Now!</strong>"</p>
+<p>"Urggghhh... Yes, all right. I'm at your behest <em>huh</em>..." She turned to nod at Matthew and Grandad, and both adjourned her.</p>
+<p>While she walked off with them, many dancing except the leading girl which walked beside her, Na'el asked, "What song would you like?"</p>
+<p>"Gaur Plain!"</p>
+<p>Another kid shouted, "Tomorrow With You!"</p>
+<p>Yet another, "Bringer of Chaos, Ultimate!"</p>
+<p>"<strong>All</strong> of them?"</p>
+<p>"<strong>All of them!</strong>" All of them shouted.</p>
+<p>"If I must. From the top, then."</p>
+<p>"<strong>Yaaaaayyyy!!</strong>"</p>
+<p>"You can relax," he said as they were watching them off. "I'm on it. I'll protect her, I swear."</p>
+<hr />
+<p>"Mm mhm... Uhm..."</p>
+<p>"Mm hmm?" Still deep in sleep when sun's already high up. A coughing tone woke him up, opening his eyes and saw Nikol looming over him.</p>
+<p>"Well... Um, sir..."</p>
+<p>"Matthew's fine. Urghhh, arggghhh..." And he stretched, prepared to wake up.</p>
+<p>"Matthew, she's gone."</p>
+<p>"Huh?" What the heck are you talking about? Rubbing his eyes, he asked for clarification, "Who's what now?"</p>
+<p>"That girl... The soldier from Agnus, Glimmer." A was standing beside him to watch his reaction.</p>
+<p>And he no longer rubbed his eyes, jumped up from bed, shouted, "<strong>SERIOUSLY?!!!</strong>"</p>
+<p>Fully awoken, the three were looking at a path that leads to the other side of the battlefield. "When did it happen?" Matthew asked.</p>
+<p>As the only one who saw her left, she replied, "It'll have been shortly before dawn... Five o'clock, give or take."</p>
+<p>"Oh yeah? Five, huh?" Then he jumped on her, "<strong>Hey! You could've said something!</strong>"</p>
+<p>"You would have stopped her."</p>
+<p>"<strong>Well, no shit!</strong>"</p>
+<p>"This is her personal matter. Even the most impassioned speeches may fail to persuade."</p>
+<p>"Sounds like a loser talk." His hand folded, unhappy the decision she'd made.</p>
+<p>"I believe <em>you</em> said something to that effect."</p>
+<p>"<strong>Uh, did not!</strong>"</p>
+<p>"Did too. Like yesterday? 'I guess words aren't getting through to them.' Eh? You said it."</p>
+<p>And his eyes wide opened at the example she gave. "Urhhh...Ngh..." Couldn't rebut. Then, he put his palm over a fist, said, "Uh... Let's just get going!"</p>
+<p>Nikol questioned, "But where, to?"</p>
+<p>"<strong>After her, of course. Glimmer. If she meets with a colony, she's stuffed.</strong>"</p>
+<p>"Um... How stuffed, exactly?"</p>
+<p>"<strong>Might find out soon enough...</strong> Er, but <strong>not if we can</strong> help it. <strong>WE GOING OR WHAT?</strong>" And he took the lead, Nikol followed, while A watched.</p>
+<p>"<em>Huh...</em>" Not that she could change his mind when he'd made a choice.</p>
+<hr />
+<p>Passing through one campside, still on the barren path, A stopped and asked, "Matthew. Any clues as to where she might have gone?"</p>
+<p>He stopped and turned to her, "Huh? How should I know? Let's just comb the area, yeah? Leave no stone unturned!"</p>
+<p>"<em>Huh...</em>" What a suggestion. After shaking her head, she suggested, "If we assume she's trying to return to her own troops, she'll likely have headed north-west. That whole area is Agnian territory. It's very probable that a colony would be stationed there. Save for perhaps your hair, there's little need to comb anything. Did you follow that, Matthew?"</p>
+<p>"Wow, A, you are so clever.{{footnote: Ahahaha! You didn't even bother to analyze.}} <strong>Truly, your intellect knows no bounds.</strong> So, we go north-west then?" Seeing that Nikol was not saying anything, looking on the ground, he suggested, "You too, c'mon. You'll be safer if you stick with us."</p>
+<p>Reluctantly and hesitantly, "<em>Urhhhh...</em>"</p>
+<p>"All right, yeah, I know that might sound rich, coming from me... <em>But would you <strong>please</strong>, just take my word for it for now?</em>"</p>
+<p>"A-a-all right..." And so they have a direction.</p>
+<hr />
+<blockquote>
+<p><strong>Translator's note on environment:</strong> Falling waterfall down to a pond, where lush green trees and grass grew along its edge. The smooth part of the land reflects the moonlight shone to it, even in stormy weather. There laid other remnants that proved civilization existed long ago, but had been abandoned, dilapidated, and turned into ruins. Some giant leaves that stuck to a giant trunk glowed fluorescent green in the dark. The area where this glowing tree resides was thick with black fog. Red 'chains' (the seeds? the flowers?) hung from the tip of some branches of the glowing tree. Only one location do we see artificial light, but not near enough to ascertain what building it is. This, is <strong>Aurora Shelf.</strong></p>
+</blockquote>
+<p>{{footnote: This is also in the 2nd video only, environment talk that is.}}</p>
+<p>Reaching the area where the huge red-leaves tree standing amongst the lush greens, the red leaves glowed red hot; even falling leaves looked like burning flickers against the night sky. Matthew said, "Looking out at it like this, you really gotta admit, this world is <strong>crazy</strong> huge."</p>
+<p>"Matthew, the world truly is vast, far more than you'll ever know, and filled with mystery." The red glowing tree stood single on top of a ledge, where a colosseum-like remnants, just an arc left, circled around one side of it. The plain was hilly, and there were other tree silhouette that did not display itself against the night sky. "And while we're not currently in the position to travel it at our leisure... One day soon, you should let your feet walk it from end to end. You would stand to gain much from the experience." A suggested, adding, "Who knows? You may even discover a new land for the people of the City to call home."</p>
+<p>"Hrmmm... You were a rover then, A?"</p>
+<p>"Hah... You know, I may well have been."</p>
+<p>And he complaint, "<strong>Why</strong> is everything you say so damn elusive...?"</p>
+<hr />
+<p>Walking between ruins toward a 'dead end'{{footnote: from our point of view.}} during a stormy day, A was alerted: "Wait."</p>
+<p>"Huh? What is it, A?"</p>
+<p>Then, they saw a blue-green rhino coming at them. Nikol was alerted, "Monster...! Do you think the girl is fine?"</p>
+<p>"Unclear. I'd say for now, you should probably worry about yourself," A suggested.</p>
+<p>Matthew was excited. "Hah, this is great! <em>Gimme gimme!</em> Lemme have a bash at this fella!"</p>
+<p>"Don't get too heated up, Matthew." warned A. "This is the time for a synergy move."</p>
+<p>"Aw yeah, good shout! You better follow my lead though!"</p>
+<p>"Hah! Not if I can help it!" And they drew their weapons.</p>
+<hr />
+<p>As the final hit, Matthew used the Ouroboros power and punched it in the face, bottom to top, before it crashed onto the ground below. "<strong>BOOM!!!</strong>"</p>
+<p>"'Boom'? Hardly." And he turned towards her, which she complaint, "That there... was what you'd call gratuitous. The poor thing was within a cetri of its life."</p>
+<p>"This old chestnut? I was quick. We won't get rumbled."</p>
+<p>"You're aware we took out two Moebius yesterday? We could well be the targets of a manhunt as we speak."</p>
+<p>"<strong>Then we knock 'em down some more.</strong>" says he with full confidence, looking up at the sky.</p>
+<p>"There's no guarantee that you'll keep winning."</p>
+<p>"Nah, but <strong>we</strong> will."</p>
+<p>"<em>Think back on what you know.</em> Not all Moebius are like those two." Remember the golden face that stabbed his grandad in his chest? Even his grandad, whom wielded a far more immense power than his, was no match for him.</p>
+<p>"<em>Hmph...</em>"</p>
+<p>Shaking her head, "Hah..."</p>
+<p>"Mm?"</p>
+<p>"What's up?" Matthew asked Nikol, hearing his sigh, and both turned their heads toward him.</p>
+<p>"No, nothing..."</p>
+<p>"Ungh?"</p>
+<p>A pushed, "Do you have something to get off your chest?"</p>
+<p>"Ngh..." He looked down on the floor, not saying anything.</p>
+<p>"You don't have to hold your tongue," A urged. "We were the ones who extricated you. You may hold us <strong>fully</strong> accountable."</p>
+<p>Then, with some reluctance, he softly raised his finger and pointed at Matthew's gloves. "Mm."</p>
+<p>"Ah? These gloves? You want 'em?"</p>
+<p>"<strong>No</strong>, not what I meant... That Art... What was it?"</p>
+<p>"Uhh, which Art?" After thinking for a moment, he recalled, "<strong>Ohhh,</strong> you mean the Ouroboros power? Is that it?"</p>
+<p>"'Ouro-boros'...?"</p>
+<p>A: "First time you've seen it. Nothing weird about being curious."</p>
+<p>"It was just... wow..."</p>
+<p>Matthew don't understand, "But hold on a mo'{{footnote: 'moment'.}}. You've got Blades and Arts too. Pretty much the same thing."</p>
+<p>With low tone, he denied, dropped his head, "Not me... I can't..."</p>
+<p>"Can't... what?"</p>
+<p>A explained, "He means he can't summon a Blade. Surely you must have realized given the way he's been fighting." That's the box and arms behind him. "I hear it can be an issue with some soldiers."</p>
+<p>"Ngh..."</p>
+<p>Matthew was optimistic, "Uh, still, you know. All part of life's rich tapestry. <strong>No big deal</strong>, am I right?"</p>
+<p>"Ngh..." He's not feeling good.</p>
+<p>"Hm?"</p>
+<p>"I couldn't take them... with these. Not like you did. <em>No way.</em>"</p>
+<p>"I don't follow. Uh..." He looked to A for explanations. After all, she's the one that can read emotions more clearly than him.</p>
+<p>"He's talking about us defeating the Moebius."</p>
+<p>"Mm..."</p>
+<p>"Ohhh, now I get it. <em>Think you got it all wrong, though.</em>"</p>
+<p>"Wha-...?"</p>
+<p>Walking near him, he explained, "You have it now. Inside you both. This power."</p>
+<p>"Hm?"</p>
+<p>"<strong>Remember? Back when I freed you</strong>, with a burst of light." That's when their soul went out of their cask, and their iris changed from Flame Clocks to Ouroboros symbol. "<strong>Anyone who gets touched by that light</strong>... inherits the Ouroboros power. That's the way <strong>we</strong> got it too."</p>
+<p>"<strong>What, really?</strong>" He couldn't believed his ears.</p>
+<p>"Uh-huh. With a little work, I'll be able to draw out its true power..." He grip one of his hands, looked at his gloves, continued, "And then in theory, I'll be able to free others without even having to destroy their Flame Clocks. Well anyway, the rest's all up to you. <strong>It's easy. You'll get the hang of it in no time.</strong>"</p>
+<p>Then, he looked at his own hands. Can he, one who can't summon a blade, really can wield such immense powers?</p>
+<p>"Think about Ouroboros power is, it was created so we could smash up Moebius cores."</p>
+<p>"And those are... what?"</p>
+<p>"Their shiny chest whatsits. You destroy one, and it takes 'em clean out. See, my grandad's pops... He used that power, <strong>soon</strong> as it came to be, and made it so that us <em>City</em> folk... would hand it down, through the generations."</p>
+<p>"'Grandad's'...? And what's a, 'pops'...?"</p>
+<p>Folding his hands, "Ohh, sorry... Long story short... All this business went down, about, 70 years ago, or thereabouts."</p>
+<p>"Right..."</p>
+<p>He was looking down again, and Matthew raised him back. "<strong>Hey, Nikol.</strong>"</p>
+<p>"Hm?"</p>
+<p>"I'm gonna be... frank with you here."</p>
+<p>"Mm..."</p>
+<p>"Don't think yourself a burden because you ain't one. We've all got our strengths and weaknesses. No big deal. Yeah?" And he tapped him quite hard on his shoulder.</p>
+<p>Nikol looked at the hand tapped on his shoulder, "Mmph..." But he wasn't looking up yet. Looks like it requires time for it to sit in with him.</p>
+<hr />
+<p>Such scene was already tracked by Moebius. Watching on a cinema screen in the dark room full of chairs (like a real cinema theater), the golden mask whom stabbed his grandad stood in the central alleyway, watching their interactions. The floating guy during the starting scene, fighting alongside Shulk and the other guy, against Alvis, also seated himself in the theater. Both said nothing, only watched quietly.</p>
+<hr />
+<p>Tracking up slope, among lush green grasses, between tall cliff rocks, Nikol suddenly stopped, calling for their attentions, "Um... ex-cuse me?"{{footnote: Behind them, there was a small waterfall to Nikol's 5 o'clock.}}</p>
+<p>"What's up, Nikol?" asked Matthew.</p>
+<p>"Well, um..." He pulled the straps that held his mechanical hands up, perhaps due to his nervousness.</p>
+<p>Walking nearer to him, Matthew urged, "<strong>Come on, man. Enough with the umming and ahing, spit it out!</strong>"</p>
+<p>"Sorry..."</p>
+<p>"Matthew... You could have chosen your words more carefully."</p>
+<p>"<strong>Ah! Arr, Wait, uh, scratch that!</strong> I just meant that you shouldn't be afraid to speak your mind...!"</p>
+<p>"I'd... like- to make some adjustments to the operation of my backpack arms. There was an issue with mobility in the last battle against the monster... I'm... sure there'll be more fighting ahead, and I don't want to slow you guys down..."</p>
+<p>"Well now..." that kept A thinking.</p>
+<p>"<strong>Is that all? Relax, no worries! We can take a load off</strong> somewhere and let you tinker."</p>
+<p>A scanned for the direction they were walking, suggested, "There's an open space over there. It should serve for a rest spot."</p>
+<p>"Oh, er, thanks very much..."</p>
+<p>Matthew added, moving one step closer to him, "And, hey, it came out weird earlier, but I really meant it -- no need to be shy with us, or hold anything back. You're not our hostage or prisoner. You know that, right?"</p>
+<p>"Um... yeah... Thank you."</p>
+<p>And he just showed A how he'd done it. She slightly nodded.</p>
+<hr />
+<p>Beside a campfire under a tree by the rocks, they watched as he tinkered with the mechanism, cranking the nuts and bolts and screws here and there. A observed, "I'm quite surprised. He's more flexible than I thought. He comprehends his situation, does his best to adapt."</p>
+<p>"Oh yeah? <strong>I find him kinda</strong>, I dunno, meek. And he's not much of a chatty fella..."</p>
+<p>"All in life's rich tapestry, no?"</p>
+<p>"Ehhh..."</p>
+<p>"People are people. Not everyone's going to have a personality as <em>straight-forward</em> as yours."</p>
+<p>"Uhh... You takin' the mick?"</p>
+<p>"No. Call it praise... Anyway," and she changed the subject. "The real issue is our other friend."</p>
+<p>"A..."</p>
+<p>"Matthew?"</p>
+<p>"I guess you... 'foresaw' all this, didn't you? Right from the start?"</p>
+<p>"Yes, but you needed to experience it. I'll take the blame."</p>
+<p>"<em>Ah, man...</em> <strong>Anyway. We'd better go and find her.</strong> Before the gal gets herself..."</p>
+<p>"Yes."</p>
+<hr />
+<p>At the other side; also still the same region but deeper into the 'forest' (sparse trees but denser than where Matthew and the others rested), she was panting heavily as she ran and ran and ran. "Urgh..." She touched her iris to scan the surrounding; but all it said was 'Communications down.' "Uhh, no good... <strong>Still a bit farther</strong> till comms range. <strong>HUH!!!</strong>" There was a shadow that ran past her front as she was checking her iris. Alerted, she didn't see what it was.</p>
+<p>She was slightly tensed, but not yet defensive{{footnote: i.e. not yet pulling out her blade.}}. She looked to her left, to her right, scanned her surroundings. "<strong>HUH!!!</strong>" More footsteps and there were volffs{{footnote: Wolf-like creature with red manes}} that surrounded her front. "<strong>VOLFFS?!!!</strong>" And she drew her weapon to face it.</p>
+<hr />
+<p>Down fell the volffs; she sighed with relief after confirming the danger's over, sheathing her weapons. Suddenly, a roar came from behind as a volff poached onto her. Subconsciously, she redeemed her weapons and the power of Ouroboros naturally glowed over her, knocking off the volffs with ease. There was a dimmed outline of her soul behind her as she used the power. After sheathing her weapon once more, she looked at the killed volff, wondered aloud, "Wh... what? How did...?"</p>
+<p>She looked at her hands, as if it had something different. No, nothing. She activated her iris to scan for any unviewable differences. Still nothing. But then, she recalled what Matthew said earlier,</p>
+<blockquote>
+<p>"<em>And your Iris Clocks... They're gone, aren't they? You're done. No need to fight any more. No need to take life, or fear its loss.</em>"</p>
+</blockquote>
+<p>"No way... I-it's true... <strong>Huh!</strong>" She was alternating between denial and acceptance until some sound of mechanics walking behind the rocks alerted her conscious. Based on her experiences, these were "Engines... Levnises?" She quietly get behind the rock and peered over it, seeing some soldiers wearing black attires. The robots resembled more like humans than Kevesi's insects, or Agnian's floating ones; and their size were far smaller than the former two, only about 1.5x the size of a normal human. These were scanning the surrounding, together with some soldiers, while other soldiers were speaking with each other. "But they're... not Kevesi Levnises. What's that gear? From the City... like the ones we studied in the textbook? <strong>HUH!!</strong>"</p>
+<p>She turned around and found herself surrounded. Footsteps were not heard when her attention was elsewhere. One of the guy wearing goggles, black gelled hair, fair skinned, wearing leather-looking gears, commented, "Ah-uh... An Agnian soldier?"</p>
+<p>Another female, also wearing goggles, with green short hair, added, "Out here all alone, eh?"</p>
+<p>"She's probably scouting out territory." A female walked forward in between them, towards Glimmer. Then, she looked at another blonde hair women, and they nodded to each other. The latter dashed off, while the female, tanned skin, dark hair, brown iris, with two ponytails, ordered, "We'll capture her for now, get her unit's location. Don't wanna be getting into fights with colonies right now." And Glimmer drew her blade to faced 3 soldiers alone.</p>
+<p>"Urgh..."</p>
+<hr />
+<p>The female dashed towards Glimmer, while she blocked; but she easily knocked her blade up into the air, automatically sheathing it. No time to think of losing her weapon; she'd made another slash at her, to which she jumped backwards and dodged. It did cut her wrist, though, and what she was wearing, a symbolic decorative made of rope tied into a specific symbol, and maintained its shape with a tightened knot made of jade, dropped to the floor. "Ungh." And she pressed against where she was injured. Other soldiers closed in to ensure her surrounded.</p>
+<p>"That's enough." The female ordered, walking past the surrounding soldiers towards her. Pointing her spear at her, she ordered, "You better stop resisting... or I will end you."</p>
+<p>"<strong>GRRRRR...</strong>" And with her anger, the Ouroboros symbol came to light. She noticed the symbol and was full of surprise.</p>
+<p>"Ahhh! <em>You're...</em>"</p>
+<p>"What's wrong, Panacea? Is there a problem?" A male voice sounded from her left. Attention diverted, everyone lowered their weapons. Anger faded and Ouroboros symbol concealed. The guy, his right hand covered inside his batman-like hood, or maybe he'd lost that hand. He had long hair, untied, blonde.</p>
+<p>"Ah! Teacher!"</p>
+<p>"An Agnus soldier. So young." She hadn't managed to speak anything before he noted Glimmer himself.</p>
+<p>Glimmer's eyes tightened. Then, Panacea explained, "Teacher, she seems to be one of <em>them</em>."</p>
+<p>"'Them'...?"</p>
+<p>"The Clockless..."</p>
+<p>"<em>Huh</em>..."</p>
+<p>And the other soldiers now mumbled behind the scene. "No Flame Clock..."</p>
+<p>"So she's out of the loop, huh...?"</p>
+<p>"Who could've done it...?"</p>
+<p>The male: "Strange..."</p>
+<p>One guy, with tanned skin, but lightly tan in the middle, darker tanned to both side of his cheeks and half of his eyes, with a golden line that run in between the darker sides and the lighter sides, green iris, short dark hair, asked, "Whaddya wanna do, Shulk?"</p>
+<hr />
+<p>They were walking on the lusher green ground, with all rocks lying around, and the walls of rocks curved a semicircle, plus some bushes green or autumn-like, when Matthew commented, "Uh, A... You're totally sure we're going the right way?"</p>
+<p>"The region beyond here, it's under Agnian control. If we posit she wanted to rejoin her people, there's a high chance she passed through here."</p>
+<p>"All right, I trust you..." But the tone wasn't very believing.</p>
+<p>Nikol's eyes was scanning the surrounding when he noticed some anomalies,  "<em>Oh!</em>"</p>
+<p>"Wassup?" They followed where his eyes were and saw where Glimmer was hit before.</p>
+<p>"Signs of battle." noted A, then scanned for more info, "Not a full-scale army engagement... Something, smaller..."</p>
+<p>"<em>Huh...</em>" Matthew walked closer to the darkened ground, taking out his terminal to check for signals. "There's a reading, but it's faint... Which means, refugees from the City?"</p>
+<p>After tucking it back into his pocket, A walked to line beside him, "Perhaps. <strong>That</strong> or the girl could have been the source."</p>
+<p>"<em>Huh...</em>"</p>
+<p>Nikol bent down to look for more details, calling for their attention to "Here..." They saw what Glimmer had dropped on the ground during the battle before.</p>
+<p>A remembered, "Definitely hers."</p>
+<p>Matthew: "So... she really was here."</p>
+<p>"No husk, though. It likely means... she was taken..."</p>
+<p>"You think, maybe she killed 'em all? Unlike the soldier kids, we don't leave a trace after we kick the bucket."</p>
+<p>"That's not possible. Given the evidence, they had the numerical advantage."</p>
+<p>"Right, OK... So we follow 'em. If it <strong>is</strong> survivors from the City, they might know... something about Na'el."</p>
+<p>"Indeed... I'm curious too."</p>
+<hr />
+<p>Their steps were easy and quick, even as grass brushed through as obstacles. Not Nikol, though. His steps were heavy, lumping forward, counting each. He held on to his mechanical arms, the weight pressing to topple him backwards. He said nothing, continued the journey if all wanted to. But Matthew saw, over his shoulder, the poor boy, and suggested aloud, "A. High time for a break."</p>
+<p>She was surprised that someone so insistent would be willing to pause, turned to look what's up with him, and saw him closing in to them, stopping a distance to catch his breathe. "Got it." And he wiped the sweat off him, and they went off to set up camp.</p>
+<hr />
+<p>The exhausted boy rested his back on a giant rock that protruded from the cliff wall, laying his mechanical arms beside him. "Hoh..."</p>
+<p>"I feel kinda guilty." He looked up and saw both approached him, with Matthew talking, "For freeing you from the cycle like that."</p>
+<p>"S'fine." And he looked back down.</p>
+<p>Folding his arms, "No, but... I just can't stand to see it. You guys, fighting all the time."</p>
+<p>"Huh..."</p>
+<p>"You're not really great with strangers... are you, pal?"</p>
+<p>"Mmm..." He shook his head.</p>
+<p>"D'you wish you could go back to your colony?"</p>
+<p>"If I did, I'd have to fight again."</p>
+<p>"<em>Mm.</em>" He gave a slight nod.</p>
+<p>Looking on the floor, thinking, "We're in... the same boat."</p>
+<p>"That so...? Well then, <em>I guess that makes us friends, eh?</em>"</p>
+<p>"Friends?" He tilted up his head and saw Matthew knelt down in front of him on one knee, to level with him. "Ahhhh... I wonder... How she is..."</p>
+<hr />
+<p>Tied to a tree at night. The two City folks standing in between her talked with each other. "Umph..." She grumbled, raised her head as she saw Shulk and Panacea approaching.</p>
+<p>"Release her," ordered Shulk. One of the guys immediately took action.</p>
+<p>"<strong>Huh? But, Teacher!</strong>"</p>
+<p>"She's already been freed from the Flame Clock. And that makes her a friend."</p>
+<p>"'Friend'...?" Mumbled Glimmer in distrust, still lingering in her old faction. She stood up after her rope is gone.</p>
+<p>"All right, then. I'd like you to answer a few questions for me. May I?" Glimmer puffed out some air. He didn't wait for her, requested, "First we'll need your name, and the colony you belonged to."</p>
+<p>"Hmph." And she looked away, refusing to say anything. But Shulk looked down and saw her dog tag attached on her arm. "So your name is 'Glimmer'. Colony Gamma. Assigned to the field support platoon, yes?"</p>
+<p>"Argh urgh..." And she quickly covered her dog tag with embarrassment.</p>
+<p>"That's far. Gamma's territory is nowhere near here. <em>So what are you doing out here all alone? Tell me who destroyed it.</em>"</p>
+<p>"<strong>Huh!</strong>" And she looked at him, surprised.</p>
+<p>"Your colony's Clock, I mean. <strong>That isn't military intel.</strong> Surely you could tell me that, no?"</p>
+<p>"...Weirdos. Two of them."</p>
+<p>"'Weirdos'...?"</p>
+<p>"They waded straight into our battle with Keves, a-a-and then..."</p>
+<p>"And the Consuls?" Panacea asked. To which Glimmer shook her head. "Pffff... You're saying they took out Moebius? That not too shabby. Teacher's level."</p>
+<p>"What were these two like?"</p>
+<p>"One had... silver hair. Blue garb. Cut the Clock clean through with a red sword."</p>
+<p>"Right..." He looked down for a while to search through his memory for anyone matching the description, then asked, "And the other?"</p>
+<p>"Some guy, <em>didn't seem too bright.</em> Black clothes, used knuckles. He's the one that defeated the Consuls, with the power of some weird light." And she looked down at her hand, remembering that she now had it too.</p>
+<p>"Hang on a sec." Someone from behind, big buff guy with tanned skin wearing black clothes approached her at such description. "You're serious about that? That guy. Did his hair... kinda look a bit like this?" He used both his hands to make some shape behind him.</p>
+<p>"Urg... Mmm..." Glimmer agreed.</p>
+<p>And he got excited, "<strong>It's Matthew. Has to be him. That's mad. So he's still alive!</strong>"</p>
+<p>"Matthew, eh?" Shulk asked.</p>
+<p>"Ah, yes. He's a guy from the City. W-we were in Procurement together. If someone's been beating up Moebius, I can't think of anyone else but him."</p>
+<p>"He's that strong, is he?" Shulk was surprised.</p>
+<p>"Mm." The buff guy agreed.</p>
+<p>"...You people, you're from the City?" Glimmer asked.</p>
+<p>Panacea ordered, "Quiet. Did I say you could ask questions?"</p>
+<p>"Mmph."</p>
+<p>Shulk: "No, it's all right. You're correct, we do have Citizens among us... but there's a bit more to it. <strong>We</strong>- are- the Liberators. We seek out survivors from the City."</p>
+<p>"Survivors?"</p>
+<p>"That's right. In order to protect this world..."</p>
+<p>"Hmph..."</p>
+<hr />
+<p>Darkness with faint glimpse of moonlight is where she rested herself. Not far from her, at the corner, was two City folks, standing beside a fire pot{{footnote: A pot put on top of a stick that stuck to the ground, and charcoal and other burnable materials put into the pot and light it on fire, to act as a traditional lamp post before the invention of light bulb.}}, talking to each other, perhaps also watching over her. She pulled her feet and wrapped his arms around them, putting down her head, alone in the cold, damp place. "Huh..."</p>
+<p>'Beep beep' "<strong>HUH!!</strong>" Her head bounced up. She immediately activated her iris, saw the status changed to 'Communications online'.</p>
+<p>Concurrently, Panacea sat herself at a table with an ether lamp in the middle, surrounded by tents and centered by a campfire, heard 'beep beep beep' while she was looking at something else. "Hm? Comm signals...?" The Comm device she put on the table keeps beeping. She wondered, "<em>Who'd call at this time...?</em> <strong>Oh!</strong>" Then, she jumped up, realized something, "<strong>One of them?!</strong>"</p>
+<p>Back to Glimmer, she received new information, reading, 'Colony Eta approaching.' "He's here." So she knows. She made up her choice, stood up, approached the two City folks outside with her weapons drawn, prepared to engage.</p>
+<p>After laying the two down, she guiltlessly dashed for the exit. Or perhaps, she was just too overwhelmed with her desires she cannot feel her guilt, if there are any.</p>
+<hr />
+<p>Nikol, A, and Matthew were far asleep beside the campfire when the ground started vibrating vehemently. The rocking ground woke Matthew up, "<strong>WHOA!!!</strong>" He jumped up from bed and tried to make sense of what's happening, and the source of the vibration, "<strong>W-what the...?!</strong>"</p>
+<p>"Earthquake?" Nikol stood up, asking. His wore back his mechanical arm, prepared for battle.</p>
+<p>"Wrong." A distinguished. "There's some kind of giant entity on the move." Her heightened sense already found its source, signaled, "Over there." And she immediately make a dash for where they were to continue on earlier in the afternoon but was too exhausted to.</p>
+<p>"Huh?" No time for them to react; they immediately acted by following behind her.</p>
+<p>Arriving at the cliff where the road twisted to either left or right{{footnote: One didn't see, and it's not important anyhow.}}, a giant entity with green-yellow lights on its surface were floating to the far side of the protruding cliff. To reach that protruding cliff, they had to turn right and follow an arc.</p>
+<p>"<strong>A Ferronis!</strong>" shouted Matthew. "<strong>This late at night? Which colony is it?</strong>"</p>
+<p>A commented, "It's odd. It should have a crew of soldiers but doesn't."</p>
+<p>Nikol noted, "Looks like it's heading to the east."</p>
+<p>She was triggered, "Huh! <strong>After it, Matthew.</strong>" We're not sure what she sensed, or foresaw, but...</p>
+<p>"<strong>YEAH!!!</strong>" And he lead the way on the arc, the rest followed.</p>
+<hr />
+<p>Even late at night did Shulk not stopped training, practicing his sparring skills, until Panacea interrupted him, dashing in while shouting anxiously, "<strong>We've been had, Teacher!</strong>"</p>
+<p>"Huh?"</p>
+<p>"The girl. She's snuck off!"</p>
+<p>"You're kidding... The watch?"</p>
+<p>"She knocked them clean out. Nothing that'll leave a scar."</p>
+<p>"Indeed." There's little time to act. He had to decide what to do next now. "Let's find her. She'll likely be heading for a colony. They'll erase her on sight."</p>
+<p>"<em>Dammit. More babysitting.</em> Told you we should've given her the full lowdown..."</p>
+<p>"<em>I'm sorry...</em> I thought it'd be too much for her to take in. I was hoping to ease her into it... <strong>AHHH!!!</strong>" And then the ground started shaking.</p>
+<p>"<strong>Ah! Teacher!</strong>" Panacea tried to fathom what's going on, calling out to her soul anchor.</p>
+<p>He raised his tone, "<strong>Well now... This isn't good. Panacea, rouse the others now! READY FOR BATTLE!!!</strong>"</p>
+<p>"On it!"</p>
+<hr />
+<p>Glimmer had almost arrive the protruded cliff herself. She ran and ran and ran, not forgetting to look behind her for any signs of pursuers. None, great! Upon arrival, she already say Colony Eta's Ferronis soon halting to a stop in a minute. She stopped and caught her breathe while waiting it to come nearer.  "Made it." That was relieving. Now she could return to her old life. Now she could be rescued. Now her desire, her wishes, would be fulfilled!</p>
+<p>Colony Eta's Flame Clock burned ragingly; its flames occupied more than half of the rim. The two blue lights, like the eyes of a ghost, located at its chest, was blinded following the turning on of a white spotlight. So strong and bright was the lamp that it's comparable to that used in football matches or stadium for outdoor night events. The sudden change of illumination wasn't friendly to her; she raised her elbow to cover it while her eyes slowly get used to it. "Ung ah..."</p>
+<p>After she got used to the light, she shouted to Eta, "<strong>I... I'm Glimmer, from Colony Gamma! I was a member of the field support platoon! I lost my colony in the fight with Colony 5. I-I've been... reconnoitering solo!</strong>" Then, she signaled behind, "<strong>Beyond here, there's a camp!</strong>" Not that she could continue speaking; Eta already fired a beam at her. The long history of war had trained her subconscious to dodge immediately, but the beam hit the floor with such strength it rolled her into the air, bumped against the floor a few times, rolled along, before halting to a stop. "Urgh..."</p>
+<p>"Ung urgh..." She had some time to recover, but the spotlight did not wait for her. Shining on her, she immediately recuperated the strength to get back on her feet, repeating, "I... <strong>I'm telling you... I'm Glimmer... from Gamma! I'm not your enemy! LISTEN TO ME!!!</strong>"</p>
+<p>The last sentence she shout, the voice on Eta annoyingly don't bother listening to her, "Oh but you are, pet."</p>
+<p>"Huh?" She was so confused, both because of what he said, and because of him not respecting her, speaking while she was speaking.{{footnote: Yeah, because human can't listen when they speak -- multitasking such way is false. When you speak, your brain is thinking and arranging what you're to speak, shutting down the faculty by drawing away almost all the attention that's used to make sense of the sound that arrived at your ears. That's why, when you speak and your hands are doing something, you only speak around 3 words before having to pause, because your brain keeps switching tasks to do 2 things at a time, repeatedly.}}</p>
+<p>The Consul teleported on top of a platform on Eta, showing himself, explained, "Soldiers who've lost their Flame Clocks have outlived their purpose."</p>
+<p>She can't believed what she'd heard, "My... Lord Consul...!"</p>
+<p>"<em>You wanna know why? Because you're no longer good for anything.</em> <strong>Ohhh, beg pardon. You gave me the enemy's lo-ca-tion, didn't ya? Then I suppose</strong> you were good for something... <strong>But your fate</strong> is erasure. <strong>G'NIGHT!!!</strong>"  And another beam prepared to launch at her.</p>
+<p>Her hopes shattered. All she'd come for nothing. Her colony, her faction, no longer accept her. Where she put hope, was now her desolation. Step by step, she drooped back, all hope lost. "<strong>Ah...!</strong>"</p>
+<p>"<strong>What are you doing?! MOVE!!!</strong>" Shulk had arrived at the scene quick enough, saw she was frozen along the path of the beam, shouted but she would not act, brain-dead. He managed to reach her on time, hugged her, and rolled on the other side with her, just as the beam slashed the ground, leaving a line of burning dirt and grass remnants, emitting black soot, polluting the air.</p>
+<p>That's not the Moebius's concern, though. The spotlight changed location again, at the two. Holding over her shoulders, he asked, "Are you OK?" He was looking at the Ferronis, not at her, but he explained while she was looking at him,  "This is what I wanted to protect you from. Now you see, this is the true nature of the Consuls."</p>
+<p>"Ngh..." Nothing hurts more than the heart.</p>
+<p>He then stood up, withdrew his weapon, the Monado, while Glimmer had some time to recuperate on the floor. Too much for her.</p>
+<p>"Who're you...?" asked the cowhead Moebius.</p>
+<p>"This wasn't the compact..."</p>
+<p>"<strong>'Compact'?</strong>"</p>
+<p>"The one with Z. We vowed a ceasefire. Not to interfere until matters were resolved."</p>
+<p>"Ah yes. I guess Lord Z did order us not to get involved or some such... But that was before..." and he turned off the spotlight. "<strong>Before two of my comrades were slain without remorse! Now things are personal!</strong>" And he transformed into his Moebius form, emitting vast red-black fog from the surface of his body. He then controlled Eta to started moving, preparing for attack.</p>
+<hr />
+<p>The three still hadn't arrived at the scene; the arc was too large to cover by legs. As fast as they can, the speed of sound traveled faster. Boom, bash, clash. "They're fighting... <strong>Get ready!</strong>" Not far now. They could already see the lights from the weapons.</p>
+<p>"There!" Matthew saw Glimmer behind Shulk and some other City folks. "But what are those other guys all about? Never seen 'em before." He's talking about Shulk.</p>
+<p>A seemed to recognize, or maybe not, but that's not for now. "We can talk about it later. We're joining the fray!"</p>
+<p>"<strong>HO-HOH!!!</strong> Thought you'd never ask, hah!" And they prepared to battle beside the others that're already battling.</p>
+<hr />
+<p>Halfway fighting, Shulk had time to ask, glancing over his shoulder, "Who're you guys...?"</p>
+<p>Eyes on Eta, Matthew replied, "Sorry, man. Stealin' your show. I'm Matthew, and this is A. Oh, and he's Nikol." Where he signaled, he peered over his shoulder to refer to who he's referring to. "We had a run-in with your friend Glimmer over there. Couldn't just let her split, y'know."</p>
+<p>"Wait, so then you're..." He was focusing on A, and A looked back at him. He saw the plus-shaped earring she wore. "Ah!" A nodded back at him, not speaking anything. But he already knew.</p>
+<p>The Moebius realized, "So, this is the so-called 'Ouroboros power'? Now I see. So that's how you were able to kill a Moebius, is it?"</p>
+<p>"<em>You ain't see nothing yet, bub. How about I give you a demo from up close?</em>"</p>
+<p>"That's an awfully mean grimace you're giving me there. I do somethin' to ya? I haven't the faintest idea why you'd be so mad at little old me..."</p>
+<p>"<em>Well, maybe you don't... But <strong>I</strong> sure as hell do!</em>" He recalled how the golden mask stabbed his grandad in his chest. "I hate you so much, a <strong>thousand deaths wouldn't bring me peace!</strong>"</p>
+<p>Even Glimmer looked up at him. "Ungh..." Both her and Nikol wondered why he felt so angry.</p>
+<p>A tried to soothe him, "Matthew. Easy now. Rage blinds you."</p>
+<p>"We've been through that one before! Thing is... Anyone who acts all high and mighty like that... <strong>needs a bruisin'!</strong>" And he summoned his Ouroboros power to evaporate off the surface of his body.</p>
+<p>"<strong>Wooooowwwwww!!!</strong> Big words! I'd love to see you try. And I've got just the ticket to make it reeeeeaaallll interesting!" And ended with the flick of his finger.</p>
+<p>"What now...?" The ground started shaking and another Kevesi Ferronis joined beside Eta, coming from below, hidden in the cloud sea before.</p>
+<p>Panacea noted, "It's another Ferronis!"</p>
+<p>The Moebius teleported in between the two Ferronises, floated mid-air, and started releasing tremendous power that co-joined both Ferronis from the middle. The side of both Ferronises melt as the 'nerves' made of such black fog power pierced itself into the sides, like the roots of a mangrove tree piercing deep into the ground, while some of its roots floated above ground. Both Ferronis slowly came together, closer and closer, until they attached, using the Moebius as glue.</p>
+<p>"What the hell is that?! <strong>Gotta be shittin' me!</strong>" asked Matthew.</p>
+<p>"<strong>Hahaha! 'Ey up, have summa this!</strong>" And both Ferronis fired thousands of rays at an angle in front, attacking all grounds. Blocked or dodged the people did. Those who can't, scream and rolled. That included Glimmer, whom tried to get on her feet after rolling a distance. "Heheh... <strong>Well, kids? How'd you like them apples? I put two Ferronises together to double my power. How's about that for a bloody breakthrough?!</strong>" He didn't wait for them to stand on their feet, announced, "<strong>Righto... This time round...</strong>" and he scanned for his next target, and found Glimmer, "<strong>Let's <em>concentrate</em>!</strong>" And both of the cannons targeted her. It'll take some time to gather the energy.</p>
+<p>Matthew noticed, "On Glimmer?"</p>
+<p>Nikol already took action, dashed at her, "<strong>Careful!</strong>" He stood in front of her and wrapped his mechanical arms around to shield the incoming beam. Bright light blinded the others, concealing their life and death status. The intensity gradually reduced, where Glimmer realized she's still alive.</p>
+<p>"Hoh!" She looked up, and indeed, she saw the boy. But his hands wouldn't have chance against the intense beam. Someone huge standing in front of him was the real culprit to the scene.</p>
+<p>"I like your attitude, kiddo." It was the guy standing beside Shulk when they were fighting Alvis long time ago.</p>
+<p>"Huh?" He lowered his mechanical arm a bit to see who he was.</p>
+<p>"Leave it to Uncle Rex." He twisted his sword and broke the beam, shining another bright light at others watching. The bright turquoise green of his sword against the dark night revealed, and "I'll show 'em a thing or three!"</p>
+<h3 id="footnotes"><a class="header" href="#footnotes">Footnotes:</a></h3>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="02_nikol_and_glimmer.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="04_what_choice.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="02_nikol_and_glimmer.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="04_what_choice.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

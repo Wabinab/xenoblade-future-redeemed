@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>What Has Riku Got For Us? - Xenoblade Chronicles: Future Redeemed</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Xenoblade Future Redeemed translated from video to words.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00_preface.html">Preface</a></li><li class="chapter-item expanded affix "><li class="part-title">Main Story</li><li class="chapter-item expanded "><a href="01_introduce_matthew.html"><strong aria-hidden="true">1.</strong> The Place Where All Began</a></li><li class="chapter-item expanded "><a href="02_nikol_and_glimmer.html"><strong aria-hidden="true">2.</strong> Meeting New Friends</a></li><li class="chapter-item expanded "><a href="03_pursuing_glimmer.html"><strong aria-hidden="true">3.</strong> She's gone! We have to find her!</a></li><li class="chapter-item expanded "><a href="04_what_choice.html"><strong aria-hidden="true">4.</strong> Father and Son, Father and Daughter, A Conversation Clears The Wall Even Between Former Enemies</a></li><li class="chapter-item expanded "><a href="05_way_home.html"><strong aria-hidden="true">5.</strong> On Their Way Home</a></li><li class="chapter-item expanded "><a href="06_Rikus_workshop.html" class="active"><strong aria-hidden="true">6.</strong> What Has Riku Got For Us?</a></li><li class="chapter-item expanded "><a href="07_nael.html"><strong aria-hidden="true">7.</strong> Na'el</a></li><li class="chapter-item expanded "><a href="08_alpha.html"><strong aria-hidden="true">8.</strong> Alpha</a></li><li class="chapter-item expanded "><a href="09_history_ouroboros.html"><strong aria-hidden="true">9.</strong> History and Ouroboros Stone</a></li><li class="chapter-item expanded "><a href="10_prison_island.html"><strong aria-hidden="true">10.</strong> Journey to Prison Island</a></li><li class="chapter-item expanded "><a href="11_histories.html"><strong aria-hidden="true">11.</strong> History & The Promised World</a></li><li class="chapter-item expanded "><a href="12_end.html"><strong aria-hidden="true">12.</strong> Finale</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="95_armories.html">Repairing the Armories</a></li><li class="chapter-item expanded affix "><a href="96_appendices.html">Appendixes</a></li><li class="chapter-item expanded affix "><a href="97_postscript.html">Postscript</a></li><li class="chapter-item expanded affix "><a href="98_references.html">References</a></li><li class="chapter-item expanded affix "><a href="99_terms.html">Terms</a></li><li class="spacer"></li></ol>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+                data-name="bmc-button" data-slug="wabinab" data-color="#FAFAFA" 
+                data-emoji=""  data-font="Cookie" 
+                data-text="Make a donation!" 
+                data-outline-color="#000000" data-font-color="#000000" 
+                data-coffee-color="#ffffff" ></script>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Xenoblade Chronicles: Future Redeemed</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="what-has-riku-got-for-us"><a class="header" href="#what-has-riku-got-for-us">What Has Riku Got For Us?</a></h1>
+<p>The setting sun painted a brown-orange hue against the walls with dark patches. Dunban's{{footnote: If you watched XC1, in this case, one don't care to do a spoiler.}} house was clearly out of service. The racks and instruments that looked like used for cooking were still there, but were badly damaged. The floor were stones of various shapes and sizes fitted like a jigsaw puzzle. The group, including Rex and Shulk's group, found Riku already waiting for them here on the ground floor of the 2-storey house. "Friends finally come. Riku was tired of waiting."</p>
+<p>"Riku, nice to meetcha. I'm Matthew."</p>
+<p>Nikol excitedly jumped to the point, "We heard from Shulk that you're setting up a workshop in here?"</p>
+<p>"That correct. However, as friends can see, there nothing here as of yet. Riku cannot handle everything by self. That why request help with setting up of workshop space. Once workshop ready, will be able to use equipment to improve weapons, so there something in it for friends also," the final sentence intended as motivations to help him than to have him help himself.</p>
+<p>"Upgrading weapons, eh? Well that's music to my ears." Rex exclaimed.</p>
+<p>Linka added, "It's a welcome proposition for us too. Anything to improve the Liberators' military capabilities."</p>
+<p>Nikol can't wait to get started, excitedly questioned, "So what can we do to help, fundamentally?"</p>
+<p>"There two tasks Riku have in mind. Firstly, want to ask to collect Ravamantine at Exile Fortress Ruins."</p>
+<p>He heard of that item before, "Ravamantine... You'll use that to make the workshop's furnace, right?"</p>
+<p>"Precisely yes. Very astute, friend Nikol."</p>
+<p>"Is that some kinda rare material, then?" asked Glimmer, sparkling with a tad bit of curiosity.</p>
+<p>"It not rare to find if know where to look. But knowing place to look, that heart of issue. Exile Fortress Ruins is territory of Ignas, so cannot simply waltz inside."</p>
+<p>"I hear ya. So that's where <strong>we</strong> come in." he punched his fist together, always excited for a fight.</p>
+<p>A reminded him, not gonna rush in, "If we're to collect this material, we'll have to make sure we're adequately prepared."</p>
+<p>He wasn't really listening, prompted next, "'K, so what's the other thing?"</p>
+<p>"Friends must find hammer of Riku."</p>
+<p>"Huh? That's it?"</p>
+<p>He shuddered, like one did when there's nothing one can do about it, "From Riku point of view, this part take prime importance. Without it, can be no talk of upgrade weapons. But when returning to Colony 9 before, it get mixed up with other goods and not been seen since."</p>
+<p>Shulk suggested, "If you say it was with other goods, then it might still be in the storage area."</p>
+<p>Rex sighed, "We've gotta sift through all that stuff? That'll be a job and a half..."</p>
+<p>A read the situation, "Well then, it seems prudent to leave that job for later."</p>
+<p>Matthew decided, "Righto. So first, we find the Ravamantine, and then after that, Riku's hammer."</p>
+<p>"Thanking in advance for help in both matters. Riku will stay here and continue prep-work."</p>
+<hr />
+<p>They got there so quick night had yet to fall. Roots dangling from the roof of the remains of the Castle; it loses two sides of its walls. On the ground were some mystical design that looked magical. The structure sits on what seems like green grass and rocky cliffs that, from this particular point of view, we can't decide where it was. There was a door on one of the remaining walls, while on the other wall was the remnants, looking like orange (amber) crystals that used to be liquid, leaked from the walls like magma, before it solidifies. At the center of the stage sits a king Ignas, which are two-legged lizard-looking creatures that had developed a civilization and had the ability to wield iron weapons. The door was behind the king Ignas, while to his left, within is view angle, was the crystal. In front of him was an aisle made by soldier Ignas looking toward each other, forming two lines on both sides.</p>
+<p>Glimmer noted: "I see Ignas. Quite the number, too..."</p>
+<p>A noted: "If we want to mine the mineral, we'll need to do something about the creatures first."</p>
+<p>That way of solving stuff suits Matthew, "Looks like it... Nothing ever comes easy, eh? Well then, let's get this party rolling!"</p>
+<hr />
+<p>After knocking down the Ignas and gathered the Ravamantine, Matthew noted, "Cool, we got what we came for."</p>
+<p>Shulk: "Next, let's find Riku's hammer for him. We should begin by searching through Colony 9's storage area."</p>
+<hr />
+<p>Boxes, boxes, and more boxes piled on top of each other, next to each other. The amount of storage stowed away was not little. The storage bath under the sun and rain all day, without a roof covering it. At night, the ether lamp illuminates a weak orange light, acting as a lighthouse to show where's where, but not bright enough to facilitate the search. No point gathering together over a single box when splitting up was the faster way to go. Perhaps tired of searching to no avail, Matthew asked A: "How's it looking? Have we got it?"</p>
+<p>"Hm... I didn't see anything matching the description."</p>
+<p>Rex, grooming: "Well, damn... I knew it'd be a hassle."</p>
+<p>Some guy named Carrom, wearing armor with green short hair, bright shining turquoise iris, and brown skin, called out as he approached, "What's the matter? Looking for something?" They turned their attention turned to him.</p>
+<p>Matthew answered him, "Yeah. Riku's lost his hammer somewhere. You seen anything like that?"</p>
+<p>"Riku's hammer?" He was trying to recall from his memories. Hammer, hammer, hammer. Had one ever seen a hammer? After a while, he exclaimed, "<strong>Oh, I got it!</strong> I think I saw it. Had a Nopon-looking design. I remember thinking it was funky."</p>
+<p>"Yeah, that sounds about right! Where'd you see it?"</p>
+<p>"Hrm... I think we forwarded it to the supply office? Nobody could make heads or tails of it, so I think the guys were talking about trying to sell it or something..."</p>
+<p>"<strong>No kidding?</strong> Well, at least it's a clue."</p>
+<p>A deteriorated their hopes, "If it was indeed sold, the trouble won't end here..."</p>
+<p>"I know that. Let's hurry to the supply office." No time to lose.</p>
+<hr />
+<p>The square where Panacea waited for them to linger around before taking them to the command center earlier, remember? The supply office was set up there, looking like a bazaar/shop, with tables on the shop front hosting a small ether lamp and a 'pail' of pencils, boxes behind. In front of the shop front laid mats of various colors. The supply manager stood on a red mat while he served his new customer, "Welcome, welcome. Anything you need?"</p>
+<p>Matthew did the talking, "We're looking for a funky hammer. Got a Nopon-looking design on it... We hear it might've been sent here?"</p>
+<p>That send him in deep thought. Hammer? Had he seen a hammer? Wait, that doesn't sound like the right word... What about...  "<strong>Oh yeahhh...!</strong> Funky's the word, all right. It seemed really tricky to use right."</p>
+<p>"Bingo. Anyway, Riku wants it, so wouldja mind giving it back?"</p>
+<p>He shook his head, "Right, about that... In the end, someone said they wanted to borrow it for a bit, and carried it off..."</p>
+<p>"Just my luck... Someone, who?" Woof, better than tracking down if being sold. It would be much more difficult to ask for a favor when possessions changed hands and someone claimed authority over it thereafter.</p>
+<p>"Erm... Sorry, I was working at the time so I didn't think to stop and question them... But I think they said they were going to use it in the central plaza? Sorry I can't be more help..." Oh yeah? At least something triggered.</p>
+<p>"Right, I see..."</p>
+<hr />
+<p>The group gathered around for a discussion, Matthew started the questioning, "OK, so, what now?"</p>
+<p>Rex suggested, "Can't be that many places in the central plaza where you'd expect to use a hammer."</p>
+<p>Shulk agreed, "Good point. If we have a wander around, we may find it sooner than we think."</p>
+<p>"Got it. This is turning into a real odyssey, but... that does seem quickest. Time to have a look around the plaza, then..." And they headed off to the plaza.</p>
+<hr />
+<p>There was a hammer with a black rubber/grip wrapped against the brown handle, and its tip was made of metal, the metal had some dizzy-eye encarvings, laying beside one of the legs of a tent. They were searching around when Nikol eyes laid on it. "Say, Matthew... Could that be Riku's hammer?"</p>
+<p>Matthew walked up and lined with Nikol, while others gathered behind, "Hm, yeah, it doesn't exactly look like a normal hammer. We might've hit the jackpot."</p>
+<p>Then, some girl called Saomi, with short blonde hair similar colored with Nikol's, and two horns growing from the top of her head, emerged from behind the metal cabinet. "Ohh, fizzlesparks! Clean forgot to put that thing away... It was, like, the perfect size for staking a tent, so I gave it a spin. Actually, more of a thwam, come to think of it!"</p>
+<p>Matthew insisted, "Well, I'm sorry, but we're gonna have to ask you to return it. Its owner's been looking for it."</p>
+<p>"Sure, I'm pretty much finished with it now. You go get that hammer home!" And she just walked away.</p>
+<p>Matthew can't stand her reaction, spoke behind her back, "I can't believe some people. If you've finished the job, then return the tool, fool!" Looking back at the hammer, he was at least grateful, "Eh, guess I can let it slide. At least we've got the ore and the hammer for Riku now." It's called the 'Ultimate Hammer'.</p>
+<hr />
+<p>"Hey Riku, we're back!" called Matthew, walking past the entrance.</p>
+<p>He turned his attention from whatever he was doing to them, asked, "Have friends got all needed things?"</p>
+<p>They walked closer to each other, and Matthew handed him the items, "Sure do. 'Ere{{footnote: 'here'}}, the Ravamantine you ordered{{footnote: Like in a restaurant, eh!}}, and here's your hammer."</p>
+<p>"<strong>Oho! Riku is over moon with joy.</strong> Now can put finishing touches on workshop, at long last. Please to wait outside a moment. Riku will be done in jiffy."</p>
+<hr />
+<p>Hammering and soldering, and we saw the new anvil and furnace set up. Such speed of crafting, not even modern industry machines could beat. Even the door sign was hammered on top of the roof beam in no time.</p>
+<p>"This is crazy...!" exclaimed Nikol.</p>
+<p>Shulk agreed, "Indeed. For an improvised workspace, it certainly is impressive... Though I'm not sure its previous tenant would have approved.{{footnote: Poor Dunban.}}"</p>
+<p>"Riku make most of all resources that put at disposal of Riku. Is motto as craftypon, in fact."</p>
+<p>"Yeah, yeah, great stuff. So can you upgrade our weapons now?" Matthew was more concerned with something else.</p>
+<p>"Of course. Would friends care to try? First time come free."</p>
+<p>"<strong>Ooh, get in!</strong> Well then, don't mind if I do!"</p>
+<hr />
+<p>"There, enstrengthenment complete. How is Blade feel?"</p>
+<p>He summoned his gloves and tried some punches, "<strong>Ooh yeah, feels good!</strong> It's even more like it's part of me now."</p>
+<p>"Riku pleased to hear. Incidentally, Matthew."</p>
+<p>"Yes?" He sheathed his blade while asking him to go on.</p>
+<p>"Where did friend obtain that Blade?"</p>
+<p>"What, this? Uhm... Well, my grandad used it, originally. Grandad gave it to my pops{{footnote: i.e. father}}, he gave it to me, and now it's all mine. That sorta deal."</p>
+<p>"Riku see."</p>
+<p>"Why'd you ask?"</p>
+<p>"No particular reason. Riku simply bit curious. Blade is good quality. Riku hope friend can make good use of for long time yet."</p>
+<p>"Yeah, that's the plan."</p>
+<p>"Hmm..." A had been watching their interactions, perhaps knew something they don't.</p>
+<p>"Riku ready to improve all friends' weapons in workshop in future also. However, rule of B.O.O.M. apply. That stands for 'bring one's own materials'."</p>
+<p>"Gotcha. Hope you're ready to get worked hard, mister!" Matthew will be visiting very often!</p>
+<hr />
+<p>Exiting the tent, Matthew turned to the others, noted, "Right then, that's the business sorted. Shall we get back to the tents and rest?" The others were excited for a sleep after a hard day's work!</p>
+<h3 id="footnotes"><a class="header" href="#footnotes">Footnotes:</a></h3>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="05_way_home.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="07_nael.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="05_way_home.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="07_nael.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
